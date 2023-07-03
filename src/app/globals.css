@@ -6,6 +6,11 @@
   @apply antialiased scroll-smooth;
 }
 
+body,
+html {
+  @apply h-auto w-screen;
+}
+
 .drone {
   animation: droneAnimation 5s infinite ease-in-out;
 }
@@ -87,4 +92,14 @@
 .chevron::after {
   right: 0;
   transform: translateY(-50%) rotate(45deg);
+}
+
+.custom-button {
+  border: none;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 8px 32px 0 rgba(119, 63, 198, 0.37);
+}
+
+.custom-button:hover {
+  box-shadow: 0 0 10px 2px rgb(119, 63, 198, 0.37);
 }

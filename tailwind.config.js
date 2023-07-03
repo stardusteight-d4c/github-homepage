@@ -10,6 +10,10 @@ module.exports = {
       backgroundImage: {
         hero: 'url(/hero-bg.webp)',
       },
+      fontFamily: {
+        inter: ['var(--font-inter)'],
+        roboto: ['var(--font-roboto)'],
+      },
     },
   },
   plugins: [],
