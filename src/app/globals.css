@@ -2,3 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply antialiased scroll-smooth;
+}
+
+.drone {
+  animation: droneAnimation 5s infinite ease-in-out;
+}
+
+@keyframes droneAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.copilot-span {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(
+    90deg,
+    rgba(1, 1, 1, 0.6) 0%,
+    rgba(1, 1, 1, 0.461) 59.76%,
+    rgba(1, 1, 1, 0) 100%
+  );
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.line {
+  width: 0;
+  height: 2px;
+  background-color: white;
+}
+
+.copilot-span:hover .line {
+  transition: 0.3s ease-in-out;
+  width: 14px;
+}
+.copilot-span:hover .chevron {
+  left: 4px;
+  animation-name: slide-in;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 4px;
+  }
+}
+
+.chevron {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  transform: rotate(90deg);
+}
+
+.chevron::before,
+.chevron::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 2px;
+  background-color: white;
+}
+
+.chevron::before {
+  left: 0;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.chevron::after {
+  right: 0;
+  transform: translateY(-50%) rotate(45deg);
+}
