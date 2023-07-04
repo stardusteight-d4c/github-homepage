@@ -1,0 +1,8 @@
+export { default as copilot } from "./copilot.svg"
+export { default as github } from "./github-logo.svg"
+export { default as kpmg } from "./kpmg.svg"
+export { default as mercedesBenz } from "./mercedes-benz.svg"
+export { default as pg } from "./pg.svg"
+export { default as pinterest } from "./pinterest.svg"
+export { default as stripe } from "./stripe.svg"
+export { default as telus } from "./telus.svg"
