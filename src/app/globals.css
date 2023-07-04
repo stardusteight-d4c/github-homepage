@@ -27,7 +27,7 @@ html {
   }
 }
 
-.copilot-span {
+.span {
   background-color: rgba(0, 0, 0, 0);
   background-image: linear-gradient(
     90deg,
@@ -41,10 +41,10 @@ html {
   border: 1px solid #ffffff2e;
 }
 
-.trial-span {
+.span-variant {
   background-color: rgba(0, 0, 0, 0);
   background-image: linear-gradient(
-    90deg,
+    180deg,
     rgba(1, 1, 1, 0.6) 0%,
     rgba(1, 1, 1, 0.461) 59.76%,
     rgba(1, 1, 1, 0) 100%
