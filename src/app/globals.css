@@ -63,7 +63,6 @@ html {
 
 .copilot-span:hover .line {
   transition: 0.3s ease-in-out;
-  width: 14px;
 }
 .copilot-span:hover .chevron {
   left: 4px;
@@ -133,3 +132,33 @@ html {
   background-color: rgb(119, 63, 198);
   filter: blur(15px);
 }
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
