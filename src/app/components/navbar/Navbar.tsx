@@ -1,4 +1,3 @@
-import React from "react"
 import Image from "next/image"
 import { ActionsIcon } from "@/app/components/atoms/icons/actions"
 import { PackagesIcon } from "@/app/components/atoms/icons/packages"
