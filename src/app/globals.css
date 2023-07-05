@@ -145,7 +145,7 @@ html {
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 20px;
   transition: transform 0.3s ease-in-out;
 }
@@ -162,3 +162,8 @@ html {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+.overlay-glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
