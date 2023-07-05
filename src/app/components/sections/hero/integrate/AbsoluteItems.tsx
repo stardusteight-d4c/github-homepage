@@ -27,7 +27,7 @@ export const AbsoluteItems = () => {
         alt="hero_drone/svg"
         width={500}
         height={326}
-        className="drone w-[35vw] lg:w-[320px] lg:h-[208px] absolute top-[15px] right-4 lx:right-10"
+        className="drone w-[35vw] xl:w-[320px] xl:h-[208px] absolute top-[240px] md:top-[15px] right-9 md:right-16 lx:right-12"
       />
     </div>
   )
