@@ -19,7 +19,7 @@ export const BackgroundImage = () => {
         width={4377}
         height={2043}
         quality={100}
-        className="lg:min-w-[4377px] z-0 max-w-[4377px] lg:min-h-[2043px] max-h-[2043px] absolute top-0 -right-[1750px] md:-right-[1550px] lg:-right-[1350px] lgg:-right-[1150px] lx:-right-[1050px]"
+        className="lg:min-w-[4377px] z-0 max-w-[3077px] lg:max-w-[4377px] lg:min-h-[2043px] max-h-[2043px] absolute top-0 -right-[1250px] md:-right-[1550px] lg:-right-[1350px] lgg:-right-[1150px] lx:-right-[1050px]"
       />
     </picture>
   )

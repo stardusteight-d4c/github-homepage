@@ -14,7 +14,7 @@ export const Hero = () => {
       <BackgroundImage />
       <div className="relative z-10">
         <AbsoluteItems />
-        <div className="pt-[300px] pl-[70px] mr-[24px] md:mr-0 md:pt-[425px] md:pl-[115px] text-[#ffffff] z-20">
+        <div className="pt-[300px] pl-[45px] md:pl-[115px] mr-[24px] md:mr-0 md:pt-[425px] text-[#ffffff] z-20">
           <CopilotSpan />
           <Header />
           <Form />

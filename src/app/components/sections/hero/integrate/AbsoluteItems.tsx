@@ -5,8 +5,8 @@ import code from "@/app/assets/code.svg"
 
 export const AbsoluteItems = () => {
   return (
-    <div className="absolute w-full pointer-events-none left-6 md:left-[38px] -top-[45px] ssm:top-[80px] lg:top-[129px]">
-      <div className="relative w-[300px] -ml-1 md:-ml-0 ssm:w-[440px] h-[630px]">
+    <div className="absolute w-full pointer-events-none left-6 md:left-[38px] -top-[45px] md:top-[80px] lg:top-[129px]">
+      <div className="relative w-[300px] -ml-1 md:-ml-0 md:w-[440px] h-[630px]">
         <img
           src={heroLine.src}
           alt="roadmap_hero_line/svg"

@@ -5,7 +5,7 @@ interface Props {}
 
 export const CopilotSpan = (props: Props) => {
   return (
-    <div className="copilot-span span w-fit hover:border-white mb-[30px] rounded-full transition-all ease-in-out duration-300 flex items-center py-[7px] md:py-[14px] px-[10px] md:px-[20px]">
+    <div className="copilot-span span w-fit hover:border-white mb-[18px] md:mb-[30px] rounded-full transition-all ease-in-out duration-300 flex items-center py-[7px] md:py-[14px] px-[10px] md:px-[20px]">
       <img
         src={copilot.src}
         alt="copilot_logo/svg"
