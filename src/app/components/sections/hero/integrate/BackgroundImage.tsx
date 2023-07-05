@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export const BackgroundImage = () => {
   return (
-    <picture>
+    <picture className="pointer-events-none">
       <source
         media="(max-width: 768px)"
         type="image/webp"

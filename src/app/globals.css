@@ -129,7 +129,6 @@ html {
 }
 
 .blur-effect {
-  background-color: rgb(119, 63, 198);
   filter: blur(15px);
 }
 

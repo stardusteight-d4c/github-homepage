@@ -1,13 +1,15 @@
 import { MobileNav } from "./components/navbar/MobileNav"
 import { Navbar } from "./components/navbar/Navbar"
 import { Hero } from "./components/sections/hero/Hero"
+import { Productivity } from "./components/sections/productivity/Productivity"
 
 export default function Home() {
   return (
-    <main className="w-screen relative h-fit bg-[#0c1015] overflow-x-hidden">
+    <main className="w-screen min-h-screen bg-[#0c1015] relative overflow-x-hidden">
       <Navbar />
       <MobileNav />
       <Hero />
+      <Productivity />
     </main>
   )
 }
