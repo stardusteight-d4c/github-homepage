@@ -16,7 +16,7 @@ export const AbsoluteItems = () => {
           <div className="blur-effect bg-[#773fc6] w-[48px] h-[48px] rounded-full animate-pulse" />
           <Code className="absolute z-20 w-[28px] h-[28px] text-white" />
         </div>
-        <div className="absolute left-[4px] md:left-[14px] rounded-full bottom-[-390px] md:bottom-[-487px] w-[2.5px] md:w-[4px] h-[437px] bg-gradient-to-b from-[#733fc8] via-[#266c40] to-[#55d163]" />
+        <div className="absolute left-[4px] md:left-[14px] rounded-full bottom-[-790px] md:bottom-[-782px] lg:bottom-[-487px] w-[2.5px] md:w-[4px] h-[840px] md:h-[735px] lg:h-[437px] bg-gradient-to-b from-[#733fc8] via-[#266c40] to-[#55d163]" />
       </div>
       <Image
         src={heroDrone.src}

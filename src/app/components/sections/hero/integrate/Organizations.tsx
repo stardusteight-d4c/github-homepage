@@ -4,7 +4,7 @@ export const Organizations = () => {
   return (
     <div className="mt-[80px] text-[#7d8590] font-medium w-full">
       <span>Trusted by the world’s leading organizations ↘︎</span>
-      <div className="transition-all ease-in-out duration-300 mt-[28px] grid gap-8 grid-cols-2 smm:grid-cols-3 lg:flex items-center md:gap-x-[58px] w-full">
+      <div className="transition-all ease-in-out duration-300 mt-[28px] grid gap-8 grid-cols-2 smm:grid-cols-3 lg:flex items-center md:justify-between w-full">
         <img
           src={logo.stripe.src}
           alt="stripe/svg"
