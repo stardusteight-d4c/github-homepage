@@ -10,6 +10,8 @@ import { Python } from "../../atoms/icons/python"
 import { JavaScript } from "../../atoms/icons/javascript"
 import { Go } from "../../atoms/icons/go"
 import { useState } from "react"
+import { CopilotIcon } from "../../atoms/icons/copilot"
+import bgStars from "../../../assets/bg-stars-1.webp"
 
 export const Productivity = () => {
   const [activeItem, setActiveItem] = useState<"python" | "javascript" | "go">(
@@ -62,7 +64,12 @@ export const Productivity = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto flex">
+        <div className="max-w-7xl mx-auto flex relative">
+          <img
+            src={bgStars.src}
+            alt="bg_stars/webp"
+            className="w-[1000px] h-[900px] z-0 -bottom-[250px] absolute right-7"
+          />
           <div className="min-h-full w-[81px] relative">
             <div className="absolute left-[53px] top-0 w-[2.5px] md:w-[4px] min-h-full bg-gradient-to-b z-20 from-[#101f1b] via-[#55d163] to-[#101f1b]" />
           </div>
@@ -121,8 +128,8 @@ export const Productivity = () => {
                 </div>
               </span>
             </div>
-            <div className="max-w-[600px] border border-[#30363d] rounded-xl overflow-hidden w-full">
-              <div className="bg-[#161b22] border-b border-[#30363d] pt-[8px] px-[8px]">
+            <div className="max-w-[600px] border border-[#30363d] rounded-xl h-fit w-full">
+              <div className="bg-[#161b22] border-b border-[#30363d] rounded-t-xl pt-[8px] px-[8px]">
                 <ul className="flex items-center -mb-[2px]">
                   <li
                     onClick={() => setActiveItem("python")}
@@ -156,54 +163,207 @@ export const Productivity = () => {
                   </li>
                 </ul>
               </div>
-              <div className="h-full w-full bg-[#0d1117] z-50 relative">
+              <div className="h-full w-full rounded-b-xl p-[16px] bg-[#0d1117] z-50 relative">
                 <code
-                  className={`${activeItem === "python" ? "block" : "hidden"}`}
+                  className={`${
+                    activeItem === "python" ? "block" : "hidden"
+                  } relative`}
                 >
-                  <span className="block">import matplotlib.pyplot as plt</span>
-                  <br />
-                  <span className="block">scatter_plot(x_values, y_values):</span>
-                  <span className="block ml-[39px]">
-                    plt.scatter(x_values, y_values, s=20)
+                  <span className="block">
+                    <span className="text-[#6e7681] mr-2">1</span>
+                    <span className="text-[#fe7b72]">import </span>
+                    matplotlib.pyplot{" "}
+                    <span className="text-[#fe7b72]">as </span>plt
                   </span>
-                  <span className="block ml-[39px]">
-                    plt.title("Scatter Plot")
+                  <span className="text-[#6e7681]">2</span>
+                  <span className="block">
+                    <span className="text-[#6e7681] mr-2">3</span>
+                    <span className="text-[#fe7b72]">def</span>{" "}
+                    <span className="text-[#d2a8ff]">draw_scatterplot</span>
+                    (x_values, y_values):
                   </span>
-                  <span className="block ml-[39px]">
-                    plt.xlabel("x values")
+                  <span className="flex">
+                    <span className="text-[#6e7681] mr-2">4</span>
+                    <span className="block pl-[39px] bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      plt.<span className="text-[#d2a8ff]">scatter</span>
+                      (x_values, y_values, s
+                      <span className="text-[#a5d6ff]">=20</span>)
+                    </span>
                   </span>
-                  <span className="block ml-[39px]">
-                    plt.ylabel("y values")
+                  <span className="flex">
+                    <span className="text-[#6e7681] mr-2">5</span>
+                    <span className="block pl-[39px] bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      plt.<span className="text-[#d2a8ff]">title</span>(
+                      <span className="text-[#a5d6ff]">"Scatter Plot"</span>)
+                    </span>
                   </span>
-                  <span className="block ml-[39px]"> plt.show()</span>
+                  <span className="flex">
+                    <span className="text-[#6e7681] mr-2">6</span>
+                    <span className="block pl-[39px] bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      plt.<span className="text-[#d2a8ff]">xlabel</span>(
+                      <span className="text-[#a5d6ff]">"x values"</span>)
+                    </span>
+                  </span>
+                  <span className="flex">
+                    <span className="text-[#6e7681] mr-2">7</span>
+                    <span className="block pl-[39px] bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      plt.<span className="text-[#d2a8ff]">ylabel</span>(
+                      <span className="text-[#a5d6ff]">"y values"</span>)
+                    </span>
+                  </span>
+                  <span className="flex">
+                    <span className="text-[#6e7681] mr-2">8</span>
+                    <span className="block pl-[39px] bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      plt.<span className="text-[#d2a8ff]">show</span>()
+                    </span>
+                  </span>
+
+                  <div className="bg-[#1f6feb] ml-[17px] text-sm font-roboto gap-x-1 absolute top-[100%] p-[8px] rounded-md rounded-tl-none w-fit h-fit flex items-center">
+                    <CopilotIcon className="w-[16px] h-[16px]" /> Copilot
+                  </div>
                 </code>
                 <code
                   className={`${
                     activeItem === "javascript" ? "block" : "hidden"
-                  }`}
+                  } relative`}
                 >
-                  <span className="block">const seconds = 3600</span>
-                  <span className="block">const = seconds /</span>
-                  <span className="block">const hours = minutes / 60</span>
-                  <span className="block">const days = hours / 24</span>
-                  <span className="block">const weeks = days / 7</span>
-                  <span className="block">const months = days / 30</span>
-                  <span className="block">const years = months / 12</span>
-                </code>
-                <code className={`${activeItem === "go" ? "block" : "hidden"}`}>
-                  <span className="block">package main</span>
                   <span className="block">
-                    func Memoize(fn func(intintint) func(int) int &#123;
+                    <span className="text-[#6e7681] mr-2">1</span>
+                    <span className="text-[#fe7b72]">const </span>seconds
+                    <span className="text-[#a5d6ff]"> = </span>
+                    <span className="text-[#a5d6ff]">3600</span>
                   </span>
-                  <span className="block">cache := make(map[int]int)</span>
-                  <span className="block">return func(n int) int &#123;</span>
-                  <span className="block">if v, ok := cache[n]; ok &#123;</span>
-                  <span className="block">return v</span>
-                  <span className="block">&#125;</span>
-                  <span className="block">cache[n] = fn(n)</span>
-                  <span className="block">return cache[n]</span>
-                  <span className="block">&#125;</span>
-                  <span className="block">&#125;</span>
+                  <span className="block">
+                    <span className="text-[#6e7681] mr-2">2</span>
+                    <span className="text-[#fe7b72]">const </span> minutes
+                    <span className="text-[#a5d6ff]"> = </span>seconds{" "}
+                    <span className="text-[#a5d6ff]">/ 60</span>
+                  </span>
+                  <div className="flex">
+                    <span className="text-[#6e7681] mr-2">3</span>
+                    <span className="block bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      <span className="text-[#fe7b72]">const </span> hours
+                      <span className="text-[#a5d6ff]"> = </span>minutes{" "}
+                      <span className="text-[#a5d6ff]">/ 60</span>
+                    </span>
+                  </div>
+                  <div className="flex">
+                    <span className="text-[#6e7681] mr-2">4</span>
+                    <span className="block bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      <span className="text-[#fe7b72]">const </span> days
+                      <span className="text-[#a5d6ff]"> = </span>hours{" "}
+                      <span className="text-[#a5d6ff]">/ 24</span>
+                    </span>
+                  </div>
+                  <div className="flex">
+                    <span className="text-[#6e7681] mr-2">5</span>
+                    <span className="block bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      <span className="text-[#fe7b72]">const </span> weeks
+                      <span className="text-[#a5d6ff]"> = </span>days{" "}
+                      <span className="text-[#a5d6ff]">/ 7</span>{" "}
+                    </span>
+                  </div>
+                  <div className="flex">
+                    <span className="text-[#6e7681] mr-2">6</span>
+                    <span className="block bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      <span className="text-[#fe7b72]">const </span> months
+                      <span className="text-[#a5d6ff]"> = </span>days{" "}
+                      <span className="text-[#a5d6ff]">/ 30</span>
+                    </span>
+                  </div>
+                  <div className="flex">
+                    <span className="text-[#6e7681] mr-2">7</span>
+                    <span className="block bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      <span className="text-[#fe7b72]">const </span>years
+                      <span className="text-[#a5d6ff]"> = </span>
+                      months <span className="text-[#a5d6ff]">/ 12</span>
+                    </span>
+                  </div>
+                  <div className="bg-[#1f6feb] ml-[17px] text-sm font-roboto gap-x-1 absolute top-[100%] p-[8px] rounded-md rounded-tl-none w-fit h-fit flex items-center">
+                    <CopilotIcon className="w-[16px] h-[16px]" /> Copilot
+                  </div>
+                </code>
+                <code
+                  className={`${
+                    activeItem === "go" ? "block" : "hidden"
+                  } relative pl-1`}
+                >
+                  <span className="block">
+                    <span className="text-[#6e7681] mr-2">1</span>
+                    <span className="text-[#fe7b72]">package </span>main
+                  </span>
+                  <span className="text-[#6e7681] mr-2">2</span>
+                  <span className="block">
+                    <span className="text-[#6e7681] mr-2">3</span>
+                    <span className="text-[#fe7b72]">func </span>
+                    <span className="text-[#d2a8ff]">Memoize</span>(fn{" "}
+                    <span className="text-[#fe7b72]">func</span>(int) int){" "}
+                    <span className="text-[#fe7b72]">func</span>(int) int &#123;
+                  </span>
+                  <div className="flex">
+                    <span className="text-[#6e7681] mr-2">4</span>
+                    <span className="block pl-[45px] bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      cache<span className="text-[#a5d6ff]"> := </span>
+                      <span className="text-[#d2a8ff]">make</span>(
+                      <span className="text-[#fe7b72]">map</span>[int]int)
+                    </span>
+                  </div>
+                  <div className="flex">
+                    <span className="text-[#6e7681] mr-2">5</span>
+                    <span className="block pl-[45px] bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      <span className="text-[#fe7b72]">return func</span>(n int)
+                      int &#123;
+                    </span>
+                  </div>
+                  <div className="flex">
+                    <span className="text-[#6e7681] mr-2">6</span>
+                    <span className="block pl-[80px] bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      <span className="text-[#fe7b72]">if</span> v, ok
+                      <span className="text-[#a5d6ff]"> := </span>cache[n]; ok
+                      &#123;
+                    </span>
+                  </div>
+                  <div className="flex">
+                    <span className="text-[#6e7681] mr-2">7</span>
+                    <span className="block pl-[115px] bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      <span className="text-[#fe7b72]">return</span> v
+                    </span>
+                  </div>
+                  <div className="flex">
+                    <span className="text-[#6e7681] mr-2">8</span>
+                    <span className="block pl-[80px] bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      &#125;
+                    </span>
+                  </div>
+                  <div className="flex">
+                    <span className="text-[#6e7681] mr-2">9</span>
+                    <span className="block pl-[80px] bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      cache[n] <span className="text-[#a5d6ff]"> = </span>
+                      <span className="text-[#d2a8ff]">fn</span>(n)
+                    </span>
+                  </div>
+                  <div className="flex">
+                    <span className="text-[#6e7681] mr-2 ml-[-9px]">10</span>
+                    <span className="block pl-[80px] bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      <span className="text-[#fe7b72]">return </span>cache[n]
+                    </span>
+                  </div>
+                  <div className="flex">
+                    <span className="text-[#6e7681] mr-2 ml-[-9px]">11</span>
+
+                    <span className="block pl-[45px] bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      &#125;
+                    </span>
+                  </div>
+                  <div className="flex">
+                    <span className="text-[#6e7681] mr-2 ml-[-9px]">12</span>
+                    <span className="block bg-[#388bfd1a] w-fit border-l-[2px] border-l-[#1f6feb]">
+                      &#125;
+                    </span>
+                  </div>
+                  <div className="bg-[#1f6feb] ml-[17px] text-sm font-roboto gap-x-1 absolute top-[100%] p-[8px] rounded-md rounded-tl-none w-fit h-fit flex items-center">
+                    <CopilotIcon className="w-[16px] h-[16px]" /> Copilot
+                  </div>
                 </code>
               </div>
             </div>
