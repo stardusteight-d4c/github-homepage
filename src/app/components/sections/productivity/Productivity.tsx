@@ -11,14 +11,16 @@ import globe from "../../../assets/globe.jpg"
 
 export const Productivity = () => {
   return (
-    <section className="max-w-[100vw] relative text-white mt-[150px]          mb-[100px]">
+    <section className="max-w-[100vw] mt-4 relative text-white       mb-[100px]">
       <div className="max-w-7xl mx-auto">
         <div className="ml-[50px] md:ml-[115px] mb-[58px] md:mb-[96px]">
           <h2 className="text-[20px] md:text-[24px] relative mb-[24px] leading-[28px] font-semibold font-roboto">
-            <div className="absolute flex items-center justify-center -left-[38px] md:-left-[74px] z-20 ">
-              <div className="blur-effect absolute bg-[#7ee787] w-[48px] h-[48px] rounded-full animate-pulse" />
-              <ProductivityIcon className="w-[28px] h-[28px] text-white" />
-              <div className="absolute rounded-xl z-0 bottom-[-375px] md:bottom-[-380px] w-[2.5px] md:w-[4px] h-[360px] bg-gradient-to-b from-[#55d163] via-[#55d163] to-transparent" />
+            <div className="absolute  -left-[38px] md:-left-[74px] z-20 ">
+              <div className="relative flex items-center justify-center">
+                <div className="blur-effect absolute bg-[#7ee787] w-[48px] h-[48px] rounded-full animate-pulse" />
+                <ProductivityIcon className="w-[28px] h-[28px] text-white" />
+                <div className="absolute rounded-xl z-0 bottom-[-375px] md:bottom-[-380px] w-[2.5px] md:w-[4px] h-[360px] bg-gradient-to-b from-[#55d163] via-[#55d163] to-transparent" />
+              </div>
             </div>
             Productivity
           </h2>
@@ -32,7 +34,7 @@ export const Productivity = () => {
         </div>
       </div>
       <div className="px-[8px] md:px-[16px] xl:px-0">
-        <div className="border z-20 relative border-[#30363d] rounded-xl overflow-hidden max-w-[1278px] w-full xl:mx-auto">
+        <div className="border z-20 relative shadow-black/50 shadow-2xl border-[#30363d] rounded-xl overflow-hidden max-w-[1278px] w-full xl:mx-auto">
           <div className="bg-[#161b22] flex items-center justify-between w-full border-b border-[#30363d] mx-auto p-[16px]">
             <div className="flex items-center">
               <CaretHorizontal className="text-[#6e7681] w-[24px] h-[24px]" />
@@ -41,7 +43,9 @@ export const Productivity = () => {
             <div className="w-fit flex items-center py-[4px] px-[8px] bg-[#0d1117] text-white border border-[#30363d] rounded-[6px]">
               <Lock className="w-[16px] h-[16px] text-[#6e7681]" />
               <code className="mx-[8px] text-sm md:text-base md:mx-[64px] block">
-                <span className="hidden md:block">mona-github-github-g59jpq2w5w7.github.dev</span>
+                <span className="hidden md:block">
+                  mona-github-github-g59jpq2w5w7.github.dev
+                </span>
                 <span className="md:hidden">mona-github-github...</span>
               </code>
               <Refresh className="w-[16px] h-[16px] text-[#6e7681]" />
