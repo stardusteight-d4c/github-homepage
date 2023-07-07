@@ -18,7 +18,7 @@ export const AbsoluteItems = () => {
           <div className="absolute bottom-[38px] md:bottom-[-58px] w-fit flex items-center justify-center my-[10px] -left-[19px] md:left-[-8px]">
             <div className="blur-effect bg-[#773fc6] w-[48px] h-[48px] rounded-full animate-pulse" />
             <Code className="absolute z-20 w-[28px] h-[28px] text-white" />
-            <div className="absolute top-[100%] left-[23px] rounded-full w-[2.5px] md:w-[4px] h-[120vh] bg-gradient-to-b from-[#733fc8] via-[#266c40] to-[#55d163]" />
+            <div className="absolute top-[100%] left-[23px] rounded-full w-[2.5px] md:w-[4px] h-[130vh] bg-gradient-to-b from-[#733fc8] via-[#266c40] to-[#55d163]" />
           </div>
         </div>
         <Image

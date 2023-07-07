@@ -15,7 +15,7 @@ export const CopilotExamples = (props: Props) => {
 
   return (
     <div className="z-20 relative shadow-black/50 shadow-2xl border border-[#30363d] rounded-xl overflow-hidden max-w-[1278px] w-full xl:mx-auto">
-      <div className="bg-[#161b22] flex py-[64px]">
+      <div className="bg-[#161b22] flex flex-col md:flex-row py-[64px]">
         <div className="pl-[64px] text-[#f0f0f0]/50 pr-[128px] text-[24px] leading-[32px] font-semibold">
           <p className="w-[447px]">
             <span className="text-[#f0f0f0]">GitHub Copilot </span>is your AI

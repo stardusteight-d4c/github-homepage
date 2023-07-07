@@ -38,7 +38,7 @@ export const Productivity = () => {
       <div className="px-[8px] md:px-[16px] xl:px-0">
         <div className="relative max-w-[1278px] w-full xl:mx-auto">
           <Editor />
-          <div className="z-40 absolute -bottom-[180px] right-[50px]">
+          <div className="z-40 absolute -bottom-[220px] md:-bottom-[180px] right-[30px] md:right-[50px]">
             <div className="relative">
               <img
                 src={contextMenu.src}
@@ -53,7 +53,7 @@ export const Productivity = () => {
               <img
                 src={ports.src}
                 alt="ports/png"
-                className="rounded-lg absolute -left-[180px] -z-10 -bottom-[70px] min-w-[373px] min-h-[184px] border border-black object-cover"
+                className="rounded-lg hidden md:block absolute -left-[180px] -z-10 -bottom-[70px] min-w-[373px] min-h-[184px] border border-black object-cover"
               />
             </div>
           </div>
@@ -62,19 +62,19 @@ export const Productivity = () => {
           <img
             src={bgStars.src}
             alt="bg_stars/webp"
-            className="w-[1000px] h-[900px] z-0 -bottom-[250px] absolute right-7"
+            className="w-[500px] md:w-[1000px] h-[900px] z-0 -bottom-[250px] absolute right-7"
           />
           <div className="min-h-full w-[81px] relative">
-            <div className="absolute left-[53px] top-0 w-[2.5px] md:w-[4px] min-h-full bg-gradient-to-b z-20 from-[#101f1b] via-[#55d163] to-[#101f1b]" />
+            <div className="absolute left-[16px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] min-h-full bg-gradient-to-b z-20 from-[#101f1b] via-[#55d163] to-[#101f1b]" />
           </div>
-          <div className="py-[5px] pl-[64px] pr-[24px] my-[64px]">
-            <p className="text-[24px] text-[#7d8590] font-inter leading-[32px] w-[500px] font-medium mb-[16px]">
+          <div className="py-[5px] pl-[30px] md:pl-[64px] pr-[8px] md:pr-[24px] mt-[245px] md:my-[64px]">
+            <p className="text-[20px] md:text-[24px] text-[#7d8590] font-inter leading-[28px] md:leading-[32px] w-[317px] md:w-full md:max-w-[500px] font-medium mb-[24px] md:mb-[16px]">
               <span className="text-[#f0f0f0]">GitHub Codespaces </span>offers a
               complete dev environment in seconds, so you can code, build, test,
               and open pull requests from any repo anywhere.
             </p>
             <span className="codespace-span flex items-center cursor-pointer leading-[40px] -mt-2 font-semibold">
-              <span className="underline-animation text-[20px] font-inter mr-2">
+              <span className="underline-animation text-base md:text-[20px] font-inter mr-2">
                 Check out GitHub Codespaces
               </span>
               <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px] mt-[2px]">
@@ -87,15 +87,15 @@ export const Productivity = () => {
                 <img
                   src={branchProductivity.src}
                   alt="git_branch_productivity/svg"
-                  className="absolute -left-[93px] -top-[180px]"
+                  className="absolute hidden md:block -left-[93px] -top-[180px]"
                 />
                 <span className="text-[#86e98e] font-inter block text-[12px] leading-[20px] font-semibold rounded-full border border-[#86e98e] w-fit px-[8px]">
                   Did you know?
                 </span>
-                <h3 className="text-[#7ee787] font-roboto my-[8px] text-[64px] leading-[68px] tracking-[2px]">
+                <h3 className="text-[#7ee787] font-roboto my-[8px] text-[32px] md:text-[64px] leading-[36px] md:leading-[68px] tracking-[2px]">
                   22% increase
                 </h3>
-                <span className="text-[20px] leading-[28px] font-medium flex">
+                <span className="text-base md:text-[20px] leading-[24px] md:leading-[28px] font-medium flex">
                   in developer productivity <br /> after three years with GitHub
                   <span className="text-base mt-6 block">1</span>
                 </span>
@@ -104,7 +104,7 @@ export const Productivity = () => {
           </div>
         </div>
         <CopilotExamples />
-        <div className="grid grid-cols-2 mt-[35px] gap-x-[35px] max-w-[1278px] w-full xl:mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 mt-[35px] gap-x-[35px] max-w-[1278px] w-full xl:mx-auto">
           <div className="col-span-1 shadow-black/50 overflow-hidden shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
             <div className="py-[64px] pl-[64px] pr-[128px] text-[#f0f0f0]/50 text-[24px] leading-[32px] font-semibold">
               <span className="text-[#f0f0f0]">GitHub Actions</span> automates
