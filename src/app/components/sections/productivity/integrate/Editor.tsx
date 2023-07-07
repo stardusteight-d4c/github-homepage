@@ -44,11 +44,17 @@ export const Editor = (props: Props) => {
               <li className="py-[8px] px-[16px] rounded-t-lg">package.json</li>
             </ul>
 
-            <div className="bg-[#0d1117] p-[24px] md:max-w-[602px] w-full h-[336px]">
+            <div className="bg-[#0d1117] relative pl-[28px] p-[24px] md:max-w-[602px] w-full h-[336px]">
+              <div className="absolute w-fit flex items-center flex-col">
+                {[...Array(12)].map((_, index) => {
+                  return <span key={index + 1} className="text-[#6e7681] -ml-5">{index + 1}</span>
+                })}
+              </div>
               <div className="max-w-[602px] overflow-x-scroll">
                 <code>
                   <span className="whitespace-nowrap block">
-                    <span className="text-[#6e7681] mr-2">1</span>&lt;
+                    <span className="mr-2" />
+                    &lt;
                     <span className="text-[#7ee787]">div </span>
                     <span className="text-[#d2a8ff]">class</span>=
                     <span className="text-[#a5d6ff]">
@@ -59,7 +65,7 @@ export const Editor = (props: Props) => {
                     &gt;
                   </span>
                   <span className="whitespace-nowrap">
-                    <span className="text-[#6e7681] mr-[20px]">2</span>
+                    <span className="mr-[20px]" />
                     &lt;<span className="text-[#7ee787]">div </span>
                     <span className="text-[#d2a8ff]">class</span>=
                     <span className="text-[#a5d6ff]">
@@ -68,7 +74,7 @@ export const Editor = (props: Props) => {
                     &gt;
                   </span>
                   <span className="whitespace-nowrap block">
-                    <span className="text-[#6e7681] mr-[35px]">3</span>
+                    <span className="mr-[35px]" />
                     &lt;<span className="text-[#7ee787]">div </span>
                     <span className="text-[#d2a8ff]">class</span>=
                     <span className="text-[#a5d6ff]">
@@ -78,7 +84,7 @@ export const Editor = (props: Props) => {
                     &gt;
                   </span>
                   <span className="whitespace-nowrap block">
-                    <span className="text-[#6e7681] mr-[50px]">4</span>
+                    <span className="mr-[50px]" />
                     &lt;<span className="text-[#7ee787]">div </span>{" "}
                     <span className="text-[#d2a8ff]">class</span>=
                     <span className="text-[#a5d6ff]">
@@ -88,11 +94,11 @@ export const Editor = (props: Props) => {
                     &gt;
                   </span>
                   <span className="whitespace-nowrap block">
-                    <span className="text-[#6e7681] mr-[65px]">5</span>
+                    <span className="mr-[65px]" />
                     &lt;<span className="text-[#7ee787]">picture</span>&gt;
                   </span>
                   <span className="whitespace-nowrap block">
-                    <span className="text-[#6e7681] mr-[80px]">6</span>
+                    <span className="mr-[80px]" />
                     &lt;<span className="text-[#7ee787]">source </span>
                     <span className="text-[#d2a8ff]">srcset</span>=
                     <span className="text-[#a5d6ff]">"astro-mona.webp" </span>
@@ -100,7 +106,7 @@ export const Editor = (props: Props) => {
                     <span className="text-[#a5d6ff]">"image/webp"</span>&gt;
                   </span>
                   <span className="whitespace-nowrap block">
-                    <span className="text-[#6e7681] mr-[80px]">7</span>
+                    <span className="mr-[80px]" />
                     &lt;<span className="text-[#7ee787]">img </span>
                     <span className="text-[#d2a8ff]">src</span>=
                     <span className="text-[#a5d6ff]">"astro-mona.svg" </span>
@@ -120,23 +126,23 @@ export const Editor = (props: Props) => {
                     &gt;
                   </span>
                   <span className="whitespace-nowrap block">
-                    <span className="text-[#6e7681] mr-[65px]">8</span>
+                    <span className="mr-[65px]" />
                     &lt;/<span className="text-[#7ee787]">picture</span>&gt;
                   </span>
                   <span className="whitespace-nowrap block">
-                    <span className="text-[#6e7681] mr-[55px]">9</span>
+                    <span className="mr-[55px]" />
                     &lt;/<span className="text-[#7ee787]">div</span>&gt;
                   </span>
                   <span className="whitespace-nowrap block">
-                    <span className="text-[#6e7681] mr-[35px]">10</span>
+                    <span className="mr-[35px]" />
                     &lt;/<span className="text-[#7ee787]">div</span>&gt;
                   </span>
                   <span className="whitespace-nowrap block">
-                    <span className="text-[#6e7681] mr-[20px]">11</span>
+                    <span className="mr-[20px]" />
                     &lt;/<span className="text-[#7ee787]">div</span>&gt;
                   </span>
                   <span className="whitespace-nowrap block">
-                  <span className="text-[#6e7681] mr-2">12</span>
+                    <span className="mr-2" />
                     &lt;/
                     <span className="text-[#7ee787]">div</span>
                     &gt;

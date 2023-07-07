@@ -8,7 +8,7 @@
 
 body,
 html {
-  @apply w-screen overflow-x-hidden bg-[#0c1015];
+  @apply max-w-[100vw] w-full overflow-x-hidden bg-[#0c1015];
 }
 
 ::-webkit-scrollbar {
@@ -20,6 +20,11 @@ html {
   cursor: pointer;
   background: #f2f2f250;
 }
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 
 .drone {
   animation: droneAnimation 5s infinite ease-in-out;

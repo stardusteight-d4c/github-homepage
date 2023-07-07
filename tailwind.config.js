@@ -12,6 +12,7 @@ module.exports = {
       smm: "500px",
       sm: "640px",
       md: "768px",
+      mdd: "900px",
       lg: "1024px",
       lgg: "1130px",
       lx: "1200px",
@@ -19,6 +20,16 @@ module.exports = {
       "2xl": "1536px",
     },
     extend: {
+      animation: {
+        'scale-up': 'scale-up 5s infinite',
+      },
+      keyframes: {
+        'scale-up': {
+          '0%': { transform: 'rotate(0deg) scale(1)' },
+          '50%': { transform: 'rotate(180deg) scale(1.5)' },
+          '100%': { transform: 'rotate(360deg) scale(1)' },
+        },
+      },
       backgroundImage: {
         hero: "url(/hero-bg.webp)",
       },

@@ -38,7 +38,7 @@ export const Productivity = () => {
       <div className="px-[8px] md:px-[16px] xl:px-0">
         <div className="relative max-w-[1278px] w-full xl:mx-auto">
           <Editor />
-          <div className="z-40 absolute -bottom-[220px] md:-bottom-[180px] right-[30px] md:right-[50px]">
+          <div className="z-40 absolute -bottom-[220px] lg:-bottom-[180px] left-[35px] md:left-[140px] lg:left-auto lg:right-[50px]">
             <div className="relative">
               <img
                 src={contextMenu.src}
@@ -48,12 +48,12 @@ export const Productivity = () => {
               <img
                 src={cursor.src}
                 alt="cursor/png"
-                className="absolute z-50 bottom-[60px] right-[50px] w-[30px] h-[48px]"
+                className="absolute z-50 bottom-[60px] left-[110px] lg:right-[50px] w-[30px] h-[48px]"
               />
               <img
                 src={ports.src}
                 alt="ports/png"
-                className="rounded-lg hidden md:block absolute -left-[180px] -z-10 -bottom-[70px] min-w-[373px] min-h-[184px] border border-black object-cover"
+                className="rounded-lg hidden xl:block absolute -left-[180px] -z-10 -bottom-[70px] min-w-[373px] min-h-[184px] border border-black object-cover"
               />
             </div>
           </div>
@@ -67,14 +67,14 @@ export const Productivity = () => {
           <div className="min-h-full w-[81px] relative">
             <div className="absolute left-[16px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] min-h-full bg-gradient-to-b z-20 from-[#101f1b] via-[#55d163] to-[#101f1b]" />
           </div>
-          <div className="py-[5px] pl-[30px] md:pl-[64px] pr-[8px] md:pr-[24px] mt-[245px] md:my-[64px]">
-            <p className="text-[20px] md:text-[24px] text-[#7d8590] font-inter leading-[28px] md:leading-[32px] w-[317px] md:w-full md:max-w-[500px] font-medium mb-[24px] md:mb-[16px]">
+          <div className="py-[5px] -ml-[45px] md:ml-0 md:pl-[64px] pr-[8px] md:pr-[24px] mt-[245px] lg:my-[64px]">
+            <p className="text-[20px] ssm:text-[24px] text-[#7d8590] font-inter leading-[28px] md:leading-[32px] max-w-[317px] smm:max-w-[500px] w-full md:max-w-[500px] font-medium mb-[24px] md:mb-[16px]">
               <span className="text-[#f0f0f0]">GitHub Codespaces </span>offers a
               complete dev environment in seconds, so you can code, build, test,
               and open pull requests from any repo anywhere.
             </p>
             <span className="codespace-span flex items-center cursor-pointer leading-[40px] -mt-2 font-semibold">
-              <span className="underline-animation text-base md:text-[20px] font-inter mr-2">
+              <span className="underline-animation text-base ssm:text-[20px] font-inter mr-2">
                 Check out GitHub Codespaces
               </span>
               <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px] mt-[2px]">
@@ -104,14 +104,14 @@ export const Productivity = () => {
           </div>
         </div>
         <CopilotExamples />
-        <div className="grid grid-cols-1 md:grid-cols-2 mt-[35px] gap-x-[35px] max-w-[1278px] w-full xl:mx-auto">
-          <div className="col-span-1 shadow-black/50 overflow-hidden shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
-            <div className="py-[64px] pl-[64px] pr-[128px] text-[#f0f0f0]/50 text-[24px] leading-[32px] font-semibold">
+        <div className="grid grid-cols-1 md:grid-cols-2 mt-[35px] gap-y-[35px] md:gap-x-[35px] max-w-[1278px] w-full xl:mx-auto">
+          <div className="col-span-1 relative shadow-black/50 overflow-hidden shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
+            <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
               <span className="text-[#f0f0f0]">GitHub Actions</span> automates
               your build, test, and deployment workflow with simple and secure
               CI/CD.
               <span className="codespace-span flex items-center cursor-pointer leading-[40px] mt-[60px] font-semibold">
-                <span className="underline-animation text-[#f0f0f0] text-[20px] font-inter mr-2">
+                <span className="underline-animation text-[#f0f0f0] text-base md:text-[20px] font-inter mr-2">
                   Discover GitHub Actions
                 </span>
                 <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px] mt-[2px]">
@@ -120,21 +120,23 @@ export const Productivity = () => {
                 </div>
               </span>
             </div>
-            <Image
-              src={actions}
-              alt="actions/png"
-              width={619}
-              height={450}
-              quality={100}
-              className="w-full h-[450px] object-cover"
-            />
+            <div className="h-[260px] ssm:h-[350px] smm:h-[450px] w-full">
+              <Image
+                src={actions}
+                alt="actions/png"
+                width={619}
+                height={450}
+                quality={100}
+                className="w-full  md:h-[350px] absolute bottom-0 lg:h-[450px] object-cover"
+              />
+            </div>
           </div>
           <div className="col-span-1 relative shadow-black/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
-            <div className="py-[64px] pl-[64px] pr-[128px] text-[#f0f0f0]/50 text-[24px] leading-[32px] font-semibold">
+            <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
               <span className="text-[#f0f0f0]">GitHub Mobile</span> fits your
               projects in your pocket, so you never miss a beat while on the go.
               <span className="codespace-span flex items-center cursor-pointer leading-[40px] mt-[60px] font-semibold">
-                <span className="underline-animation text-[#f0f0f0] text-[20px] font-inter mr-2">
+                <span className="underline-animation text-[#f0f0f0] text-base md:text-[20px] font-inter mr-2">
                   Get GitHub Mobile
                 </span>
                 <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px] mt-[2px]">
@@ -143,7 +145,7 @@ export const Productivity = () => {
                 </div>
               </span>
             </div>
-            <div className="h-[450px] w-full">
+            <div className="h-[260px] ssm:h-[350px] md:h-[450px] w-full">
               <Image
                 src={mobile}
                 alt="mobile/png"

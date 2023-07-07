@@ -22,6 +22,15 @@ export const MobileNav = (props: Props) => {
     "product" | "solutions" | "open-source" | false
   >(false)
 
+  useEffect(() => {
+    const menuToggle = document.querySelector(".menu-toggle")
+    const menu = document.querySelector(".menu")
+    menuToggle?.addEventListener("click", () => {
+      menuToggle.classList.toggle("active")
+      menu?.classList.toggle("active")
+    })
+  }, [])
+
   function handleActiveItem(item: string) {
     if (item === "product") {
       if (activeItem === "product") {
@@ -44,16 +53,6 @@ export const MobileNav = (props: Props) => {
     }
   }
 
-  useEffect(() => {
-    const menuToggle = document.querySelector(".menu-toggle")
-    const menu = document.querySelector(".menu")
-
-    menuToggle?.addEventListener("click", () => {
-      menuToggle.classList.toggle("active")
-      menu?.classList.toggle("active")
-    })
-  }, [])
-
   return (
     <header className="top-0 absolute w-screen z-[200] lg:hidden">
       {createPortal(
@@ -69,7 +68,7 @@ export const MobileNav = (props: Props) => {
             openMenu ? "block" : "hidden"
           } overlay-glassmorphism w-screen min-h-screen inset-0 z-[100] overflow-hidden fixed`}
         />,
-        document?.body
+        document.body
       )}
       <div className="flex items-center justify-between w-full py-4 px-4 md:px-[40px]">
         <button className="py-[4px] px-[8px] w-[74px] whitespace-nowrap text-white bg-transparent border border-white rounded-md text-light font-inter flex items-center justify-center">
