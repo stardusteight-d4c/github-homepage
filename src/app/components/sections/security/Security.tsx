@@ -1,5 +1,6 @@
+"use client"
+
 import { Security2 as SecurityIcon } from "../../atoms/icons/security-2"
-import issuesPlan from "@/app/assets/issues-plan.png"
 import bgStars from "@/app/assets/bg-stars-1.webp"
 import branchSecurity from "@/app/assets/git-branch-security.svg"
 import codeScanning from "@/app/assets/illu-code-scanning.png"
@@ -8,10 +9,20 @@ import ghasList from "@/app/assets/illu-ghas-list.png"
 import secretScanning from "@/app/assets/illu-secret-scanning.png"
 import Image from "next/image"
 import { Check } from "../../atoms/icons/check"
+import { GlobeScene } from "../../GlobeScene"
+import { useEffect, useState } from "react"
 
 interface Props {}
 
 export const Security = (props: Props) => {
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setMounted(true)
+    }, 5000)
+  }, [])
+
   return (
     <section
       id="security"
@@ -218,6 +229,7 @@ export const Security = (props: Props) => {
             </div>
           </div>
         </div>
+        {mounted && <GlobeScene />}
       </div>
     </section>
   )
