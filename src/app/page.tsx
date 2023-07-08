@@ -1,5 +1,6 @@
 import { MobileNav } from "./components/navbar/MobileNav"
 import { Navbar } from "./components/navbar/Navbar"
+import { Collaboration } from "./components/sections/collaboration/Collaboration"
 import { Hero } from "./components/sections/hero/Hero"
 import { Productivity } from "./components/sections/productivity/Productivity"
 
@@ -10,6 +11,7 @@ export default function Home() {
       <MobileNav />
       <Hero />
       <Productivity />
+      <Collaboration />
     </main>
   )
 }

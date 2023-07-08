@@ -13,25 +13,30 @@ import Image from "next/image"
 
 export const Productivity = () => {
   return (
-    <section className="max-w-[100vw] mt-4 relative text-[#f0f0f0]       mb-[500px]">
+    <section
+      id="productivity"
+      className="max-w-[100vw] relative mt-4 text-[#f0f0f0]"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="ml-[50px] md:ml-[115px] mb-[58px] md:mb-[96px]">
-          <h2 className="text-[20px] md:text-[24px] relative mb-[24px] leading-[28px] font-semibold font-roboto">
+          <h2 className="text-[20px] font-jet-brains md:text-[24px] relative mb-[24px] leading-[28px] font-semibold">
             <div className="absolute  -left-[38px] md:-left-[74px] z-20 ">
               <div className="relative flex items-center justify-center">
                 <div className="blur-effect absolute bg-[#7ee787] w-[48px] h-[48px] rounded-full animate-pulse" />
                 <ProductivityIcon className="w-[28px] h-[28px] text-[#f0f0f0]" />
-                <div className="absolute rounded-xl z-0 bottom-[-375px] md:bottom-[-380px] w-[2.5px] md:w-[4px] h-[360px] bg-gradient-to-b from-[#55d163] via-[#55d163] to-transparent" />
+                <div className="absolute z-0 top-[100%] mt-3 w-[2.5px] md:w-[4px] h-[400px] bg-gradient-to-b from-[#55d163] via-[#55d163] to-transparent" />
               </div>
             </div>
             Productivity
           </h2>
-          <p className="text-[28px] md:text-[48px] leading-[32px] md:leading-[55px] tracking-[-0,03em] font-inter mr-2 max-w-[960px]">
-            <strong className="bg-gradient-to-br mr-2 from-[#7ee787] leading-[32px] md:leading-[55px] tracking-[-0,03em] to-green-400 text-transparent bg-clip-text">
-              Accelerate high-quality software development.
-            </strong>
-            Our AI-powered platform drives innovation with tools that boost
-            developer velocity.
+          <p className="text-[28px] md:text-[48px] leading-[32px] md:leading-[55px] font-inter mr-2 max-w-[960px]">
+            <p className="bg-gradient-to-br from-[#7ee787] to-green-400 text-transparent bg-clip-text font-semibold mr-2 leading-[32px] md:leading-[55px] tracking-[-0,03em]">
+              Accelerate high-quality <br /> software development.
+            </p>
+            <p className="tracking-[-0,03em]">
+              Our AI-powered platform drives innovation with tools that boost
+              developer velocity.
+            </p>
           </p>
         </div>
       </div>
@@ -73,7 +78,7 @@ export const Productivity = () => {
               complete dev environment in seconds, so you can code, build, test,
               and open pull requests from any repo anywhere.
             </p>
-            <span className="codespace-span flex items-center cursor-pointer leading-[40px] -mt-2 font-semibold">
+            <span className="codespace-span flex items-center cursor-pointer leading-[40px] mt-4 md:mt-0 font-semibold">
               <span className="underline-animation text-base ssm:text-[20px] font-inter mr-2">
                 Check out GitHub Codespaces
               </span>
@@ -92,7 +97,7 @@ export const Productivity = () => {
                 <span className="text-[#86e98e] font-inter block text-[12px] leading-[20px] font-semibold rounded-full border border-[#86e98e] w-fit px-[8px]">
                   Did you know?
                 </span>
-                <h3 className="text-[#7ee787] font-roboto my-[8px] text-[32px] md:text-[64px] leading-[36px] md:leading-[68px] tracking-[2px]">
+                <h3 className="bg-gradient-to-br from-[#7ee787] to-green-400 text-transparent bg-clip-text font-jet-brains my-[8px] text-[32px] md:text-[64px] leading-[36px] md:leading-[68px] tracking-[-5px]">
                   22% increase
                 </h3>
                 <span className="text-base md:text-[20px] leading-[24px] md:leading-[28px] font-medium flex">
@@ -104,57 +109,62 @@ export const Productivity = () => {
           </div>
         </div>
         <CopilotExamples />
-        <div className="grid grid-cols-1 md:grid-cols-2 mt-[35px] gap-y-[35px] md:gap-x-[35px] max-w-[1278px] w-full xl:mx-auto">
-          <div className="col-span-1 relative shadow-black/50 overflow-hidden shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
-            <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
-              <span className="text-[#f0f0f0]">GitHub Actions</span> automates
-              your build, test, and deployment workflow with simple and secure
-              CI/CD.
-              <span className="codespace-span flex items-center cursor-pointer leading-[40px] mt-[60px] font-semibold">
-                <span className="underline-animation text-[#f0f0f0] text-base md:text-[20px] font-inter mr-2">
-                  Discover GitHub Actions
+        <div className="relative pb-[158px] overflow-hidden">
+          <div className="relative grid grid-cols-1 md:grid-cols-2 mt-[35px] gap-y-[35px] md:gap-x-[35px] max-w-[1278px] w-full xl:mx-auto">
+            <div className="col-span-1 relative overflow-hidden shadow-black/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
+              <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
+                <span className="text-[#f0f0f0]">GitHub Actions</span> automates
+                your build, test, and deployment workflow with simple and secure
+                CI/CD.
+                <span className="codespace-span flex items-center cursor-pointer leading-[40px] mt-[60px] font-semibold">
+                  <span className="underline-animation text-[#f0f0f0] text-base md:text-[20px] font-inter mr-2">
+                    Discover GitHub Actions
+                  </span>
+                  <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px] mt-[2px]">
+                    <div className="chevron" />
+                    <span className="line absolute -translate-y-1/2 top-1/2" />
+                  </div>
                 </span>
-                <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px] mt-[2px]">
-                  <div className="chevron" />
-                  <span className="line absolute -translate-y-1/2 top-1/2" />
-                </div>
-              </span>
+              </div>
+              <div className="h-[260px] ssm:h-[350px] smm:h-[450px] w-full">
+                <Image
+                  src={actions}
+                  alt="actions/png"
+                  width={619}
+                  height={450}
+                  quality={100}
+                  className="w-full  md:h-[350px] absolute bottom-0 lg:h-[450px] object-cover"
+                />
+              </div>
             </div>
-            <div className="h-[260px] ssm:h-[350px] smm:h-[450px] w-full">
-              <Image
-                src={actions}
-                alt="actions/png"
-                width={619}
-                height={450}
-                quality={100}
-                className="w-full  md:h-[350px] absolute bottom-0 lg:h-[450px] object-cover"
-              />
-            </div>
-          </div>
-          <div className="col-span-1 relative shadow-black/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
-            <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
-              <span className="text-[#f0f0f0]">GitHub Mobile</span> fits your
-              projects in your pocket, so you never miss a beat while on the go.
-              <span className="codespace-span flex items-center cursor-pointer leading-[40px] mt-[60px] font-semibold">
-                <span className="underline-animation text-[#f0f0f0] text-base md:text-[20px] font-inter mr-2">
-                  Get GitHub Mobile
+
+            <div className="col-span-1 relative shadow-black/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
+              <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
+                <span className="text-[#f0f0f0]">GitHub Mobile</span> fits your
+                projects in your pocket, so you never miss a beat while on the
+                go.
+                <span className="codespace-span flex items-center cursor-pointer leading-[40px] mt-[60px] font-semibold">
+                  <span className="underline-animation text-[#f0f0f0] text-base md:text-[20px] font-inter mr-2">
+                    Get GitHub Mobile
+                  </span>
+                  <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px] mt-[2px]">
+                    <div className="chevron" />
+                    <span className="line absolute -translate-y-1/2 top-1/2" />
+                  </div>
                 </span>
-                <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px] mt-[2px]">
-                  <div className="chevron" />
-                  <span className="line absolute -translate-y-1/2 top-1/2" />
-                </div>
-              </span>
+              </div>
+              <div className="h-[260px] ssm:h-[350px] md:h-[450px] w-full">
+                <Image
+                  src={mobile}
+                  alt="mobile/png"
+                  width={1208}
+                  height={764}
+                  quality={100}
+                  className="w-[600px] absolute bottom-0 mx-auto block object-cover"
+                />
+              </div>
             </div>
-            <div className="h-[260px] ssm:h-[350px] md:h-[450px] w-full">
-              <Image
-                src={mobile}
-                alt="mobile/png"
-                width={1208}
-                height={764}
-                quality={100}
-                className="w-[600px] absolute bottom-0 mx-auto block object-cover"
-              />
-            </div>
+            <div className="absolute left-[16px] md:left-[53px] top-[100%] z-0 w-[2.5px] md:w-[4px] h-[50vh] bg-gradient-to-b from-transparent via-[#e65f44] to-white" />
           </div>
         </div>
       </div>

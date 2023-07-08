@@ -1,16 +1,14 @@
 import React from "react"
-import copilot from "@/app/assets/logos/copilot.svg"
+import { CopilotIcon } from "@/app/components/atoms/icons/copilot"
 
 interface Props {}
 
 export const CopilotSpan = (props: Props) => {
   return (
     <div className="copilot-span span  w-fit hover:border-white mb-[18px] md:mb-[30px] rounded-full transition-all ease-in-out duration-300 flex items-center py-[7px] md:py-[14px] px-[10px] md:px-[20px]">
-      <img
-        src={copilot.src}
-        alt="copilot_logo/svg"
-        className="mr-[16px] w-[38px] md:w-[40px]"
-      />
+      <div className="bg-white rounded-full w-fit h-fit mr-[16px] ">
+        <CopilotIcon className="w-[38px] md:w-[40px] my-2 mx-[1px] text-[#0c1015]" />
+      </div>
       <div className="flex flex-col font-roboto mr-[16px] pr-[4px]">
         <strong className="text-sm md:text-base font-medium tracking-[0.03em] leading-5">
           Introducing GitHub Copilot X
