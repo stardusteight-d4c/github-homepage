@@ -48,7 +48,7 @@ export const Productivity = () => {
               <img
                 src={contextMenu.src}
                 alt="context_menu/png"
-                className="rounded-lg z-40 w-[300px] h-[262px] border border-black object-cover"
+                className="rounded-lg shadow-black/30 shadow-xl z-40 w-[300px] h-[262px] border border-black object-cover"
               />
               <img
                 src={cursor.src}
@@ -58,7 +58,7 @@ export const Productivity = () => {
               <img
                 src={ports.src}
                 alt="ports/png"
-                className="rounded-lg hidden xl:block absolute -left-[180px] -z-10 -bottom-[70px] min-w-[373px] min-h-[184px] border border-black object-cover"
+                className="rounded-lg shadow-black/30 shadow-xl hidden xl:block absolute -left-[180px] -z-10 -bottom-[70px] min-w-[373px] min-h-[184px] border border-black object-cover"
               />
             </div>
           </div>

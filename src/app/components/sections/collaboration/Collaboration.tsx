@@ -33,14 +33,14 @@ export const Collaboration = (props: Props) => {
             <p className="bg-gradient-to-br from-[#fe7b72] to-[#ea6045] text-transparent bg-clip-text font-semibold mr-2 leading-[32px] md:leading-[55px] tracking-[-0,03em]">
               Supercharge collaboration.
             </p>
-            <p className=" tracking-[-0,03em]">
+            <p className="tracking-[-0,03em]">
               We provide unlimited repositories, best-in-class version control,
               and the world’s most powerful open source community! So your team
               can work more efficiently together.
             </p>
           </p>
         </div>
-        <div className="relative z-50">
+        <div className="relative z-50 px-[8px] md:px-[16px] xl:px-0">
           <img
             src={issuesPlan.src}
             alt="issues_plan/png"
@@ -49,7 +49,7 @@ export const Collaboration = (props: Props) => {
           <img
             src={projects.src}
             alt="projects/png"
-            className="absolute bottom-[-375px] right-[-25px] w-[544px] h-[459px] rounded-lg border border-black"
+            className="absolute shadow-black/30 shadow-xl bottom-[-175px] xl:bottom-[-375px] right-[16px] lg:left-auto smm:left-[45px] md:left-[142px] lg:right-[50px] xl:right-[-25px] w-[267px] xl:w-[544px] h-[225px] xl:h-[459px] rounded-lg border border-black"
           />
         </div>
         <div className="max-w-7xl mx-auto flex relative pb-9 overflow-hidden">
@@ -59,9 +59,9 @@ export const Collaboration = (props: Props) => {
             className="w-[500px] rotate-[180deg] md:w-[1000px] h-[900px] z-0 -bottom-[190px] absolute -right-[180px]"
           />
           <div className="min-h-full w-[81px] relative">
-            <div className="absolute left-[16px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] h-[800px] bg-gradient-to-b z-20 from-[#101f1b] via-[#ea6045] to-[#101f1b]" />
+            <div className="absolute left-[24px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] h-[800px] bg-gradient-to-b z-20 from-[#101f1b] via-[#ea6045] to-[#101f1b]" />
           </div>
-          <div className="py-[5px] -ml-[45px] md:ml-0 md:pl-[64px] pr-[8px] md:pr-[24px] mt-[245px] lg:my-[64px]">
+          <div className="py-[5px] -ml-[35px] md:ml-0 md:pl-[64px] pr-[8px] md:pr-[24px] mt-[200px] md:mt-[245px] lg:my-[64px]">
             <p className="text-[20px] ssm:text-[24px] text-[#7d8590] font-inter leading-[28px] md:leading-[32px] max-w-[317px] smm:max-w-[500px] w-full md:max-w-[500px] font-medium mb-[24px] md:mb-[16px]">
               <span className="text-[#f0f0f0]">
                 GitHub Issues and GitHub Projects{" "}
@@ -99,7 +99,7 @@ export const Collaboration = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-y-[35px] md:gap-x-[35px] max-w-[1278px] w-full xl:mx-auto">
+        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-y-[35px] px-[8px] md:px-0 md:gap-x-[35px] max-w-[1278px] w-full xl:mx-auto">
           <div className="col-span-1 relative overflow-hidden shadow-black/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
             <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
               <span className="text-[#f0f0f0]">GitHub Discussions</span> create
@@ -153,14 +153,14 @@ export const Collaboration = (props: Props) => {
           </div>
         </div>
 
-        <div className="z-20 relative h-[457px] mt-[35px] shadow-black/50 shadow-2xl border border-[#30363d] rounded-xl overflow-hidden max-w-[1278px] w-full xl:mx-auto">
-          <div className="bg-[#161b22] h-full flex flex-col md:flex-row justify-between">
-            <div className="text-[#f0f0f0]/50 md:pr-[50px] px-[8px] mdd:px-[32px] lg:px-[42px] py-[24px] mdd:py-[42px] p-[32px] leading-[32px] font-semibold">
+        <div className="z-20 relative px-[8px] md:px-[16px] xl:px-0 md:h-[457px] mt-[35px] max-w-[1278px] w-full xl:mx-auto">
+          <div className="bg-[#161b22] h-full flex flex-col md:flex-row justify-between shadow-black/50 shadow-2xl border border-[#30363d] rounded-xl overflow-hidden">
+            <div className="text-[#f0f0f0]/50 relative md:mr-[50px] mx-[40px] pb-[65px] md:pb-0 mdd:mx-[32px] lg:mx-[58px] my-[24px] mdd:my-[62px] m-[32px] leading-[32px] font-semibold">
               <p className="md:max-w-[447px] w-full text-[20px] mdd:text-[24px]">
                 <span className="text-[#f0f0f0]">GitHub Sponsors </span> lets
                 you support your favorite open source maintainers and projects.
               </p>
-              <span className="codespace-span flex items-center cursor-pointer leading-[40px] mt-[60px] font-semibold">
+              <span className="codespace-span flex items-center cursor-pointer leading-[40px] absolute left-0 bottom-0 font-semibold">
                 <span className="underline-animation text-[#f0f0f0] text-base mdd:text-[20px] font-inter mr-2">
                   Invest with GitHub Sponsors
                 </span>
@@ -170,16 +170,16 @@ export const Collaboration = (props: Props) => {
                 </div>
               </span>
             </div>
-            <div className="grid grid-cols-3 gap-4 -mt-[90px] mr-8 -rotate-[15deg]">
+            <div className="grid grid-cols-3 w-[550px] h-fit md:w-fit gap-4 mt-[80px] md:-mt-[90px] mr-8 -rotate-[10deg] md:-rotate-[15deg]">
               <a
                 href="https://github.com/directus"
                 target="_blank"
-                className="col-span-1 h-fit px-[28px] py-[24px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+                className="col-span-1 h-fit px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
               >
                 <img
                   src={sponsors.directus.src}
                   alt="directus"
-                  className="w-[98px] mx-auto rounded-md"
+                  className="w-[48px] md:w-[98px] mx-auto rounded-md"
                 />
                 <span className="block text-sm font-roboto text-[#686e77] mx-auto my-[8px]">
                   Directus
@@ -194,12 +194,12 @@ export const Collaboration = (props: Props) => {
               <a
                 href="https://github.com/eslint"
                 target="_blank"
-                className="col-span-1 h-fit px-[28px] py-[24px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+                className="col-span-1 h-fit px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
               >
                 <img
                   src={sponsors.eslint.src}
                   alt="eslint"
-                  className="w-[98px] mx-auto rounded-md"
+                  className="w-[48px] md:w-[98px] mx-auto rounded-md"
                 />
                 <span className="block text-sm font-roboto text-[#686e77] mx-auto my-[8px]">
                   Eslint
@@ -214,12 +214,12 @@ export const Collaboration = (props: Props) => {
               <a
                 href="https://github.com/chaynhq"
                 target="_blank"
-                className="col-span-1 h-fit px-[28px] py-[24px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+                className="col-span-1 h-fit px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
               >
                 <img
                   src={sponsors.chaynhq.src}
                   alt="chaynhq"
-                  className="w-[98px] mx-auto rounded-md"
+                  className="w-[48px] md:w-[98px] mx-auto rounded-md"
                 />
                 <span className="block text-sm font-roboto text-[#686e77] mx-auto my-[8px]">
                   CHAYN
@@ -234,12 +234,12 @@ export const Collaboration = (props: Props) => {
               <a
                 href="https://github.com/kazupon"
                 target="_blank"
-                className="col-span-1 h-fit px-[28px] py-[24px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+                className="col-span-1 h-fit px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
               >
                 <img
                   src={sponsors.kazupon.src}
                   alt="kazupon"
-                  className="w-[98px] mx-auto rounded-full"
+                  className="w-[48px] md:w-[98px] mx-auto rounded-full"
                 />
                 <span className="block text-sm font-roboto text-[#686e77] mx-auto my-[8px]">
                   kazupon
@@ -254,12 +254,12 @@ export const Collaboration = (props: Props) => {
               <a
                 href="https://github.com/commandpost"
                 target="_blank"
-                className="col-span-1 h-fit px-[28px] py-[24px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+                className="col-span-1 h-fit px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
               >
                 <img
                   src={sponsors.commandpost.src}
                   alt="commandpost"
-                  className="w-[98px] mx-auto rounded-md"
+                  className="w-[48px] md:w-[98px] mx-auto rounded-md"
                 />
                 <span className="block text-sm font-roboto text-[#686e77] mx-auto my-[8px]">
                   CommandPost
@@ -274,12 +274,12 @@ export const Collaboration = (props: Props) => {
               <a
                 href="https://github.com/sindresorhus"
                 target="_blank"
-                className="col-span-1 h-fit px-[28px] py-[24px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+                className="col-span-1 h-fit px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
               >
                 <img
                   src={sponsors.sindresorhus.src}
                   alt="sindresorhus"
-                  className="w-[98px] mx-auto rounded-full"
+                  className="w-[48px] md:w-[98px] mx-auto rounded-full"
                 />
                 <span className="block text-sm font-roboto text-[#686e77] mx-auto my-[8px]">
                   sindresorhus
@@ -294,12 +294,12 @@ export const Collaboration = (props: Props) => {
               <a
                 href="https://github.com/homebrew"
                 target="_blank"
-                className="col-span-1 h-fit px-[28px] py-[24px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+                className="col-span-1 h-fit px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
               >
                 <img
                   src={sponsors.homebrew.src}
                   alt="homebrew"
-                  className="w-[98px] mx-auto rounded-md"
+                  className="w-[48px] md:w-[98px] mx-auto rounded-md"
                 />
                 <span className="block text-sm font-roboto text-[#686e77] mx-auto my-[8px]">
                   Homebrew
@@ -314,12 +314,12 @@ export const Collaboration = (props: Props) => {
               <a
                 href="https://github.com/yyx990803"
                 target="_blank"
-                className="col-span-1 h-fit px-[28px] py-[24px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+                className="col-span-1 h-fit px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
               >
                 <img
                   src={sponsors.yyx990803.src}
                   alt="homebrew"
-                  className="w-[98px] mx-auto rounded-full"
+                  className="w-[48px] md:w-[98px] mx-auto rounded-full"
                 />
                 <span className="block text-sm font-roboto text-[#686e77] mx-auto my-[8px]">
                   yyx990803
@@ -335,12 +335,12 @@ export const Collaboration = (props: Props) => {
               <a
                 href="https://github.com/dayhaysoos"
                 target="_blank"
-                className="col-span-1 h-fit px-[28px] py-[24px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+                className="col-span-1 h-fit px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
               >
                 <img
                   src={sponsors.dayhaysoos.src}
                   alt="dayhaysoos"
-                  className="w-[98px] mx-auto rounded-full"
+                  className="w-[48px] md:w-[98px] mx-auto rounded-full"
                 />
                 <span className="block text-sm font-roboto text-[#686e77] mx-auto my-[8px]">
                   dayhaysoos
