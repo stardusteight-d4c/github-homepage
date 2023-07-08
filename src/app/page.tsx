@@ -3,6 +3,7 @@ import { Navbar } from "./components/navbar/Navbar"
 import { Collaboration } from "./components/sections/collaboration/Collaboration"
 import { Hero } from "./components/sections/hero/Hero"
 import { Productivity } from "./components/sections/productivity/Productivity"
+import { Security } from "./components/sections/security/Security"
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Productivity />
       <Collaboration />
+      <Security />
     </main>
   )
 }

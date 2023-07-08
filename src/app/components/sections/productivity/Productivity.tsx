@@ -23,7 +23,7 @@ export const Productivity = () => {
             <div className="absolute  -left-[38px] md:-left-[74px] z-20 ">
               <div className="relative flex items-center justify-center">
                 <div className="blur-effect absolute bg-[#7ee787] w-[48px] h-[48px] rounded-full animate-pulse" />
-                <ProductivityIcon className="w-[28px] h-[28px] text-[#f0f0f0]" />
+                <ProductivityIcon className="w-[28px] h-[28px] text-[#f0f0f0] relative z-[50]" />
                 <div className="absolute z-0 top-[100%] mt-3 w-[2.5px] md:w-[4px] h-[400px] bg-gradient-to-b from-[#55d163] via-[#55d163] to-transparent" />
               </div>
             </div>
