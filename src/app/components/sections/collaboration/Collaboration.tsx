@@ -5,7 +5,9 @@ import branchCollaboration from "@/app/assets/git-branch-collaboration.svg"
 import discussions from "@/app/assets/illu-discussions.png"
 import pullRequests from "@/app/assets/illu-pull-requests.png"
 import projects from "@/app/assets/illu-projects.png"
+import * as sponsors from "@/app/assets/sponsors"
 import Image from "next/image"
+import { Heart } from "../../atoms/icons/heart"
 
 interface Props {}
 
@@ -50,14 +52,14 @@ export const Collaboration = (props: Props) => {
             className="absolute bottom-[-375px] right-[-25px] w-[544px] h-[459px] rounded-lg border border-black"
           />
         </div>
-        <div className="max-w-7xl mx-auto flex relative">
+        <div className="max-w-7xl mx-auto flex relative pb-9 overflow-hidden">
           <img
             src={bgStars.src}
             alt="bg_stars/webp"
-            className="w-[500px] md:w-[1000px] h-[900px] z-0 -bottom-[250px] absolute right-7"
+            className="w-[500px] rotate-[180deg] md:w-[1000px] h-[900px] z-0 -bottom-[190px] absolute -right-[180px]"
           />
           <div className="min-h-full w-[81px] relative">
-            <div className="absolute left-[16px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] min-h-full bg-gradient-to-b z-20 from-[#101f1b] via-[#ea6045] to-[#101f1b]" />
+            <div className="absolute left-[16px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] h-[800px] bg-gradient-to-b z-20 from-[#101f1b] via-[#ea6045] to-[#101f1b]" />
           </div>
           <div className="py-[5px] -ml-[45px] md:ml-0 md:pl-[64px] pr-[8px] md:pr-[24px] mt-[245px] lg:my-[64px]">
             <p className="text-[20px] ssm:text-[24px] text-[#7d8590] font-inter leading-[28px] md:leading-[32px] max-w-[317px] smm:max-w-[500px] w-full md:max-w-[500px] font-medium mb-[24px] md:mb-[16px]">
@@ -147,6 +149,209 @@ export const Collaboration = (props: Props) => {
                 quality={100}
                 className="w-full md:h-[350px] absolute bottom-0 lg:h-[450px] object-cover"
               />
+            </div>
+          </div>
+        </div>
+
+        <div className="z-20 relative h-[457px] mt-[35px] shadow-black/50 shadow-2xl border border-[#30363d] rounded-xl overflow-hidden max-w-[1278px] w-full xl:mx-auto">
+          <div className="bg-[#161b22] h-full flex flex-col md:flex-row justify-between">
+            <div className="text-[#f0f0f0]/50 md:pr-[50px] px-[8px] mdd:px-[32px] lg:px-[42px] py-[24px] mdd:py-[42px] p-[32px] leading-[32px] font-semibold">
+              <p className="md:max-w-[447px] w-full text-[20px] mdd:text-[24px]">
+                <span className="text-[#f0f0f0]">GitHub Sponsors </span> lets
+                you support your favorite open source maintainers and projects.
+              </p>
+              <span className="codespace-span flex items-center cursor-pointer leading-[40px] mt-[60px] font-semibold">
+                <span className="underline-animation text-[#f0f0f0] text-base mdd:text-[20px] font-inter mr-2">
+                  Invest with GitHub Sponsors
+                </span>
+                <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px] mt-[2px]">
+                  <div className="chevron" />
+                  <span className="line absolute -translate-y-1/2 top-1/2" />
+                </div>
+              </span>
+            </div>
+            <div className="grid grid-cols-3 gap-4 -mt-[90px] mr-8 -rotate-[15deg]">
+              <a
+                href="https://github.com/directus"
+                target="_blank"
+                className="col-span-1 h-fit px-[28px] py-[24px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+              >
+                <img
+                  src={sponsors.directus.src}
+                  alt="directus"
+                  className="w-[98px] mx-auto rounded-md"
+                />
+                <span className="block text-sm font-roboto text-[#686e77] mx-auto my-[8px]">
+                  Directus
+                </span>
+                <button className="flex hover:brightness-150 cursor-pointer items-center bg-[#21262d] border border-[#373b42] rounded-md gap-x-[4px] py-[5px] px-[16px]">
+                  <Heart className="text-[#db61a2] w-[17px] h-[17px]" />
+                  <span className="text-[#bec6ce] font-roboto text-sm">
+                    Sponsor
+                  </span>
+                </button>
+              </a>
+              <a
+                href="https://github.com/eslint"
+                target="_blank"
+                className="col-span-1 h-fit px-[28px] py-[24px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+              >
+                <img
+                  src={sponsors.eslint.src}
+                  alt="eslint"
+                  className="w-[98px] mx-auto rounded-md"
+                />
+                <span className="block text-sm font-roboto text-[#686e77] mx-auto my-[8px]">
+                  Eslint
+                </span>
+                <button className="flex hover:brightness-150 cursor-pointer items-center bg-[#21262d] border border-[#373b42] rounded-md gap-x-[4px] py-[5px] px-[16px]">
+                  <Heart className="text-[#db61a2] w-[17px] h-[17px]" />
+                  <span className="text-[#bec6ce] font-roboto text-sm">
+                    Sponsor
+                  </span>
+                </button>
+              </a>
+              <a
+                href="https://github.com/chaynhq"
+                target="_blank"
+                className="col-span-1 h-fit px-[28px] py-[24px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+              >
+                <img
+                  src={sponsors.chaynhq.src}
+                  alt="chaynhq"
+                  className="w-[98px] mx-auto rounded-md"
+                />
+                <span className="block text-sm font-roboto text-[#686e77] mx-auto my-[8px]">
+                  CHAYN
+                </span>
+                <button className="flex hover:brightness-150 cursor-pointer items-center bg-[#21262d] border border-[#373b42] rounded-md gap-x-[4px] py-[5px] px-[16px]">
+                  <Heart className="text-[#db61a2] w-[17px] h-[17px]" />
+                  <span className="text-[#bec6ce] font-roboto text-sm">
+                    Sponsor
+                  </span>
+                </button>
+              </a>
+              <a
+                href="https://github.com/kazupon"
+                target="_blank"
+                className="col-span-1 h-fit px-[28px] py-[24px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+              >
+                <img
+                  src={sponsors.kazupon.src}
+                  alt="kazupon"
+                  className="w-[98px] mx-auto rounded-full"
+                />
+                <span className="block text-sm font-roboto text-[#686e77] mx-auto my-[8px]">
+                  kazupon
+                </span>
+                <button className="flex hover:brightness-150 cursor-pointer items-center bg-[#21262d] border border-[#373b42] rounded-md gap-x-[4px] py-[5px] px-[16px]">
+                  <Heart className="text-[#db61a2] w-[17px] h-[17px]" />
+                  <span className="text-[#bec6ce] font-roboto text-sm">
+                    Sponsor
+                  </span>
+                </button>
+              </a>
+              <a
+                href="https://github.com/commandpost"
+                target="_blank"
+                className="col-span-1 h-fit px-[28px] py-[24px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+              >
+                <img
+                  src={sponsors.commandpost.src}
+                  alt="commandpost"
+                  className="w-[98px] mx-auto rounded-md"
+                />
+                <span className="block text-sm font-roboto text-[#686e77] mx-auto my-[8px]">
+                  CommandPost
+                </span>
+                <button className="flex hover:brightness-150 cursor-pointer items-center bg-[#21262d] border border-[#373b42] rounded-md gap-x-[4px] py-[5px] px-[16px]">
+                  <Heart className="text-[#db61a2] w-[17px] h-[17px]" />
+                  <span className="text-[#bec6ce] font-roboto text-sm">
+                    Sponsor
+                  </span>
+                </button>
+              </a>
+              <a
+                href="https://github.com/sindresorhus"
+                target="_blank"
+                className="col-span-1 h-fit px-[28px] py-[24px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+              >
+                <img
+                  src={sponsors.sindresorhus.src}
+                  alt="sindresorhus"
+                  className="w-[98px] mx-auto rounded-full"
+                />
+                <span className="block text-sm font-roboto text-[#686e77] mx-auto my-[8px]">
+                  sindresorhus
+                </span>
+                <button className="flex hover:brightness-150 cursor-pointer items-center bg-[#21262d] border border-[#373b42] rounded-md gap-x-[4px] py-[5px] px-[16px]">
+                  <Heart className="text-[#db61a2] w-[17px] h-[17px]" />
+                  <span className="text-[#bec6ce] font-roboto text-sm">
+                    Sponsor
+                  </span>
+                </button>
+              </a>
+              <a
+                href="https://github.com/homebrew"
+                target="_blank"
+                className="col-span-1 h-fit px-[28px] py-[24px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+              >
+                <img
+                  src={sponsors.homebrew.src}
+                  alt="homebrew"
+                  className="w-[98px] mx-auto rounded-md"
+                />
+                <span className="block text-sm font-roboto text-[#686e77] mx-auto my-[8px]">
+                  Homebrew
+                </span>
+                <button className="flex hover:brightness-150 cursor-pointer items-center bg-[#21262d] border border-[#373b42] rounded-md gap-x-[4px] py-[5px] px-[16px]">
+                  <Heart className="text-[#db61a2] w-[17px] h-[17px]" />
+                  <span className="text-[#bec6ce] font-roboto text-sm">
+                    Sponsor
+                  </span>
+                </button>
+              </a>
+              <a
+                href="https://github.com/yyx990803"
+                target="_blank"
+                className="col-span-1 h-fit px-[28px] py-[24px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+              >
+                <img
+                  src={sponsors.yyx990803.src}
+                  alt="homebrew"
+                  className="w-[98px] mx-auto rounded-full"
+                />
+                <span className="block text-sm font-roboto text-[#686e77] mx-auto my-[8px]">
+                  yyx990803
+                </span>
+                <button className="flex hover:brightness-150 cursor-pointer items-center bg-[#21262d] border border-[#373b42] rounded-md gap-x-[4px] py-[5px] px-[16px]">
+                  <Heart className="text-[#db61a2] w-[17px] h-[17px]" />
+                  <span className="text-[#bec6ce] font-roboto text-sm">
+                    Sponsor
+                  </span>
+                </button>
+              </a>
+
+              <a
+                href="https://github.com/dayhaysoos"
+                target="_blank"
+                className="col-span-1 h-fit px-[28px] py-[24px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+              >
+                <img
+                  src={sponsors.dayhaysoos.src}
+                  alt="dayhaysoos"
+                  className="w-[98px] mx-auto rounded-full"
+                />
+                <span className="block text-sm font-roboto text-[#686e77] mx-auto my-[8px]">
+                  dayhaysoos
+                </span>
+                <button className="flex hover:brightness-150 cursor-pointer items-center bg-[#21262d] border border-[#373b42] rounded-md gap-x-[4px] py-[5px] px-[16px]">
+                  <Heart className="text-[#db61a2] w-[17px] h-[17px]" />
+                  <span className="text-[#bec6ce] font-roboto text-sm">
+                    Sponsor
+                  </span>
+                </button>
+              </a>
             </div>
           </div>
         </div>
