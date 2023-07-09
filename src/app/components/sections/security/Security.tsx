@@ -10,7 +10,6 @@ import footerGalaxy from "@/app/assets/footer-galaxy.jpg"
 import secretScanning from "@/app/assets/illu-secret-scanning.png"
 import Image from "next/image"
 import { Check } from "../../atoms/icons/check"
-import { GlobeScene } from "../../GlobeScene"
 import { useEffect, useState } from "react"
 
 interface Props {}
@@ -230,8 +229,8 @@ export const Security = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="h-[1280px] relative flex items-center justify-center flex-col mt-4 w-full rounded-full overflow-hidden">
-          <img src={footerGalaxy.src} alt="footer_galaxy/png" className="w-full h-[1280px] absolute z-0" />
+        <div className="relative flex items-center justify-center flex-col mt-4 w-full ">
+          <img src={footerGalaxy.src} alt="footer_galaxy/png" className="w-full absolute z-0" />
           <div className="relative z-50">
             <h4 className="text-[54px] text-center w-[840px] mx-auto font-jet-brains text-[#f6f8fa] leading-[58px] md:tracking-[-4px] font-bold">
               The place for anyone from anywhere to build anything
@@ -261,7 +260,6 @@ export const Security = (props: Props) => {
               </button>
             </div>
           </div>
-          <div className="absolute z-10 left-1 top-[20px] w-screen">{mounted && <GlobeScene />}</div>
         </div>
       </div>
     </section>
