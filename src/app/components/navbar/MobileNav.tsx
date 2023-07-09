@@ -71,7 +71,7 @@ export const MobileNav = (props: Props) => {
         document.body
       )}
       <div className="flex items-center justify-between w-full py-4 px-4 md:px-[40px]">
-        <button className="py-[4px] px-[8px] w-[74px] whitespace-nowrap text-white bg-transparent border border-white rounded-md text-light font-inter flex items-center justify-center">
+        <button className="py-[4px] px-[8px] w-[74px] whitespace-nowrap text-[#f6f8fa] bg-transparent border border-[#f6f8fa] rounded-md text-light font-inter flex items-center justify-center">
           Sign up
         </button>
         <Image
@@ -92,7 +92,7 @@ export const MobileNav = (props: Props) => {
             <div
               className={`${
                 openMenu ? "block" : "hidden"
-              } menu top-[65px] max-h-[516px] -right-[16px] md:-right-[48px] p-[16px] w-[95vw] ssm:w-[320px] ml-4 bg-white overflow-y-scroll rounded-l-lg border border-[#636a74]/30 fixed`}
+              } menu top-[65px] max-h-[516px] -right-[16px] md:-right-[48px] p-[16px] w-[95vw] ssm:w-[320px] ml-4 bg-[#f6f8fa] overflow-y-scroll rounded-l-lg border border-[#636a74]/30 fixed`}
             >
               <nav className="px-[16px] mb-auto text-[#1f2328]">
                 <ul>
@@ -348,7 +348,7 @@ export const MobileNav = (props: Props) => {
                     placeholder="Search GitHub"
                     className="border border-[#1f2328]/10 mb-2 w-full bg-[#1f2328]/5 focus:border-blue-600 placeholder:text-[#1f2328]/50 text-[#1f2328] rounded-md py-[8px] px-[14px] outline-none"
                   />
-                  <button className="py-[8px] px-[12px] w-full text-white bg-[#1f2328] font-inter rounded-md hover:opacity-80 transition-all ease-in-out duration-75">
+                  <button className="py-[8px] px-[12px] w-full text-[#f6f8fa] bg-[#1f2328] font-inter rounded-md hover:opacity-80 transition-all ease-in-out duration-75">
                     Sign in
                   </button>
                 </div>

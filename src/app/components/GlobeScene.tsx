@@ -12,8 +12,8 @@ export function GlobeScene() {
   return (
     <Suspense fallback={"Loading..."}>
       <Canvas
-      camera={{ position: [0, 0, 20000], near: 0.1, far: 30000 }}
-        style={{ width: "1200px", height: "1200px" }}
+        camera={{ position: [0, 0, 10000], near: 0.1, far: 30000 }}
+        style={{ width: "1280px", height: "1280px" }}
       >
         <primitive object={gltf.scene} position={[0, 0, 0]} />
         <directionalLight position={[0, 0, 150]} />
@@ -28,7 +28,7 @@ export function GlobeScene() {
           target={[0, 0, 0]}
           enablePan={false}
           autoRotate
-          enableZoom={true}
+          enableZoom={false}
         />
       </Canvas>
     </Suspense>

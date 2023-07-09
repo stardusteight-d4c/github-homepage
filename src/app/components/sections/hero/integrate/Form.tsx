@@ -11,7 +11,7 @@ export const Form = (props: Props) => {
             <input
               type="text"
               placeholder="Email address"
-              className="placeholder:text-[#535a61] outline-none w-full md:w-[296px] border-[2px] border-white transition-all duration-100 focus:border-blue-600 text-black/90 bg-white rounded-md md:rounded-r-none rounded-l-md py-[10px] px-[12px] md:px-[24px]"
+              className="placeholder:text-[#535a61] outline-none w-full md:w-[296px] border-[2px] border-[#f6f8fa] transition-all duration-100 focus:border-blue-600 text-[#0d1117]/90 bg-[#f6f8fa] rounded-md md:rounded-r-none rounded-l-md py-[10px] px-[12px] md:px-[24px]"
             />
           </div>
           <button className="custom-button py-[12px] w-full md:w-fit px-[24px] bg-[#773fc6] rounded-md md:rounded-l-none rounded-r-md text-base font-semibold font-inter flex items-center justify-center">
@@ -20,7 +20,7 @@ export const Form = (props: Props) => {
         </div>
       </form>
       <div className="h-[1px] lg:h-[48px] w-full md:w-[487px] lg:w-[1px] border-t lg:border-l border-[#ffffff2e] my-4 lg:my-0 lg:mx-4" />
-      <button className="trial-span w-full md:w-[487px] lg:w-fit span transition-all ease-in-out duration-300 relative flex items-center justify-center py-[12px] px-[24px] rounded-md bg-transparent border-[1px] hover:border-white border-[#ffffff2e] font-semibold">
+      <button className="trial-span w-full md:w-[487px] lg:w-fit span transition-all ease-in-out duration-300 relative flex items-center justify-center py-[12px] px-[24px] rounded-md bg-transparent border-[1px] hover:border-[#f6f8fa] border-[#ffffff2e] font-semibold">
         <span className="pr-[4px] tracking-[0.03em] font-roboto font-medium">
           Start a free enterprise trial
         </span>

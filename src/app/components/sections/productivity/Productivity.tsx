@@ -48,7 +48,7 @@ export const Productivity = () => {
               <img
                 src={contextMenu.src}
                 alt="context_menu/png"
-                className="rounded-lg shadow-black/30 shadow-xl z-40 w-[300px] h-[262px] border border-black object-cover"
+                className="rounded-lg shadow-[#0d1117]/30 shadow-xl z-40 w-[300px] h-[262px] border border-[#0d1117] object-cover"
               />
               <img
                 src={cursor.src}
@@ -58,7 +58,7 @@ export const Productivity = () => {
               <img
                 src={ports.src}
                 alt="ports/png"
-                className="rounded-lg shadow-black/30 shadow-xl hidden xl:block absolute -left-[180px] -z-10 -bottom-[70px] min-w-[373px] min-h-[184px] border border-black object-cover"
+                className="rounded-lg shadow-[#0d1117]/30 shadow-xl hidden xl:block absolute -left-[180px] -z-10 -bottom-[70px] min-w-[373px] min-h-[184px] border border-[#0d1117] object-cover"
               />
             </div>
           </div>
@@ -111,7 +111,7 @@ export const Productivity = () => {
         <CopilotExamples />
         <div className="relative pb-[158px] overflow-hidden">
           <div className="relative grid grid-cols-1 md:grid-cols-2 mt-[35px] gap-y-[35px] md:gap-x-[35px] max-w-[1278px] w-full xl:mx-auto">
-            <div className="col-span-1 relative overflow-hidden shadow-black/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
+            <div className="col-span-1 relative overflow-hidden shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
               <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
                 <span className="text-[#f0f0f0]">GitHub Actions</span> automates
                 your build, test, and deployment workflow with simple and secure
@@ -138,7 +138,7 @@ export const Productivity = () => {
               </div>
             </div>
 
-            <div className="col-span-1 relative shadow-black/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
+            <div className="col-span-1 relative shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
               <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
                 <span className="text-[#f0f0f0]">GitHub Mobile</span> fits your
                 projects in your pocket, so you never miss a beat while on the
@@ -164,7 +164,7 @@ export const Productivity = () => {
                 />
               </div>
             </div>
-            <div className="absolute left-[16px] md:left-[53px] top-[100%] z-0 w-[2.5px] md:w-[4px] h-[50vh] bg-gradient-to-b from-transparent via-[#e65f44] to-white" />
+            <div className="absolute left-[16px] md:left-[53px] top-[100%] z-0 w-[2.5px] md:w-[4px] h-[50vh] bg-gradient-to-b from-transparent via-[#e65f44] to-[#f6f8fa]" />
           </div>
         </div>
       </div>

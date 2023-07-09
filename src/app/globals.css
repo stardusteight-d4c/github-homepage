@@ -67,9 +67,30 @@ html {
 .line {
   width: 0;
   height: 2px;
-  background-color: white;
+  background-color: #f6f8fa;
   border-radius: 50px;
   transition: all 0.1s ease-in-out; 
+}
+
+.line-black {
+  width: 0;
+  height: 2px;
+  background-color: #0d1117;
+  border-radius: 50px;
+  transition: all 0.1s ease-in-out; 
+}
+
+.span-button:hover .line-black {
+  width: 14px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.span-button:hover .chevron-black {
+  left: 4px;
+  animation-name: slide-in;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
 }
 
 .copilot-span:hover .line {
@@ -117,6 +138,37 @@ html {
   }
 }
 
+.chevron-black {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  transform: rotate(90deg);
+  transition: all 0.3s ease-in-out; 
+}
+
+
+.chevron-black::before,
+.chevron-black::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 2px;
+  background-color: #0d1117;
+  border-radius: 50px;
+}
+
+.chevron-black::before {
+  left: 0;
+  transform: translateY(-50%) rotate(-45deg);
+  border-radius: 50px;
+}
+
+.chevron-black::after {
+  right: 0;
+  transform: translateY(-50%) rotate(45deg);
+}
+
 .chevron {
   width: 16px;
   height: 16px;
@@ -132,7 +184,7 @@ html {
   top: 50%;
   width: 10px;
   height: 2px;
-  background-color: white;
+  background-color: #f6f8fa;
   border-radius: 50px;
 }
 
@@ -208,7 +260,7 @@ html {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: white;
+  background-color: #f6f8fa;
   transition: width 0.3s ease-in-out;
 }
 

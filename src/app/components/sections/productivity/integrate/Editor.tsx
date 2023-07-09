@@ -12,13 +12,13 @@ interface Props {}
 
 export const Editor = (props: Props) => {
   return (
-    <div className="border z-20 relative shadow-black/50 shadow-2xl border-[#30363d] rounded-xl overflow-hidden max-w-[1278px] w-full xl:mx-auto">
+    <div className="border z-20 relative shadow-[#0d1117]/50 shadow-2xl border-[#30363d] rounded-xl overflow-hidden max-w-[1278px] w-full xl:mx-auto">
       <div className="bg-[#161b22] flex items-center justify-between w-full border-b border-[#30363d] mx-auto p-[16px]">
         <div className="flex items-center">
           <CaretHorizontal className="text-[#6e7681] w-[24px] h-[24px]" />
           <CaretHorizontal className="text-[#6e7681] w-[24px] h-[24px] rotate-180" />
         </div>
-        <div className="w-fit flex items-center py-[4px] px-[8px] bg-[#0d1117] text-white border border-[#30363d] rounded-[6px]">
+        <div className="w-fit flex items-center py-[4px] px-[8px] bg-[#0d1117] text-[#f6f8fa] border border-[#30363d] rounded-[6px]">
           <Lock className="w-[16px] h-[16px] text-[#6e7681]" />
           <code className="mx-[8px] text-sm md:text-base md:mx-[64px] block">
             <span className="hidden md:block">
@@ -153,7 +153,7 @@ export const Editor = (props: Props) => {
 
             <div className="text-[#7d8590] border-y border-[#30363d] h-full px-[24px] py-[12px]">
               <ul className="flex items-center gap-x-4 pb-[12px] text-sm font-semibold">
-                <li className="text-white">Terminal</li>
+                <li className="text-[#f6f8fa]">Terminal</li>
                 <li>Output</li>
                 <li>Problems</li>
                 <li>Debug</li>
@@ -224,9 +224,9 @@ export const Editor = (props: Props) => {
 
           <div className="hidden md:block w-full h-fit">
             <ul className="bg-[#161b22] w-full flex items-center justify-between pt-[16px] pb-[8px] px-[16px] ">
-              <Menu className="text-white w-[16px] h-[16px]" />
-              <GithubLogo className="text-white w-[24px] h-[24px]" />
-              <Notify className="text-white w-[16px] h-[16px]" />
+              <Menu className="text-[#f6f8fa] w-[16px] h-[16px]" />
+              <GithubLogo className="text-[#f6f8fa] w-[24px] h-[24px]" />
+              <Notify className="text-[#f6f8fa] w-[16px] h-[16px]" />
             </ul>
             <div className="bg-[#040D21]">
               <Image

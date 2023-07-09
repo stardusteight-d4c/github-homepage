@@ -6,6 +6,7 @@ import branchSecurity from "@/app/assets/git-branch-security.svg"
 import codeScanning from "@/app/assets/illu-code-scanning.png"
 import dependabot from "@/app/assets/illu-dependabot.png"
 import ghasList from "@/app/assets/illu-ghas-list.png"
+import footerGalaxy from "@/app/assets/footer-galaxy.jpg"
 import secretScanning from "@/app/assets/illu-secret-scanning.png"
 import Image from "next/image"
 import { Check } from "../../atoms/icons/check"
@@ -52,7 +53,7 @@ export const Security = (props: Props) => {
         </div>
         <div className="relative z-50 px-[8px] md:px-[16px] xl:px-0">
           <div className="z-20 relative px-[8px] md:px-[16px] xl:px-0 mb-[35px] max-w-[1278px] w-full xl:mx-auto">
-            <div className="bg-[#161b22] font-roboto p-[82px] h-full shadow-black/50 shadow-2xl border border-[#30363d] rounded-xl overflow-hidden">
+            <div className="bg-[#161b22] font-roboto p-[82px] h-full shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl overflow-hidden">
               <div className="text-[#5c636d]">
                 <span className="block text-sm font-medium">cmake.yml</span>
                 <span className="block text-xs">on: push </span>
@@ -104,7 +105,7 @@ export const Security = (props: Props) => {
           <img
             src={ghasList.src}
             alt="ghas_list/png"
-            className="absolute shadow-black/30 z-[80] shadow-xl bottom-[-265px] right-[16px] w-[541px] h-[300px] rounded-lg border border-black"
+            className="absolute shadow-[#0d1117]/30 z-[80] shadow-xl bottom-[-265px] right-[16px] w-[541px] h-[300px] rounded-lg border border-[#0d1117]"
           />
         </div>
         <div className="max-w-7xl mx-auto flex relative pb-9 overflow-hidden">
@@ -154,7 +155,7 @@ export const Security = (props: Props) => {
         </div>
 
         <div className="z-20 relative px-[8px] md:px-[16px] xl:px-0 md:h-[457px] mb-[35px] max-w-[1278px] w-full xl:mx-auto">
-          <div className="bg-[#161b22] h-full flex flex-col md:flex-row justify-between shadow-black/50 shadow-2xl border border-[#30363d] rounded-xl overflow-hidden">
+          <div className="bg-[#161b22] h-full flex flex-col md:flex-row justify-between shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl overflow-hidden">
             <div className="text-[#f0f0f0]/50 relative md:mr-[50px] mx-[40px] pb-[65px] md:pb-0 mdd:mx-[32px] lg:mx-[58px] my-[28px] mdd:my-[62px] m-[32px] leading-[32px] font-semibold">
               <p className="md:max-w-[447px] w-full text-[20px] mdd:text-[24px]">
                 <span className="text-[#f0f0f0]">Secret scanning </span>
@@ -176,7 +177,7 @@ export const Security = (props: Props) => {
         </div>
 
         <div className="relative grid grid-cols-1 md:grid-cols-2 gap-y-[35px] px-[8px] md:px-0 md:gap-x-[35px] max-w-[1278px] w-full xl:mx-auto">
-          <div className="col-span-1 relative overflow-hidden shadow-black/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
+          <div className="col-span-1 relative overflow-hidden shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
             <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
               <span className="text-[#f0f0f0]">Dependabot</span> makes it easy
               to find and fix vulnerable dependencies in your supply chain.
@@ -202,7 +203,7 @@ export const Security = (props: Props) => {
             </div>
           </div>
 
-          <div className="col-span-1 relative overflow-hidden shadow-black/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
+          <div className="col-span-1 relative overflow-hidden shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
             <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
               <span className="text-[#f0f0f0]">Code scanning</span> is GitHub’s
               static code analysis tool that helps you remediate issues in your
@@ -229,7 +230,39 @@ export const Security = (props: Props) => {
             </div>
           </div>
         </div>
-        {mounted && <GlobeScene />}
+        <div className="h-[1280px] relative flex items-center justify-center flex-col mt-4 w-full rounded-full overflow-hidden">
+          <img src={footerGalaxy.src} alt="footer_galaxy/png" className="w-full h-[1280px] absolute z-0" />
+          <div className="relative z-50">
+            <h4 className="text-[54px] text-center w-[840px] mx-auto font-jet-brains text-[#f6f8fa] leading-[58px] md:tracking-[-4px] font-bold">
+              The place for anyone from anywhere to build anything
+            </h4>
+            <p className="text-[20px] text-[#7d8590] leading-[28px] w-[724px] text-center mx-auto mt-[16px]">
+              Whether you’re scaling your startup or just learning how to code,
+              GitHub is your home. Join the world’s largest developer platform
+              to build the innovations that empower humanity. Let’s build from
+              here.
+            </p>
+            <div className="flex items-center justify-center gap-x-2 mt-[50px]">
+              <button className="span-button bg-[#f6f8fa] flex items-center gap-x-3 rounded-md text-xl font-bold text-[#0d1117] py-[18px] px-[30px]">
+                <span>Sign up for GitHub</span>
+                <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px] mt-[2px]">
+                  <div className="chevron-black " />
+                  <span className="line-black -ml-2 absolute -translate-y-1/2 top-1/2" />
+                </div>
+              </button>
+              <button className="trial-span span w-fit transition-all ease-in-out duration-300 relative flex items-center justify-center py-[17px] px-[30px] rounded-md bg-transparent border-[1px] hover:border-[#f6f8fa] border-[#ffffff2e] font-semibold">
+                <span className="pr-[4px] text-xl tracking-[0.03em] font-roboto font-medium">
+                  Start a free enterprise trial
+                </span>
+                <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px]">
+                  <div className="chevron ml-2 mt-[1px]" />
+                  <span className="line absolute -translate-y-1/2 top-1/2 mt-[1px]" />
+                </div>
+              </button>
+            </div>
+          </div>
+          <div className="absolute z-10 left-1 top-[20px] w-screen">{mounted && <GlobeScene />}</div>
+        </div>
       </div>
     </section>
   )

@@ -16,7 +16,7 @@ export const Navbar = (props: Props) => {
   return (
     <header className="top-0 absolute w-screen z-50 hidden lg:block">
       <nav className="max-w-7xl mx-auto px-4 py-1 flex items-center justify-between">
-        <ul className="flex items-center text-white">
+        <ul className="flex items-center text-[#f6f8fa]">
           <li className="cursor-pointer">
             <Image
               src={logo.github}
@@ -37,7 +37,7 @@ export const Navbar = (props: Props) => {
                 className="group-hover:translate-y-[2px] transition-all ease-in duration-100 w-[16px] h-[16px] ml-1 mr-4"
               />
             </div>
-            <div className="absolute -mt-2 -ml-5 w-[500px] hidden group-hover:flex bg-white border border-[#636a74]/30 my-6 rounded-lg">
+            <div className="absolute -mt-2 -ml-5 w-[500px] hidden group-hover:flex bg-[#f6f8fa] border border-[#636a74]/30 my-6 rounded-lg">
               <ul className="pl-[24px] pr-[48px] font-roboto py-[24px] flex flex-col">
                 <li className="flex items-center py-[8px] pb-[16px] group/li text-[#636a74] hover:text-blue-600 cursor-pointer transition-all ease-in duration-100">
                   <ActionsIcon className="w-[24px] h-[24px] mr-[16px]" />
@@ -161,7 +161,7 @@ export const Navbar = (props: Props) => {
                 className="group-hover:translate-y-[2px] transition-all ease-in duration-100 w-[16px] h-[16px] ml-1 mr-4"
               />
             </div>
-            <div className="absolute flex-col -ml-5 p-[24px] w-[300px] hidden group-hover:flex border border-[#636a74]/30 bg-white text-[#1f2328] -mt-2 rounded-lg">
+            <div className="absolute flex-col -ml-5 p-[24px] w-[300px] hidden group-hover:flex border border-[#636a74]/30 bg-[#f6f8fa] text-[#1f2328] -mt-2 rounded-lg">
               <div>
                 <h2 className="font-semibold font-roboto leading-[20px] text-[#1f2328]">
                   For
@@ -229,7 +229,7 @@ export const Navbar = (props: Props) => {
                 className="group-hover:translate-y-[2px] transition-all ease-in duration-100 w-[16px] h-[16px] ml-1 mr-4"
               />
             </div>
-            <div className="absolute font-roboto flex-col -ml-5 p-[24px] w-[300px] hidden group-hover:flex border border-[#636a74]/30 bg-white text-[#1f2328] -mt-2 rounded-lg">
+            <div className="absolute font-roboto flex-col -ml-5 p-[24px] w-[300px] hidden group-hover:flex border border-[#636a74]/30 bg-[#f6f8fa] text-[#1f2328] -mt-2 rounded-lg">
               <div className="cursor-pointer group/li">
                 <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-blue-600 transition-all duration-200 ease-in-out">
                   GitHub Sponsors
@@ -275,9 +275,9 @@ export const Navbar = (props: Props) => {
           <input
             type="text"
             placeholder="Search GitHub"
-            className="span-variant focus:border-blue-600 text-white rounded-md w-[240px] py-[8px] px-[14px] outline-none"
+            className="span-variant focus:border-blue-600 text-[#f6f8fa] rounded-md w-[240px] py-[8px] px-[14px] outline-none"
           />
-          <div className="text-white flex items-center justify-center">
+          <div className="text-[#f6f8fa] flex items-center justify-center">
             <button className="py-[8px] px-[12px] font-inter rounded-md hover:opacity-80 transition-all ease-in-out duration-75">
               Sign in
             </button>
