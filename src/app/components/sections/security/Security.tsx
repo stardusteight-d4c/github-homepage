@@ -6,9 +6,7 @@ import branchSecurity from "@/app/assets/git-branch-security.svg"
 import codeScanning from "@/app/assets/illu-code-scanning.png"
 import dependabot from "@/app/assets/illu-dependabot.png"
 import ghasList from "@/app/assets/illu-ghas-list.png"
-import footerGalaxy from "@/app/assets/footer-galaxy.jpg"
 import secretScanning from "@/app/assets/illu-secret-scanning.png"
-import globe from "@/app/assets/globe.png"
 import Image from "next/image"
 import { Check } from "../../atoms/icons/check"
 
@@ -20,31 +18,29 @@ export const Security = (props: Props) => {
       id="security"
       className="max-w-[100vw] relative mt-4 text-[#f0f0f0]          mb-[100px]"
     >
-      <div>
-        <div className="max-w-7xl mx-auto">
-          <div className="ml-[50px] md:ml-[115px] mb-[58px] md:mb-[96px]">
-            <h2 className="text-[20px] md:text-[24px] relative mb-[24px] leading-[28px] font-semibold font-jet-brains">
-              <div className="absolute  -left-[38px] md:-left-[74px] z-20 ">
-                <div className="relative flex items-center justify-center">
-                  <div className="blur-effect absolute bg-[#939aff] w-[48px] h-[48px] rounded-full animate-pulse" />
-                  <SecurityIcon className="w-[28px] h-[28px] text-[#f0f0f0] relative z-[50]" />
-                  <div className="absolute z-0 top-[100%] mt-3 w-[2.5px] md:w-[4px] h-[460px] bg-gradient-to-b from-[#939aff] via-[#5c61bc] to-[#68332b]" />
-                </div>
+      <div className="max-w-7xl mx-auto ">
+        <div className="ml-[50px] md:ml-[115px] mb-[58px] md:mb-[96px]">
+          <h2 className="text-[20px] md:text-[24px] relative mb-[24px] leading-[28px] font-semibold font-jet-brains">
+            <div className="absolute  -left-[38px] md:-left-[74px] z-20 ">
+              <div className="relative flex items-center justify-center">
+                <div className="blur-effect absolute bg-[#939aff] w-[48px] h-[48px] rounded-full animate-pulse" />
+                <SecurityIcon className="w-[28px] h-[28px] text-[#f0f0f0] relative z-[50]" />
+                <div className="absolute z-0 top-[100%] mt-3 w-[2.5px] md:w-[4px] h-[460px] bg-gradient-to-b from-[#939aff] via-[#5c61bc] to-[#68332b]" />
               </div>
-              Security
-            </h2>
-            <p className="text-[28px] md:text-[48px] leading-[32px] md:leading-[55px] font-inter mr-2 max-w-[960px]">
-              <p className="bg-gradient-to-br from-[#939aff] to-[#5c61bc] text-transparent bg-clip-text font-semibold mr-2 leading-[32px] md:leading-[55px] tracking-[-0,03em]">
-                Embed security into <br /> the developer workflow.
-              </p>
-              <p className="tracking-[-0,03em]">
-                With GitHub, developers can secure their code in minutes and
-                organizations can automatically comply with regulations.
-              </p>
+            </div>
+            Security
+          </h2>
+          <p className="text-[28px] md:text-[48px] leading-[32px] md:leading-[55px] font-inter mr-2 max-w-[960px]">
+            <p className="bg-gradient-to-br from-[#939aff] to-[#5c61bc] text-transparent bg-clip-text font-semibold mr-2 leading-[32px] md:leading-[55px] tracking-[-0,03em]">
+              Embed security into <br /> the developer workflow.
             </p>
-          </div>
+            <p className="tracking-[-0,03em]">
+              With GitHub, developers can secure their code in minutes and
+              organizations can automatically comply with regulations.
+            </p>
+          </p>
         </div>
-        <div className="max-w-7xl mx-auto relative z-50 px-[8px] md:px-[16px] xl:px-0">
+        <div className="relative z-50 px-[8px] md:px-[16px] xl:px-0">
           <div className="z-20 relative px-[8px] md:px-[16px] xl:px-0 mb-[35px] max-w-[1278px] w-full xl:mx-auto">
             <div className="bg-[#161b22] font-roboto p-[82px] h-full shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl overflow-hidden">
               <div className="text-[#5c636d]">
@@ -101,7 +97,7 @@ export const Security = (props: Props) => {
             className="absolute shadow-[#0d1117]/30 z-[80] shadow-xl bottom-[-265px] right-[16px] w-[541px] h-[300px] rounded-lg border border-[#0d1117]"
           />
         </div>
-        <div className="max-w-7xl mx-auto flex relative pb-9 overflow-hidden">
+        <div className="flex relative pb-9 overflow-hidden">
           <img
             src={bgStars.src}
             alt="bg_stars/webp"
@@ -147,7 +143,7 @@ export const Security = (props: Props) => {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto z-20 relative px-[8px] md:px-[16px] xl:px-0 md:h-[457px] mb-[35px] w-full xl:mx-auto">
+        <div className="mx-auto z-20 relative px-[8px] md:px-[16px] xl:px-0 md:h-[457px] mb-[35px] w-full xl:mx-auto">
           <div className="bg-[#161b22] h-full flex flex-col md:flex-row justify-between shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl overflow-hidden">
             <div className="text-[#f0f0f0]/50 relative md:mr-[50px] mx-[40px] pb-[65px] md:pb-0 mdd:mx-[32px] lg:mx-[58px] my-[28px] mdd:my-[62px] m-[32px] leading-[32px] font-semibold">
               <p className="md:max-w-[447px] w-full text-[20px] mdd:text-[24px]">
@@ -169,7 +165,7 @@ export const Security = (props: Props) => {
           </div>
         </div>
 
-        <div className="max-w-[1278px] relative grid grid-cols-1 h-fit md:grid-cols-2 gap-y-[35px] px-[8px] md:px-0 md:gap-x-[35px] w-full xl:mx-auto">
+        <div className="relative grid grid-cols-1 h-fit md:grid-cols-2 gap-y-[35px] px-[8px] md:px-0 md:gap-x-[35px] w-full xl:mx-auto">
           <div className="col-span-1 relative overflow-hidden shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
             <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
               <span className="text-[#f0f0f0]">Dependabot</span> makes it easy
@@ -220,45 +216,6 @@ export const Security = (props: Props) => {
                 quality={100}
                 className="w-full md:h-[350px] absolute bottom-0 lg:h-[450px] object-cover"
               />
-            </div>
-          </div>
-        </div>
-        <div className="w-screen h-[35px] bg-gradient-to-b from-[#0c1015] to-[#0d1018]" />
-        <div className="relative flex items-center justify-center flex-col w-full ">
-          <img
-            src={footerGalaxy.src}
-            alt="footer_galaxy/png"
-            className="top-0 w-screen  absolute z-0"
-          />
-          <div className="relative z-50 pt-[160px]">
-            <h4 className="text-[54px] text-center w-[840px] mx-auto font-jet-brains text-[#f6f8fa] leading-[58px] md:tracking-[-4px] font-bold">
-              The place for anyone from anywhere to build anything
-            </h4>
-            <p className="text-[20px] text-[#7d8590] leading-[28px] w-[724px] text-center mx-auto mt-[16px]">
-              Whether you’re scaling your startup or just learning how to code,
-              GitHub is your home. Join the world’s largest developer platform
-              to build the innovations that empower humanity. Let’s build from
-              here.
-            </p>
-            <div className="flex items-center justify-center gap-x-2 mt-[50px]">
-              <button className="span-button bg-[#f6f8fa] flex items-center gap-x-3 rounded-md text-xl font-bold text-[#0d1117] py-[18px] px-[30px]">
-                <span>Sign up for GitHub</span>
-                <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px] mt-[2px]">
-                  <div className="chevron-black " />
-                  <span className="line-black -ml-2 absolute -translate-y-1/2 top-1/2" />
-                </div>
-              </button>
-              <button className="trial-span span w-fit transition-all ease-in-out duration-300 relative flex items-center justify-center py-[17px] px-[30px] rounded-md bg-transparent border-[1px] hover:border-[#f6f8fa] border-[#ffffff2e] font-semibold">
-                <span className="pr-[4px] text-xl tracking-[0.03em] font-roboto font-medium">
-                  Start a free enterprise trial
-                </span>
-                <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px]">
-                  <div className="chevron ml-2 mt-[1px]" />
-                  <span className="line absolute -translate-y-1/2 top-1/2 mt-[1px]" />
-                </div>
-              </button>
-            </div>
-            <div>
             </div>
           </div>
         </div>
