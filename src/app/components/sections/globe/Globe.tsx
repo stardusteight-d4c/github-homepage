@@ -28,7 +28,7 @@ export const Globe = (props: Props) => {
             width={4553}
             height={1291}
             quality={100}
-            className="lg:min-w-[2000.33px] 2xl:min-w-[4553.33px] xl:h-[1000px] 2xl:h-[1291px] z-0  absolute top-0 -right-[1250px] md:-right-[1550px] lg:-right-[200px] 2xl:-right-[1050px]"
+            className="lg:min-w-[2000.33px] 2xl:min-w-[4553.33px] xl:h-[1000px] 2xl:h-[1291px] z-0  absolute top-0 -right-[1250px] md:-right-[1550px] lg:-right-[200px] 2xl:-right-[1650px]"
           />
         </picture>
         <div className="flex items-center justify-center flex-col">

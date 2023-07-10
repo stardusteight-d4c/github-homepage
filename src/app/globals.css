@@ -267,3 +267,23 @@ html {
 .underline-animation:hover::before {
   width: 100%;
 }
+
+.text-with-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.text-with-underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  transition: width 0.3s;
+}
+
+.text-with-underline:hover::before {
+  width: 80%;
+}
