@@ -39,10 +39,10 @@ export const Navbar = (props: Props) => {
             </div>
             <div className="absolute -mt-2 -ml-5 w-[500px] hidden group-hover:flex bg-[#f6f8fa] border border-[#636a74]/30 my-6 rounded-lg">
               <ul className="pl-[24px] pr-[48px] font-roboto py-[24px] flex flex-col">
-                <li className="flex items-center py-[8px] pb-[16px] group/li text-[#636a74] hover:text-blue-600 cursor-pointer transition-all ease-in duration-100">
+                <li className="flex items-center py-[8px] pb-[16px] group/li text-[#636a74] hover:text-[#2563eb] cursor-pointer transition-all ease-in duration-100">
                   <ActionsIcon className="w-[24px] h-[24px] mr-[16px]" />
                   <div className="flex flex-col items-start">
-                    <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-blue-600 transition-all ease-in duration-100">
+                    <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-[#2563eb] transition-all ease-in duration-100">
                       Actions
                     </h2>
                     <span className="text-sm leading-[20px]">
@@ -50,10 +50,10 @@ export const Navbar = (props: Props) => {
                     </span>
                   </div>
                 </li>
-                <li className="flex items-center py-[8px] pb-[16px] group/li text-[#636a74] hover:text-blue-600 cursor-pointer transition-all ease-in duration-100">
+                <li className="flex items-center py-[8px] pb-[16px] group/li text-[#636a74] hover:text-[#2563eb] cursor-pointer transition-all ease-in duration-100">
                   <PackagesIcon className="w-[24px] h-[24px] mr-[16px]" />
                   <div className="flex flex-col items-start">
-                    <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-blue-600 transition-all ease-in duration-100">
+                    <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-[#2563eb] transition-all ease-in duration-100">
                       Packages
                     </h2>
                     <span className="text-sm leading-[20px]">
@@ -61,10 +61,10 @@ export const Navbar = (props: Props) => {
                     </span>
                   </div>
                 </li>
-                <li className="flex items-center py-[8px] pb-[16px] group/li text-[#636a74] hover:text-blue-600 cursor-pointer transition-all ease-in duration-100">
+                <li className="flex items-center py-[8px] pb-[16px] group/li text-[#636a74] hover:text-[#2563eb] cursor-pointer transition-all ease-in duration-100">
                   <SecurityIcon className="w-[24px] h-[24px] mr-[16px]" />
                   <div className="flex flex-col items-start">
-                    <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-blue-600 transition-all ease-in duration-100">
+                    <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-[#2563eb] transition-all ease-in duration-100">
                       Security
                     </h2>
                     <span className="text-sm leading-[20px]">
@@ -72,10 +72,10 @@ export const Navbar = (props: Props) => {
                     </span>
                   </div>
                 </li>
-                <li className="flex items-center py-[8px] pb-[16px] group/li text-[#636a74] hover:text-blue-600 cursor-pointer transition-all ease-in duration-100">
+                <li className="flex items-center py-[8px] pb-[16px] group/li text-[#636a74] hover:text-[#2563eb] cursor-pointer transition-all ease-in duration-100">
                   <CodeSpacesIcon className="w-[24px] h-[24px] mr-[16px]" />
                   <div className="flex flex-col items-start">
-                    <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-blue-600 transition-all ease-in duration-100">
+                    <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-[#2563eb] transition-all ease-in duration-100">
                       Codespaces
                     </h2>
                     <span className="text-sm leading-[20px]">
@@ -83,10 +83,10 @@ export const Navbar = (props: Props) => {
                     </span>
                   </div>
                 </li>
-                <li className="flex items-center py-[8px] pb-[16px] group/li text-[#636a74] hover:text-blue-600 cursor-pointer transition-all ease-in duration-100">
+                <li className="flex items-center py-[8px] pb-[16px] group/li text-[#636a74] hover:text-[#2563eb] cursor-pointer transition-all ease-in duration-100">
                   <CopilotIcon className="w-[24px] h-[24px] mr-[16px]" />
                   <div className="flex flex-col items-start">
-                    <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-blue-600 transition-all ease-in duration-100">
+                    <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-[#2563eb] transition-all ease-in duration-100">
                       Copilot
                     </h2>
                     <span className="text-sm leading-[20px]">
@@ -94,10 +94,10 @@ export const Navbar = (props: Props) => {
                     </span>
                   </div>
                 </li>
-                <li className="flex items-center py-[8px] pb-[16px] group/li text-[#636a74] hover:text-blue-600 cursor-pointer transition-all ease-in duration-100">
+                <li className="flex items-center py-[8px] pb-[16px] group/li text-[#636a74] hover:text-[#2563eb] cursor-pointer transition-all ease-in duration-100">
                   <CodeReviewIcon className="w-[24px] h-[24px] mr-[16px]" />
                   <div className="flex flex-col items-start">
-                    <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-blue-600 transition-all ease-in duration-100">
+                    <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-[#2563eb] transition-all ease-in duration-100">
                       Code Review
                     </h2>
                     <span className="text-sm leading-[20px]">
@@ -105,10 +105,10 @@ export const Navbar = (props: Props) => {
                     </span>
                   </div>
                 </li>
-                <li className="flex items-center py-[8px] pb-[16px] group/li text-[#636a74] hover:text-blue-600 cursor-pointer transition-all ease-in duration-100">
+                <li className="flex items-center py-[8px] pb-[16px] group/li text-[#636a74] hover:text-[#2563eb] cursor-pointer transition-all ease-in duration-100">
                   <IssuesIcon className="w-[24px] h-[24px] mr-[16px]" />
                   <div className="flex flex-col items-start">
-                    <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-blue-600 transition-all ease-in duration-100">
+                    <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-[#2563eb] transition-all ease-in duration-100">
                       Issues
                     </h2>
                     <span className="text-sm leading-[20px]">
@@ -116,10 +116,10 @@ export const Navbar = (props: Props) => {
                     </span>
                   </div>
                 </li>
-                <li className="flex items-center py-[8px] pb-[16px] group/li text-[#636a74] hover:text-blue-600 cursor-pointer transition-all ease-in duration-100">
+                <li className="flex items-center py-[8px] pb-[16px] group/li text-[#636a74] hover:text-[#2563eb] cursor-pointer transition-all ease-in duration-100">
                   <DiscussionsIcon className="w-[24px] h-[24px] mr-[16px]" />
                   <div className="flex flex-col items-start">
-                    <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-blue-600 transition-all ease-in duration-100">
+                    <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-[#2563eb] transition-all ease-in duration-100">
                       Discussions
                     </h2>
                     <span className="text-sm leading-[20px]">
@@ -134,16 +134,16 @@ export const Navbar = (props: Props) => {
                   Explore
                 </h2>
                 <ul className="font-roboto text-[#636a74] mt-[4px]">
-                  <li className="text-sm cursor-pointer leading-[20px] py-[4px] hover:text-blue-600 transition-all duration-200 ease-in-out">
+                  <li className="text-sm cursor-pointer leading-[20px] py-[4px] hover:text-[#2563eb] transition-all duration-200 ease-in-out">
                     All features
                   </li>
-                  <li className="text-sm cursor-pointer leading-[20px] py-[4px] hover:text-blue-600 transition-all duration-200 ease-in-out">
+                  <li className="text-sm cursor-pointer leading-[20px] py-[4px] hover:text-[#2563eb] transition-all duration-200 ease-in-out">
                     Documentation
                   </li>
-                  <li className="text-sm cursor-pointer leading-[20px] py-[4px] hover:text-blue-600 transition-all duration-200 ease-in-out">
+                  <li className="text-sm cursor-pointer leading-[20px] py-[4px] hover:text-[#2563eb] transition-all duration-200 ease-in-out">
                     GitHub Skills
                   </li>
-                  <li className="text-sm cursor-pointer leading-[20px] py-[4px] hover:text-blue-600 transition-all duration-200 ease-in-out">
+                  <li className="text-sm cursor-pointer leading-[20px] py-[4px] hover:text-[#2563eb] transition-all duration-200 ease-in-out">
                     Blog
                   </li>
                 </ul>
@@ -167,16 +167,16 @@ export const Navbar = (props: Props) => {
                   For
                 </h2>
                 <ul className="font-roboto text-[#636a74] mt-[4px]">
-                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-blue-600 transition-all duration-200 ease-in-out">
+                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-[#2563eb] transition-all duration-200 ease-in-out">
                     Enterprise
                   </li>
-                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-blue-600 transition-all duration-200 ease-in-out">
+                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-[#2563eb] transition-all duration-200 ease-in-out">
                     Teams
                   </li>
-                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-blue-600 transition-all duration-200 ease-in-out">
+                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-[#2563eb] transition-all duration-200 ease-in-out">
                     Startups
                   </li>
-                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-blue-600 transition-all duration-200 ease-in-out">
+                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-[#2563eb] transition-all duration-200 ease-in-out">
                     Startups Education
                   </li>
                 </ul>
@@ -187,13 +187,13 @@ export const Navbar = (props: Props) => {
                   By Solution
                 </h2>
                 <ul className="font-roboto text-[#636a74] mt-[4px]">
-                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-blue-600 transition-all duration-200 ease-in-out">
+                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-[#2563eb] transition-all duration-200 ease-in-out">
                     CI/CD & Automation
                   </li>
-                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-blue-600 transition-all duration-200 ease-in-out">
+                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-[#2563eb] transition-all duration-200 ease-in-out">
                     DevOps
                   </li>
-                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-blue-600 transition-all duration-200 ease-in-out">
+                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-[#2563eb] transition-all duration-200 ease-in-out">
                     DevSecOps
                   </li>
                 </ul>
@@ -204,13 +204,13 @@ export const Navbar = (props: Props) => {
                   Case Studies
                 </h2>
                 <ul className="font-roboto text-[#636a74] mt-[4px]">
-                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-blue-600 transition-all duration-200 ease-in-out">
+                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-[#2563eb] transition-all duration-200 ease-in-out">
                     Customer
                   </li>
-                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-blue-600 transition-all duration-200 ease-in-out">
+                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-[#2563eb] transition-all duration-200 ease-in-out">
                     Stories
                   </li>
-                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-blue-600 transition-all duration-200 ease-in-out">
+                  <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-[#2563eb] transition-all duration-200 ease-in-out">
                     Resources
                   </li>
                 </ul>
@@ -231,21 +231,21 @@ export const Navbar = (props: Props) => {
             </div>
             <div className="absolute font-roboto flex-col -ml-5 p-[24px] w-[300px] hidden group-hover:flex border border-[#636a74]/30 bg-[#f6f8fa] text-[#1f2328] -mt-2 rounded-lg">
               <div className="cursor-pointer group/li">
-                <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-blue-600 transition-all duration-200 ease-in-out">
+                <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-[#2563eb] transition-all duration-200 ease-in-out">
                   GitHub Sponsors
                 </h2>
                 <span>
-                  <span className="text-sm -mt-1 text-[#636a74] block leading-[20px] pt-[6px] group-hover/li:text-blue-600 transition-all duration-200 ease-in-out">
+                  <span className="text-sm -mt-1 text-[#636a74] block leading-[20px] pt-[6px] group-hover/li:text-[#2563eb] transition-all duration-200 ease-in-out">
                     Fund open source developers
                   </span>
                 </span>
               </div>
               <div className="bg-[#636a74]/30 w-full h-[1px] my-[16px]" />
               <div className="cursor-pointer group/li">
-                <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-blue-600 transition-all duration-200 ease-in-out">
+                <h2 className="font-semibold leading-[20px] text-[#1f2328] group-hover/li:text-[#2563eb] transition-all duration-200 ease-in-out">
                   The ReadME Project
                 </h2>
-                <span className="text-sm -mt-1 text-[#636a74] block leading-[20px] pt-[6px] group-hover/li:text-blue-600 transition-all duration-200 ease-in-out">
+                <span className="text-sm -mt-1 text-[#636a74] block leading-[20px] pt-[6px] group-hover/li:text-[#2563eb] transition-all duration-200 ease-in-out">
                   GitHub community articles
                 </span>
               </div>
@@ -254,13 +254,13 @@ export const Navbar = (props: Props) => {
                 Repositories
               </h2>
               <ul className="text-[#636a74]">
-                <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-blue-600 transition-all duration-200 ease-in-out">
+                <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-[#2563eb] transition-all duration-200 ease-in-out">
                   Topics
                 </li>
-                <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-blue-600 transition-all duration-200 ease-in-out">
+                <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-[#2563eb] transition-all duration-200 ease-in-out">
                   Trending
                 </li>
-                <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-blue-600 transition-all duration-200 ease-in-out">
+                <li className="text-sm cursor-pointer leading-[20px] py-[6px] hover:text-[#2563eb] transition-all duration-200 ease-in-out">
                   Collections
                 </li>
               </ul>
@@ -275,7 +275,7 @@ export const Navbar = (props: Props) => {
           <input
             type="text"
             placeholder="Search GitHub"
-            className="span-variant focus:border-blue-600 text-[#f6f8fa] rounded-md w-[240px] py-[8px] px-[14px] outline-none"
+            className="span-variant focus:border-[#2563eb] text-[#f6f8fa] rounded-md w-[240px] py-[8px] px-[14px] outline-none"
           />
           <div className="text-[#f6f8fa] flex items-center justify-center">
             <button className="py-[8px] px-[12px] font-inter rounded-md hover:opacity-80 transition-all ease-in-out duration-75">

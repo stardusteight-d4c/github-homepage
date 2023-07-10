@@ -61,23 +61,26 @@ export const Globe = (props: Props) => {
               </button>
             </div>
             <div>
-              <div className="relative w-screen">
-                <div className="relative max-w-7xl mx-auto">
-                  <img
+              <div className="relative w-screen pointer-events-none select-none">
+                <div className="relative max-w-7xl mx-auto pointer-events-none select-none">
+                  <Image
                     src={globe.src}
                     alt="globe/png"
-                    className="relative ml-[80px] w-fit -mb-6 z-[5]"
+                    width={1150}
+                    height={641}
+                    quality={100}
+                    className="relative w-[1150px] -mt-[50px] ml-[12px] -mb-6 z-[5] pointer-events-none select-none"
                   />
                   <img
                     src={astrocat.src}
                     alt="astrocat/png"
-                    className="absolute w-[541px] z-20 -bottom-[200px] left-[380px]"
+                    className="absolute w-[541px] z-20 -bottom-[200px] left-[380px] pointer-events-none  select-none"
                   />
                 </div>
                 <img
                   src={ground.src}
                   alt="ground/svg"
-                  className="absolute z-10 h-[150px] min-w-[2500px] left-1/2 -translate-x-1/2"
+                  className="absolute z-10 h-[150px] min-w-[2500px] left-1/2 -translate-x-1/2 pointer-events-none  select-none"
                 />
               </div>
             </div>
