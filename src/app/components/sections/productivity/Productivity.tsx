@@ -24,7 +24,7 @@ export const Productivity = () => {
               <div className="relative flex items-center justify-center">
                 <div className="blur-effect absolute bg-[#7ee787] w-[48px] h-[48px] rounded-full animate-pulse" />
                 <ProductivityIcon className="w-[28px] h-[28px] text-[#f0f0f0] relative z-[50]" />
-                <div className="absolute z-0 top-[100%] mt-3 w-[2.5px] md:w-[4px] h-[400px] bg-gradient-to-b from-[#55d163] via-[#55d163] to-transparent" />
+                <div className="absolute z-0 top-[100%] mt-3 w-[2.5px] md:w-[4px] h-[400px] bg-gradient-to-b from-[#48eb5b] via-[#55d163] to-[#48eb5b]" />
               </div>
             </div>
             Productivity
@@ -70,7 +70,7 @@ export const Productivity = () => {
             className="w-[500px] md:w-[1000px] h-[900px] z-0 -bottom-[250px] absolute right-7"
           />
           <div className="min-h-full w-[81px] relative">
-            <div className="absolute left-[16px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] min-h-full bg-gradient-to-b z-20 from-[#101f1b] via-[#55d163] to-[#101f1b]" />
+            <div className="absolute left-[16px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] min-h-full bg-gradient-to-b z-20 from-[#55d163] via-[#48eb5b] to-[#55d163]" />
           </div>
           <div className="py-[5px] -ml-[45px] md:ml-0 md:pl-[64px] pr-[8px] md:pr-[24px] mt-[245px] lg:my-[64px]">
             <p className="text-[20px] ssm:text-[24px] text-[#7d8590] font-inter leading-[28px] md:leading-[32px] max-w-[317px] smm:max-w-[500px] w-full md:max-w-[500px] font-medium mb-[24px] md:mb-[16px]">
@@ -164,7 +164,7 @@ export const Productivity = () => {
                 />
               </div>
             </div>
-            <div className="absolute left-[16px] md:left-[53px] top-[100%] z-0 w-[2.5px] md:w-[4px] h-[50vh] bg-gradient-to-b from-transparent via-[#e65f44] to-[#f6f8fa]" />
+            <div className="absolute left-[16px] md:left-[53px] top-[100%] z-0 w-[2.5px] md:w-[4px] h-[50vh] bg-gradient-to-b from-[#ea6045] via-[#fe7b72] to-[#ea6045]" />
           </div>
         </div>
       </div>

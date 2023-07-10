@@ -24,7 +24,7 @@ export const Collaboration = (props: Props) => {
               <div className="relative flex items-center justify-center">
                 <div className="blur-effect absolute bg-[#fe7b72] w-[48px] h-[48px] rounded-full animate-pulse" />
                 <CollaborationIcon className="w-[28px] h-[28px] text-[#f0f0f0] relative z-[50]" />
-                <div className="absolute z-0 top-[100%] mt-3 w-[2.5px] md:w-[4px] h-[460px] bg-gradient-to-b from-[#fe7b72] via-[#ea6045] to-[#68332b]" />
+                <div className="absolute z-0 top-[100%] mt-3 w-[2.5px] md:w-[4px] h-[460px] bg-gradient-to-b from-[#ea6045] via-[#fe7b72] to-[#ea6045]" />
               </div>
             </div>
             Collaboration
@@ -59,7 +59,7 @@ export const Collaboration = (props: Props) => {
             className="w-[500px] rotate-[180deg] md:w-[1000px] h-[900px] z-0 -bottom-[190px] absolute -right-[180px]"
           />
           <div className="min-h-full w-[81px] relative">
-            <div className="absolute left-[24px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] h-[800px] bg-gradient-to-b z-20 from-[#101f1b] via-[#ea6045] to-[#101f1b]" />
+            <div className="absolute left-[24px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] h-[800px] bg-gradient-to-b z-20 from-[#fe7b72] via-[#ea6045] to-[#fe7b72]" />
           </div>
           <div className="py-[5px] -ml-[35px] md:ml-0 md:pl-[64px] pr-[8px] md:pr-[24px] mt-[200px] md:mt-[245px] lg:my-[64px]">
             <p className="text-[20px] ssm:text-[24px] text-[#7d8590] font-inter leading-[28px] md:leading-[32px] max-w-[317px] smm:max-w-[500px] w-full md:max-w-[500px] font-medium mb-[24px] md:mb-[16px]">
@@ -356,7 +356,7 @@ export const Collaboration = (props: Props) => {
                 </a>
               </div>
             </div>
-            <div className="absolute left-[16px] md:left-[53px] top-[100%] z-0 w-[2.5px] md:w-[4px] h-[50vh] bg-gradient-to-b from-transparent via-[#5c61bc] to-[#f6f8fa]" />
+            <div className="absolute left-[16px] md:left-[52px] top-[100%] z-0 w-[2.5px] md:w-[4px] h-[50vh] bg-gradient-to-b from-[#2b2c68] via-[#5c61bc] to-[#f6f8fa]" />
           </div>
         </div>
       </div>

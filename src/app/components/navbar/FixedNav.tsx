@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import caretDown from "@/app/assets/caret-down.svg"
 import { CaretDown } from "../atoms/icons/caret-down"
 import { X } from "../atoms/icons/X"
 

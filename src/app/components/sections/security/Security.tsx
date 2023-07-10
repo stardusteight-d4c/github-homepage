@@ -25,7 +25,7 @@ export const Security = (props: Props) => {
               <div className="relative flex items-center justify-center">
                 <div className="blur-effect absolute bg-[#939aff] w-[48px] h-[48px] rounded-full animate-pulse" />
                 <SecurityIcon className="w-[28px] h-[28px] text-[#f0f0f0] relative z-[50]" />
-                <div className="absolute z-0 top-[100%] mt-3 w-[2.5px] md:w-[4px] h-[460px] bg-gradient-to-b from-[#939aff] via-[#5c61bc] to-[#68332b]" />
+                <div className="absolute z-0 top-[100%] mt-3 w-[2.5px] md:w-[4px] h-[460px] bg-gradient-to-b from-[#939aff] via-[#5c61bc] to-[#2b2c68]" />
               </div>
             </div>
             Security
@@ -97,14 +97,14 @@ export const Security = (props: Props) => {
             className="absolute shadow-[#0d1117]/30 z-[80] shadow-xl bottom-[-265px] right-[16px] w-[541px] h-[300px] rounded-lg border border-[#0d1117]"
           />
         </div>
-        <div className="flex relative pb-9 overflow-hidden">
+        <div className="flex relative pb-9">
           <img
             src={bgStars.src}
             alt="bg_stars/webp"
             className="w-[500px] rotate-[380deg] md:w-[1000px] h-[900px] z-0 -bottom-[280px] absolute right-0"
           />
-          <div className="min-h-full w-[81px] relative">
-            <div className="absolute left-[24px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] h-[800px] bg-gradient-to-b z-20 from-[#101f1b] via-[#5c61bc] to-[#101f1b]" />
+          <div className="min-h-full -mt-[38px] w-[81px] relative">
+            <div className="absolute left-[24px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] h-[800px] bg-gradient-to-b z-20 from-[#2b2c68] via-[#5c61bc] to-[#2b2c68]" />
           </div>
           <div className="py-[5px] -ml-[35px] md:ml-0 md:pl-[64px] pr-[8px] md:pr-[24px] mt-[200px] md:mt-[245px] lg:my-[64px]">
             <p className="text-[20px] ssm:text-[24px] text-[#7d8590] font-inter leading-[28px] md:leading-[32px] max-w-[317px] smm:max-w-[500px] w-full md:max-w-[500px] font-medium mb-[24px] md:mb-[16px]">
