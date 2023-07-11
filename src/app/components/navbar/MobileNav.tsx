@@ -102,7 +102,11 @@ export const MobileNav = (props: Props) => {
                       className="py-[16px] flex items-center justify-between text-[20px] font-semibold font-roboto whitespace-nowrap"
                     >
                       <span>Product</span>
-                      <CaretRight className="w-[19px] h-[19px] text-[#96979a]" />
+                      <CaretRight
+                        className={`${
+                          activeItem === "product" && "rotate-90"
+                        } w-[19px] h-[19px] text-[#96979a]`}
+                      />
                     </div>
                     <ul
                       className={`${
@@ -225,7 +229,11 @@ export const MobileNav = (props: Props) => {
                       className="py-[16px] flex items-center justify-between text-[20px] font-semibold font-roboto whitespace-nowrap"
                     >
                       <span>Solutions</span>
-                      <CaretRight className="w-[19px] h-[19px] text-[#96979a]" />
+                      <CaretRight
+                        className={`${
+                          activeItem === "solutions" && "rotate-90"
+                        } w-[19px] h-[19px] text-[#96979a]`}
+                      />
                     </div>
                     <div
                       className={`${
@@ -294,7 +302,11 @@ export const MobileNav = (props: Props) => {
                       className="py-[16px] flex items-center justify-between text-[20px] font-semibold font-roboto whitespace-nowrap"
                     >
                       <span>Open Source</span>
-                      <CaretRight className="w-[19px] h-[19px] text-[#96979a]" />
+                      <CaretRight
+                        className={`${
+                          activeItem === "open-source" && "rotate-90"
+                        } w-[19px] h-[19px] text-[#96979a]`}
+                      />
                     </div>
                     <div
                       className={`${

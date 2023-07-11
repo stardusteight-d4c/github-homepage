@@ -127,14 +127,14 @@ export const Productivity = () => {
                   </div>
                 </span>
               </div>
-              <div className="h-[260px] ssm:h-[350px] smm:h-[450px] w-full">
+              <div className="h-full w-fit mx-auto mt-7">
                 <Image
                   src={actions}
                   alt="actions/png"
                   width={550}
                   height={425}
                   quality={100}
-                  className="md:h-[350px] left-1/2 -translate-x-1/2 border border-[#30363d] border-b-0 absolute bottom-0 w-[550px] lg:h-[425px] rounded-t-2xl object-fill"
+                  className="md:h-[350px] mt-auto border border-[#30363d] border-b-0 w-[350px] smm:w-full lg:w-[550px] lg:h-[425px] rounded-t-2xl object-fill"
                 />
               </div>
             </div>
@@ -154,22 +154,22 @@ export const Productivity = () => {
                   </div>
                 </span>
               </div>
-              <div className="h-[260px] ssm:h-[350px] md:h-[450px] w-full">
+              <div className="h-[480px] md:h-[260px] w-fit mx-auto mt-7">
                 <Image
                   src={mobile1}
                   alt="mobile1/png"
                   width={350}
                   height={425}
                   quality={100}
-                  className="left-[35px] border border-[#30363d] border-b-0 absolute -bottom-[195px] w-[350px] rounded-t-2xl object-fill"
+                  className="lgg:left-[35px] left-1/2 -translate-x-1/2 lgg:translate-x-0 border border-[#30363d] border-b-0 absolute -bottom-[150px] md:-bottom-[265px] lg:-bottom-[195px] w-[350px] rounded-t-2xl object-fill"
                 />
-                   <Image
+                <Image
                   src={mobile2}
                   alt="mobile2/png"
                   width={350}
                   height={425}
                   quality={100}
-                  className="left-[232px] border border-[#30363d] border-b-0 absolute -bottom-[300px] w-[350px] rounded-t-2xl object-fill"
+                  className="hidden lgg:block left-[232px] border border-[#30363d] border-b-0 absolute -bottom-[300px] w-[350px] rounded-t-2xl object-fill"
                 />
               </div>
             </div>
