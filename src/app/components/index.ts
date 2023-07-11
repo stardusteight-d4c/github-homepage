@@ -1,6 +1,6 @@
 export { Navbar } from "./navbar/Navbar"
-export { MobileNav } from "./navbar/MobileNav"
-export { FixedNav } from "./navbar/FixedNav"
+export { MobileNav } from "./mobile-nav/MobileNav"
+export { FixedNav } from "./fixed-nav/FixedNav"
 export { Hero } from "./sections/hero/Hero"
 export { Productivity } from "./sections/productivity/Productivity"
 export { Collaboration } from "./sections/collaboration/Collaboration"

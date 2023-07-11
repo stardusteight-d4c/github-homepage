@@ -12,7 +12,9 @@ import { DiscussionsIcon } from "@/app/components/atoms/icons/discussions"
 import * as logo from "@/app/assets/logos/index"
 import { useEffect, useState } from "react"
 import { CaretRight } from "../atoms/icons/caretRight"
-import { createPortal } from "react-dom"
+import { Overlay } from "./integrate/Overlay"
+import { SignUp } from "./integrate/SignUp"
+import { HamburgerMenu } from "./integrate/HamburgerMenu"
 
 interface Props {}
 
@@ -55,25 +57,9 @@ export const MobileNav = (props: Props) => {
 
   return (
     <header className="top-0 absolute w-screen z-[200] lg:hidden">
-      {createPortal(
-        <div
-          onClick={() => {
-            const menuToggle = document.querySelector(".menu-toggle")
-            const menu = document.querySelector(".menu")
-            menuToggle?.classList.toggle("active")
-            menu?.classList.toggle("active")
-            setOpenMenu(false)
-          }}
-          className={`${
-            openMenu ? "block" : "hidden"
-          } overlay-glassmorphism w-screen min-h-screen inset-0 z-[100] overflow-hidden fixed`}
-        />,
-        document.body
-      )}
+      <Overlay openMenu={openMenu} setOpenMenu={setOpenMenu} />
       <div className="flex items-center justify-between w-full py-4 px-4 md:px-[40px]">
-        <button className="py-[4px] px-[8px] w-[74px] whitespace-nowrap text-[#f6f8fa] bg-transparent border border-[#f6f8fa] rounded-md text-light font-inter flex items-center justify-center">
-          Sign up
-        </button>
+        <SignUp />
         <Image
           src={logo.github}
           alt="github_logo/svg"
@@ -83,12 +69,7 @@ export const MobileNav = (props: Props) => {
         />
         <div className="w-[74px]">
           <div className="w-full relative flex items-end justify-end">
-            <div onClick={() => setOpenMenu(!openMenu)} className="menu-toggle">
-              <div className="bar" />
-              <div className="bar" />
-              <div className="bar" />
-            </div>
-
+            <HamburgerMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
             <div
               className={`${
                 openMenu ? "block" : "hidden"
