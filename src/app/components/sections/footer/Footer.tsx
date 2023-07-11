@@ -11,9 +11,9 @@ interface Props {}
 
 export const Footer = (props: Props) => {
   return (
-    <section className="w-screen text-[#ffffff] mt-[110px] relative z-10 bg-[#0c1015] h-fit overflow-hidden">
-      <div className="max-w-7xl mx-auto mt-[200px]">
-        <div className="w-[936px] text-[#7d8590] text-[14px] leading-[21px] font-roboto ml-[12px]">
+    <section className="w-screen text-[#ffffff] mt-0 lg:mt-[110px] relative z-10 bg-[#0c1015] h-fit overflow-hidden">
+      <div className="max-w-7xl mx-auto mt-[200px] px-[8px] md:px-0">
+        <div className="lg:w-[936px] text-[#7d8590] text-[14px] leading-[21px] font-roboto ml-[12px]">
           <p className="flex items-center">
             <span className="block -mt-[28px] text-[12px] mr-1">1</span>The
             Total Economic Impact™ Of GitHub Enterprise Cloud and Advanced
@@ -28,10 +28,10 @@ export const Footer = (props: Props) => {
             GitHub, Octoverse 2022 The state of open source software.
           </p>
         </div>
-        <div className="mt-[75px] flex">
-          <div className="w-full max-w-[416px]">
+        <div className="mt-[75px] flex flex-col md:flex-row">
+          <div className="w-full lg:max-w-[416px]">
             <Github />
-            <p className="flex flex-col mt-[45px]">
+            <p className="flex flex-col mt-[25px] md:mt-[45px]">
               <span className="text-[#ffffff] text-[14px] leading-[21px] tracking-wide font-roboto font-medium">
                 Subscribe to our newsletter
               </span>
@@ -45,7 +45,7 @@ export const Footer = (props: Props) => {
               </span>
             </button>
           </div>
-          <div className="grid grid-cols-4 justify-between w-full text-[#7d8590] text-[14px] leading-[21px]">
+          <div className="mt-[58px] md:mt-0 grid gap-y-[58px] grid-cols-2 md:grid-cols-4 justify-between w-full text-[#7d8590] text-[14px] leading-[21px]">
             <div className="col-span-1 flex flex-col gap-y-[16px]">
               <h3 className="font-jet-brains">Product </h3>
               <ul className="flex flex-col gap-y-[16px]">
@@ -148,9 +148,9 @@ export const Footer = (props: Props) => {
         </div>
       </div>
       <div className="mt-[180px] py-[24px] px-[16px] text-[#7d8590] bg-[#161b22] w-screen">
-        <div className="max-w-7xl mx-auto flex justify-between">
-          <div>
-            <ul className="flex items-center text-[12px] leading-[18px] gap-x-[16px]">
+        <div className="max-w-7xl mx-auto grid grid-rows-2 md:flex justify-between">
+          <div className="row-span-1 row-start-2 -mt-[28px] md:-mt-0">
+            <ul className="md:flex items-center text-[12px] leading-[18px] md:gap-x-[16px]">
               <li>© 2023 GitHub, Inc.</li>
               <li className="w-fit cursor-pointer hover:text-[#2563eb] hover:underline hover:underline-[#2563eb]">
                 Terms
@@ -166,7 +166,7 @@ export const Footer = (props: Props) => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="row-span-1 row-start-1">
             <ul className="flex items-center gap-x-[16px]">
               <li className="cursor-pointer">
                 <Twitter className="w-[18px] h-[18px]" />
