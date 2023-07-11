@@ -17,7 +17,7 @@ export const Collaboration = (props: Props) => {
       id="collaboration"
       className="max-w-[100vw] relative mt-4 text-[#f0f0f0]"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-[8px] md:px-[16px] xl:px-0">
         <div className="ml-[50px] md:ml-[115px] mb-[58px] md:mb-[96px]">
           <h2 className="text-[20px] md:text-[24px] relative mb-[24px] leading-[28px] font-semibold font-jet-brains">
             <div className="absolute  -left-[38px] md:-left-[74px] z-20 ">
@@ -40,7 +40,7 @@ export const Collaboration = (props: Props) => {
             </p>
           </p>
         </div>
-        <div className="relative z-50 px-[8px] md:px-[16px] xl:px-0">
+        <div className="relative z-50">
           <img
             src={issuesPlan.src}
             alt="issues_plan/png"
@@ -154,15 +154,15 @@ export const Collaboration = (props: Props) => {
         </div>
 
         <div className="relative pb-[158px]">
-          <div className="z-20 relative px-[8px] md:px-[16px] xl:px-0 md:h-[457px] mt-[35px] max-w-[1278px] w-full xl:mx-auto">
-            <div className="bg-[#161b22] h-full flex flex-col md:flex-row justify-between shadow-black/50 shadow-xl border border-[#30363d] rounded-xl overflow-hidden">
+          <div className="z-20 relative md:h-[550px] lg:h-[457px] mt-[35px] max-w-[1278px] w-full xl:mx-auto">
+            <div className="bg-[#161b22] h-full flex flex-col lg:flex-row justify-between shadow-black/50 shadow-xl border border-[#30363d] rounded-xl overflow-hidden">
               <div className="text-[#f0f0f0]/50 relative md:mr-[50px] mx-[40px] pb-[65px] md:pb-0 mdd:mx-[32px] lg:mx-[58px] my-[28px] mdd:my-[62px] m-[32px] leading-[32px] font-semibold">
                 <p className="md:max-w-[447px] w-full text-[20px] mdd:text-[24px]">
                   <span className="text-[#f0f0f0]">GitHub Sponsors </span> lets
                   you support your favorite open source maintainers and
                   projects.
                 </p>
-                <span className="codespace-span flex items-center cursor-pointer leading-[40px] absolute left-0 bottom-0 font-semibold">
+                <span className="codespace-span flex items-center cursor-pointer leading-[40px] absolute left-0 bottom-0 md:-bottom-[65px] lg:bottom-0 font-semibold">
                   <span className="underline-animation text-[#f0f0f0] text-base mdd:text-[20px] font-inter mr-2">
                     Invest with GitHub Sponsors
                   </span>
@@ -172,11 +172,11 @@ export const Collaboration = (props: Props) => {
                   </div>
                 </span>
               </div>
-              <div className="grid grid-cols-3 w-[500px] h-fit md:w-fit gap-2 md:gap-4 mt-[25px] md:-mt-[90px] mr-8 -rotate-[10deg] md:-rotate-[15deg]">
+              <div className="grid grid-cols-3 w-[500px] md:min-w-[525px] h-fit lg:w-fit gap-2 md:gap-4 mt-[0px] lg:-mt-[90px] md:ml-[400px] lg:ml-0 lg:mr-8 -rotate-[10deg] lg:-rotate-[15deg]">
                 <a
                   href="https://github.com/directus"
                   target="_blank"
-                  className="col-span-1 h-fit px-[24px] w-fit md:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+                  className="col-span-1 h-fit px-[24px] w-fit lg:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
                 >
                   <img
                     src={sponsors.directus.src}
@@ -196,7 +196,7 @@ export const Collaboration = (props: Props) => {
                 <a
                   href="https://github.com/eslint"
                   target="_blank"
-                  className="col-span-1 h-fit px-[24px] w-fit md:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+                  className="col-span-1 h-fit px-[24px] w-fit lg:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
                 >
                   <img
                     src={sponsors.eslint.src}
@@ -216,7 +216,7 @@ export const Collaboration = (props: Props) => {
                 <a
                   href="https://github.com/chaynhq"
                   target="_blank"
-                  className="col-span-1 h-fit px-[24px] w-fit md:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+                  className="col-span-1 h-fit px-[24px] w-fit lg:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
                 >
                   <img
                     src={sponsors.chaynhq.src}
@@ -236,7 +236,7 @@ export const Collaboration = (props: Props) => {
                 <a
                   href="https://github.com/kazupon"
                   target="_blank"
-                  className="col-span-1 h-fit px-[24px] w-fit md:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+                  className="col-span-1 h-fit px-[24px] w-fit lg:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
                 >
                   <img
                     src={sponsors.kazupon.src}
@@ -256,7 +256,7 @@ export const Collaboration = (props: Props) => {
                 <a
                   href="https://github.com/commandpost"
                   target="_blank"
-                  className="col-span-1 h-fit px-[24px] w-fit md:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+                  className="col-span-1 h-fit px-[24px] w-fit lg:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
                 >
                   <img
                     src={sponsors.commandpost.src}
@@ -276,7 +276,7 @@ export const Collaboration = (props: Props) => {
                 <a
                   href="https://github.com/sindresorhus"
                   target="_blank"
-                  className="col-span-1 h-fit px-[24px] w-fit md:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+                  className="col-span-1 h-fit px-[24px] w-fit lg:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
                 >
                   <img
                     src={sponsors.sindresorhus.src}
@@ -296,7 +296,7 @@ export const Collaboration = (props: Props) => {
                 <a
                   href="https://github.com/homebrew"
                   target="_blank"
-                  className="col-span-1 h-fit px-[24px] w-fit md:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+                  className="col-span-1 h-fit px-[24px] w-fit lg:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
                 >
                   <img
                     src={sponsors.homebrew.src}
@@ -316,7 +316,7 @@ export const Collaboration = (props: Props) => {
                 <a
                   href="https://github.com/yyx990803"
                   target="_blank"
-                  className="col-span-1 h-fit px-[24px] w-fit md:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+                  className="col-span-1 h-fit px-[24px] w-fit lg:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
                 >
                   <img
                     src={sponsors.yyx990803.src}
@@ -337,7 +337,7 @@ export const Collaboration = (props: Props) => {
                 <a
                   href="https://github.com/dayhaysoos"
                   target="_blank"
-                  className="col-span-1 h-fit px-[24px] w-fit md:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
+                  className="col-span-1 h-fit px-[24px] w-fit lg:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md"
                 >
                   <img
                     src={sponsors.dayhaysoos.src}

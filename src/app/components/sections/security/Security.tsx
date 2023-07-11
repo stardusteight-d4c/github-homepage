@@ -18,14 +18,14 @@ export const Security = (props: Props) => {
       id="security"
       className="max-w-[100vw] relative mt-4 text-[#f0f0f0]"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-[8px] md:px-[16px] xl:px-0">
         <div className="ml-[50px] md:ml-[115px] mb-[58px] md:mb-[96px]">
           <h2 className="text-[20px] md:text-[24px] relative mb-[24px] leading-[28px] font-semibold font-jet-brains">
-            <div className="absolute  -left-[38px] md:-left-[74px] z-20 ">
+            <div className="absolute -left-[38px] md:-left-[74px] z-20 ">
               <div className="relative flex items-center justify-center">
                 <div className="blur-effect absolute bg-[#939aff] w-[48px] h-[48px] rounded-full animate-pulse" />
                 <SecurityIcon className="w-[28px] h-[28px] text-[#f0f0f0] relative z-[50]" />
-                <div className="absolute z-0 top-[100%] mt-3 w-[2.5px] md:w-[4px] h-[460px] bg-gradient-to-b from-[#939aff] via-[#5c61bc] to-[#2b2c68]" />
+                <div className="absolute z-0 top-[100%] mt-3 w-[2.5px] md:w-[4px] h-[500px] bg-gradient-to-b from-[#939aff] via-[#5c61bc] to-[#2b2c68]" />
               </div>
             </div>
             Security
@@ -40,7 +40,7 @@ export const Security = (props: Props) => {
             </p>
           </p>
         </div>
-        <div className="relative z-50 px-[8px] md:px-[16px] xl:px-0">
+        <div className="relative z-50">
           <div className="z-20 relative mb-[35px] max-w-[1278px] w-full xl:mx-auto">
             <div className="bg-[#161b22] font-roboto p-[24px] lg:p-[82px] h-full shadow-black/50 shadow-xl border border-[#30363d] rounded-xl overflow-hidden">
               <div className="text-[#5c636d]">
@@ -151,7 +151,7 @@ export const Security = (props: Props) => {
           </div>
         </div>
 
-        <div className="mx-auto z-20 relative px-[8px] md:px-[16px] xl:px-0 md:h-[457px] mb-[35px] w-full xl:mx-auto">
+        <div className="mx-auto z-20 relative md:h-[457px] mb-[35px] w-full xl:mx-auto">
           <div className="bg-[#161b22] h-full flex flex-col md:flex-row justify-between shadow-black/50 shadow-xl border border-[#30363d] rounded-xl overflow-hidden">
             <div className="text-[#f0f0f0]/50 relative md:mr-[50px] mx-[40px] pb-[65px] md:pb-0 mdd:mx-[32px] lg:mx-[58px] my-[28px] mdd:my-[62px] m-[32px] leading-[32px] font-semibold">
               <p className="md:max-w-[447px] w-full text-[20px] mdd:text-[24px]">

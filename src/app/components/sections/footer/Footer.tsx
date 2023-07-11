@@ -12,8 +12,8 @@ interface Props {}
 export const Footer = (props: Props) => {
   return (
     <section className="w-screen text-[#ffffff] mt-0 lg:mt-[110px] relative z-10 bg-[#0c1015] h-fit overflow-hidden">
-      <div className="max-w-7xl mx-auto mt-[200px] px-[8px] md:px-0">
-        <div className="lg:w-[936px] text-[#7d8590] text-[14px] leading-[21px] font-roboto ml-[12px]">
+      <div className="max-w-7xl mx-auto mt-[200px] px-[8px] md:px-[16px]">
+        <div className="lg:w-[936px] text-[#7d8590] text-[14px] leading-[21px] font-roboto ml-[24px] lg:ml-[12px]">
           <p className="flex items-center">
             <span className="block -mt-[28px] text-[12px] mr-1">1</span>The
             Total Economic Impact™ Of GitHub Enterprise Cloud and Advanced
