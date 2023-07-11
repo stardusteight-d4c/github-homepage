@@ -2,8 +2,8 @@ import { Collaboration as CollaborationIcon } from "@/app/components/atoms/icons
 import issuesPlan from "@/app/assets/issues-plan.png"
 import bgStars from "@/app/assets/bg-stars-1.webp"
 import branchCollaboration from "@/app/assets/git-branch-collaboration.svg"
-import discussions from "@/app/assets/illu-discussions.png"
-import pullRequests from "@/app/assets/illu-pull-requests.png"
+import discussions from "@/app/assets/discussions.png"
+import pullRequests from "@/app/assets/pull-requests.png"
 import projects from "@/app/assets/illu-projects.png"
 import * as sponsors from "@/app/assets/sponsors"
 import Image from "next/image"
@@ -44,12 +44,12 @@ export const Collaboration = (props: Props) => {
           <img
             src={issuesPlan.src}
             alt="issues_plan/png"
-            className="w-full shadow-[#0d1117]/50 shadow-2xl rounded-xl border border-[#0d1117]"
+            className="w-full border border-[#30363d] shadow-black/50 shadow-xl rounded-xl"
           />
           <img
             src={projects.src}
             alt="projects/png"
-            className="absolute object-cover shadow-[#0d1117]/30 shadow-xl bottom-[-175px] xl:bottom-[-375px] right-[16px] lg:left-auto smm:left-[45px] md:left-[142px] lg:right-[50px] xl:right-[25px] w-[267px] xl:w-[544px] h-[225px] xl:h-[459px] rounded-lg border border-[#0d1117]"
+            className="absolute object-cover shadow-black/50 shadow-2xl bottom-[-175px] xl:bottom-[-375px] right-[16px] lg:left-auto smm:left-[45px] md:left-[142px] lg:right-[50px] xl:right-[25px] w-[267px] xl:w-[544px] h-[225px] xl:h-[459px] rounded-lg border border-[#0d1117]"
           />
         </div>
         <div className="max-w-7xl mx-auto flex relative pb-9 overflow-hidden">
@@ -100,7 +100,7 @@ export const Collaboration = (props: Props) => {
           </div>
         </div>
         <div className="relative grid grid-cols-1 md:grid-cols-2 gap-y-[35px] px-[8px] md:px-0 md:gap-x-[35px] max-w-[1278px] w-full xl:mx-auto">
-          <div className="col-span-1 relative overflow-hidden shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
+          <div className="col-span-1 relative overflow-hidden shadow-black/50 shadow-xl border border-[#30363d] rounded-xl bg-[#161b22]">
             <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
               <span className="text-[#f0f0f0]">GitHub Discussions</span> create
               space to ask questions and have open-ended conversations.
@@ -118,15 +118,15 @@ export const Collaboration = (props: Props) => {
               <Image
                 src={discussions}
                 alt="discussions/png"
-                width={619}
-                height={450}
+                width={550}
+                height={425}
                 quality={100}
-                className="w-full md:h-[350px] absolute bottom-0 lg:h-[450px] object-cover"
+                className="md:h-[350px] left-1/2 -translate-x-1/2 border border-[#30363d] border-b-0 absolute bottom-0 w-[550px] lg:h-[425px] rounded-t-2xl object-fill"
               />
             </div>
           </div>
 
-          <div className="col-span-1 relative overflow-hidden shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
+          <div className="col-span-1 relative overflow-hidden shadow-black/50 shadow-xl border border-[#30363d] rounded-xl bg-[#161b22]">
             <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
               <span className="text-[#f0f0f0]">Pull requests</span> allow
               real-time communication and collaboration about code changes.
@@ -144,18 +144,18 @@ export const Collaboration = (props: Props) => {
               <Image
                 src={pullRequests}
                 alt="pull_requests/png"
-                width={619}
-                height={450}
+                width={550}
+                height={425}
                 quality={100}
-                className="w-full md:h-[350px] absolute bottom-0 lg:h-[450px] object-cover"
+                className="md:h-[350px] left-1/2 -translate-x-1/2 border border-[#30363d] border-b-0 absolute bottom-0 w-[550px] lg:h-[425px] rounded-t-2xl object-fill"
               />
             </div>
           </div>
         </div>
 
-        <div className="relative pb-[158px] overflow-hidden">
+        <div className="relative pb-[158px]">
           <div className="z-20 relative px-[8px] md:px-[16px] xl:px-0 md:h-[457px] mt-[35px] max-w-[1278px] w-full xl:mx-auto">
-            <div className="bg-[#161b22] h-full flex flex-col md:flex-row justify-between shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl overflow-hidden">
+            <div className="bg-[#161b22] h-full flex flex-col md:flex-row justify-between shadow-black/50 shadow-xl border border-[#30363d] rounded-xl overflow-hidden">
               <div className="text-[#f0f0f0]/50 relative md:mr-[50px] mx-[40px] pb-[65px] md:pb-0 mdd:mx-[32px] lg:mx-[58px] my-[28px] mdd:my-[62px] m-[32px] leading-[32px] font-semibold">
                 <p className="md:max-w-[447px] w-full text-[20px] mdd:text-[24px]">
                   <span className="text-[#f0f0f0]">GitHub Sponsors </span> lets
@@ -356,7 +356,9 @@ export const Collaboration = (props: Props) => {
                 </a>
               </div>
             </div>
-            <div className="absolute left-[16px] md:left-[52px] top-[100%] z-0 w-[2.5px] md:w-[4px] h-[50vh] bg-gradient-to-b from-[#2b2c68] via-[#5c61bc] to-[#f6f8fa]" />
+            <div className="overflow-hidden h-[158px] w-full absolute top-[100%]">
+              <div className="absolute left-[16px] md:left-[52px] top-0 z-0 w-[2.5px] md:w-[4px] h-[50vh] bg-gradient-to-b from-[#2b2c68] via-[#5c61bc] to-[#f6f8fa]" />
+            </div>
           </div>
         </div>
       </div>

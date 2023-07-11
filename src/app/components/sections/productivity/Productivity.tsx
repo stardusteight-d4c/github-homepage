@@ -5,8 +5,9 @@ import cursor from "../../../assets/illo-cursor.png"
 import ports from "../../../assets/illo-ports.png"
 import branchProductivity from "../../../assets/git-branch-productivity.svg"
 import bgStars from "../../../assets/bg-stars-1.webp"
-import actions from "../../../assets/illu-actions.png"
-import mobile from "../../../assets/illu-mobile.png"
+import actions from "../../../assets/github-actions.png"
+import mobile1 from "@/app/assets/github-mobile-1.png"
+import mobile2 from "@/app/assets/github-mobile-2.png"
 
 import { CopilotExamples } from "./integrate/CopilotExamples"
 import Image from "next/image"
@@ -48,7 +49,7 @@ export const Productivity = () => {
               <img
                 src={contextMenu.src}
                 alt="context_menu/png"
-                className="rounded-lg shadow-[#0d1117]/30 shadow-xl z-40 w-[300px] h-[262px] border border-[#0d1117] object-cover"
+                className="rounded-lg shadow-black/50 shadow-2xl z-40 w-[300px] h-[262px] border border-black object-cover"
               />
               <img
                 src={cursor.src}
@@ -58,7 +59,7 @@ export const Productivity = () => {
               <img
                 src={ports.src}
                 alt="ports/png"
-                className="rounded-lg shadow-[#0d1117]/30 shadow-xl hidden xl:block absolute -left-[180px] -z-10 -bottom-[70px] min-w-[373px] min-h-[184px] border border-[#0d1117] object-cover"
+                className="rounded-lg shadow-black/50 shadow-xl hidden xl:block absolute -left-[180px] -z-10 -bottom-[70px] min-w-[373px] min-h-[184px] border border-black object-cover"
               />
             </div>
           </div>
@@ -111,7 +112,7 @@ export const Productivity = () => {
         <CopilotExamples />
         <div className="relative pb-[158px] overflow-hidden">
           <div className="relative grid grid-cols-1 md:grid-cols-2 mt-[35px] gap-y-[35px] md:gap-x-[35px] max-w-[1278px] w-full xl:mx-auto">
-            <div className="col-span-1 relative overflow-hidden shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
+            <div className="col-span-1 relative overflow-hidden shadow-black/50 shadow-xl border border-[#30363d] rounded-xl bg-[#161b22]">
               <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
                 <span className="text-[#f0f0f0]">GitHub Actions</span> automates
                 your build, test, and deployment workflow with simple and secure
@@ -130,15 +131,15 @@ export const Productivity = () => {
                 <Image
                   src={actions}
                   alt="actions/png"
-                  width={619}
-                  height={450}
+                  width={550}
+                  height={425}
                   quality={100}
-                  className="w-full  md:h-[350px] absolute bottom-0 lg:h-[450px] object-cover"
+                  className="md:h-[350px] left-1/2 -translate-x-1/2 border border-[#30363d] border-b-0 absolute bottom-0 w-[550px] lg:h-[425px] rounded-t-2xl object-fill"
                 />
               </div>
             </div>
 
-            <div className="col-span-1 relative shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
+            <div className="col-span-1  overflow-hidden relative shadow-black/50 shadow-xl border border-[#30363d] rounded-xl bg-[#161b22]">
               <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
                 <span className="text-[#f0f0f0]">GitHub Mobile</span> fits your
                 projects in your pocket, so you never miss a beat while on the
@@ -155,12 +156,20 @@ export const Productivity = () => {
               </div>
               <div className="h-[260px] ssm:h-[350px] md:h-[450px] w-full">
                 <Image
-                  src={mobile}
-                  alt="mobile/png"
-                  width={1208}
-                  height={764}
+                  src={mobile1}
+                  alt="mobile1/png"
+                  width={350}
+                  height={425}
                   quality={100}
-                  className="w-[600px] absolute bottom-0 mx-auto block object-cover"
+                  className="left-[35px] border border-[#30363d] border-b-0 absolute -bottom-[195px] w-[350px] rounded-t-2xl object-fill"
+                />
+                   <Image
+                  src={mobile2}
+                  alt="mobile2/png"
+                  width={350}
+                  height={425}
+                  quality={100}
+                  className="left-[232px] border border-[#30363d] border-b-0 absolute -bottom-[300px] w-[350px] rounded-t-2xl object-fill"
                 />
               </div>
             </div>

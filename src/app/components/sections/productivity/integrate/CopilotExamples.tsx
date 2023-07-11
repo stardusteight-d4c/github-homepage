@@ -14,7 +14,7 @@ export const CopilotExamples = (props: Props) => {
   )
 
   return (
-    <div className="z-20 relative shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl overflow-hidden max-w-[1278px] w-full xl:mx-auto">
+    <div className="z-20 relative shadow-black/50 shadow-xl border border-[#30363d] rounded-xl overflow-hidden max-w-[1278px] w-full xl:mx-auto">
       <div className="bg-[#161b22] flex flex-col px-[8px] mdd:px-[32px] lg:px-[42px] md:flex-row justify-between py-[24px] mdd:py-[42px]">
         <div className="text-[#f0f0f0]/50 md:pr-[50px] p-[32px] leading-[32px] font-semibold">
           <p className="md:max-w-[447px] w-full text-[20px] mdd:text-[24px]">

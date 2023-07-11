@@ -16,9 +16,9 @@ export const Security = (props: Props) => {
   return (
     <section
       id="security"
-      className="max-w-[100vw] relative mt-4 text-[#f0f0f0]          mb-[100px]"
+      className="max-w-[100vw] relative mt-4 text-[#f0f0f0]"
     >
-      <div className="max-w-7xl mx-auto ">
+      <div className="max-w-7xl mx-auto">
         <div className="ml-[50px] md:ml-[115px] mb-[58px] md:mb-[96px]">
           <h2 className="text-[20px] md:text-[24px] relative mb-[24px] leading-[28px] font-semibold font-jet-brains">
             <div className="absolute  -left-[38px] md:-left-[74px] z-20 ">
@@ -42,7 +42,7 @@ export const Security = (props: Props) => {
         </div>
         <div className="relative z-50 px-[8px] md:px-[16px] xl:px-0">
           <div className="z-20 relative px-[8px] md:px-[16px] xl:px-0 mb-[35px] max-w-[1278px] w-full xl:mx-auto">
-            <div className="bg-[#161b22] font-roboto p-[82px] h-full shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl overflow-hidden">
+            <div className="bg-[#161b22] font-roboto p-[82px] h-full shadow-black/50 shadow-xl border border-[#30363d] rounded-xl overflow-hidden">
               <div className="text-[#5c636d]">
                 <span className="block text-sm font-medium">cmake.yml</span>
                 <span className="block text-xs">on: push </span>
@@ -94,7 +94,7 @@ export const Security = (props: Props) => {
           <img
             src={ghasList.src}
             alt="ghas_list/png"
-            className="absolute shadow-[#0d1117]/30 z-[80] shadow-xl bottom-[-265px] right-[16px] w-[541px] h-[300px] rounded-lg border border-[#0d1117]"
+            className="absolute shadow-black/50 shadow-2xl z-[80] bottom-[-265px] right-[16px] w-[541px] h-[300px] rounded-lg border border-black"
           />
         </div>
         <div className="flex relative pb-9">
@@ -144,7 +144,7 @@ export const Security = (props: Props) => {
         </div>
 
         <div className="mx-auto z-20 relative px-[8px] md:px-[16px] xl:px-0 md:h-[457px] mb-[35px] w-full xl:mx-auto">
-          <div className="bg-[#161b22] h-full flex flex-col md:flex-row justify-between shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl overflow-hidden">
+          <div className="bg-[#161b22] h-full flex flex-col md:flex-row justify-between shadow-black/50 shadow-xl border border-[#30363d] rounded-xl overflow-hidden">
             <div className="text-[#f0f0f0]/50 relative md:mr-[50px] mx-[40px] pb-[65px] md:pb-0 mdd:mx-[32px] lg:mx-[58px] my-[28px] mdd:my-[62px] m-[32px] leading-[32px] font-semibold">
               <p className="md:max-w-[447px] w-full text-[20px] mdd:text-[24px]">
                 <span className="text-[#f0f0f0]">Secret scanning </span>
@@ -166,7 +166,7 @@ export const Security = (props: Props) => {
         </div>
 
         <div className="relative grid grid-cols-1 h-fit md:grid-cols-2 gap-y-[35px] px-[8px] md:px-0 md:gap-x-[35px] w-full xl:mx-auto">
-          <div className="col-span-1 relative overflow-hidden shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
+          <div className="col-span-1 relative overflow-hidden shadow-black/50 shadow-xl border border-[#30363d] rounded-xl bg-[#161b22]">
             <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
               <span className="text-[#f0f0f0]">Dependabot</span> makes it easy
               to find and fix vulnerable dependencies in your supply chain.
@@ -192,7 +192,7 @@ export const Security = (props: Props) => {
             </div>
           </div>
 
-          <div className="col-span-1 relative overflow-hidden shadow-[#0d1117]/50 shadow-2xl border border-[#30363d] rounded-xl bg-[#161b22]">
+          <div className="col-span-1 relative overflow-hidden shadow-black/50 shadow-xl border border-[#30363d] rounded-xl bg-[#161b22]">
             <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
               <span className="text-[#f0f0f0]">Code scanning</span> is GitHub’s
               static code analysis tool that helps you remediate issues in your
@@ -214,7 +214,7 @@ export const Security = (props: Props) => {
                 width={619}
                 height={450}
                 quality={100}
-                className="w-full md:h-[350px] absolute bottom-0 lg:h-[450px] object-cover"
+                className="w-full md:h-[350px]  absolute bottom-0 lg:h-[450px] object-cover"
               />
             </div>
           </div>

@@ -12,7 +12,7 @@ interface Props {}
 
 export const Editor = (props: Props) => {
   return (
-    <div className="border z-20 relative shadow-[#0d1117]/50 shadow-2xl border-[#30363d] rounded-xl overflow-hidden max-w-[1278px] w-full xl:mx-auto">
+    <div className="border z-20 relative shadow-black/50 shadow-xl border-[#30363d] rounded-xl overflow-hidden max-w-[1278px] w-full xl:mx-auto">
       <div className="bg-[#161b22] flex items-center justify-between w-full border-b border-[#30363d] mx-auto p-[16px]">
         <div className="flex items-center">
           <CaretHorizontal className="text-[#6e7681] w-[24px] h-[24px]" />
