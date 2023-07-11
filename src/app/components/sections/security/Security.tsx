@@ -42,51 +42,57 @@ export const Security = (props: Props) => {
         </div>
         <div className="relative z-50 px-[8px] md:px-[16px] xl:px-0">
           <div className="z-20 relative px-[8px] md:px-[16px] xl:px-0 mb-[35px] max-w-[1278px] w-full xl:mx-auto">
-            <div className="bg-[#161b22] font-roboto p-[82px] h-full shadow-black/50 shadow-xl border border-[#30363d] rounded-xl overflow-hidden">
+            <div className="bg-[#161b22] font-roboto p-[24px] lg:p-[82px] h-full shadow-black/50 shadow-xl border border-[#30363d] rounded-xl overflow-hidden">
               <div className="text-[#5c636d]">
                 <span className="block text-sm font-medium">cmake.yml</span>
                 <span className="block text-xs">on: push </span>
               </div>
-              <div className="flex items-start justify-center gap-x-[42px]">
-                <div className="relative bg-[#41474e] shadow-black/50 shadow-xl mt-[34px] rounded-md w-[400px] flex items-center justify-between py-[16px] px-[24px]">
+              <div className="flex flex-col lg:flex-row items-start justify-center gap-[42px]">
+                <div className="relative bg-[#41474e] shadow-black/50 shadow-xl mt-[34px] rounded-md w-full lg:max-w-[400px] flex items-center justify-between py-[16px] px-[24px]">
                   <span className="flex items-center gap-x-2">
                     <Check className="w-[22px] h-[22px] text-[#3fb950]" />
                     <span>Build</span>
                   </span>
                   <span className="text-sm text-[#969ea7]">1m 21s</span>
-                  <div className="absolute left-[100%]">
+                  <div className="hidden lg:block absolute left-[100%]">
                     <div className="h-[2px] w-[42px] bg-[#d1d5da] relative">
                       <div className="w-[10px] h-[10px] bg-[#6e7681] rounded-full absolute top-1/2 -translate-y-1/2 -left-[5px] border-[2px] border-[#444d56]" />
                       <div className="w-[10px] h-[10px] bg-[#6e7681] rounded-full absolute top-1/2 -translate-y-1/2 -right-[5px] border-[2px] border-[#444d56]" />
                     </div>
                   </div>
+                  <div className="block lg:hidden absolute top-[100%]">
+                    <div className="w-[2px] h-[42px] bg-[#d1d5da] relative">
+                      <div className="w-[10px] h-[10px] bg-[#6e7681] rounded-full absolute -top-[5px] -left-[4px] border-[2px] border-[#444d56]" />
+                      <div className="w-[10px] h-[10px] bg-[#6e7681] rounded-full absolute -bottom-[5px] -left-[4px] border-[2px] border-[#444d56]" />
+                    </div>
+                  </div>
                 </div>
 
-                <div>
+                <div className="w-full lg:w-fit">
                   <div className="bg-[#41474e] w-fit rounded-t-md px-[24px] pt-[8px] pb-[4px]">
                     Steps
                   </div>
-                  <div className="shadow-black/50 shadow-xl">
-                    <div className="bg-[#41474e] rounded-tr-md w-[400px] flex items-center justify-between py-[16px] px-[24px]">
+                  <div className="shadow-black/50 shadow-xl w-full lg:w-fit">
+                    <div className="bg-[#41474e] rounded-tr-md lg:w-[400px] w-full flex items-center justify-between py-[16px] px-[24px]">
                       <span className="flex items-center gap-x-2">
                         <Check className="w-[22px] h-[22px] text-[#3fb950]" />
                         <span>Initialize CodeQL</span>
                       </span>
-                      <span className="text-sm text-[#969ea7]">1m 42s</span>
+                      <span className="text-sm text-[#969ea7] hidden md:block">1m 42s</span>
                     </div>
-                    <div className="bg-[#41474e] w-[400px] flex items-center justify-between py-[16px] px-[24px]">
+                    <div className="bg-[#41474e] lg:w-[400px] w-full flex items-center justify-between py-[16px] px-[24px]">
                       <span className="flex items-center gap-x-2">
                         <Check className="w-[22px] h-[22px] text-[#3fb950]" />
                         <span>Autobuild</span>
                       </span>
-                      <span className="text-sm text-[#969ea7]">1m 24s</span>
+                      <span className="text-sm text-[#969ea7] hidden md:block">1m 24s</span>
                     </div>
-                    <div className="bg-[#41474e] rounded-b-md w-[400px] flex items-center justify-between py-[16px] px-[24px]">
+                    <div className="bg-[#41474e] rounded-b-md lg:w-[400px] w-full flex items-center justify-between py-[16px] px-[24px]">
                       <span className="flex items-center gap-x-2">
                         <Check className="w-[22px] h-[22px] text-[#3fb950]" />
                         <span>Perform CodeQL Analyses</span>
                       </span>
-                      <span className="text-sm text-[#969ea7]">1m 36s</span>
+                      <span className="text-sm text-[#969ea7] hidden md:block">1m 36s</span>
                     </div>
                   </div>
                 </div>
@@ -96,7 +102,7 @@ export const Security = (props: Props) => {
           <img
             src={ghasList.src}
             alt="ghas_list/png"
-            className="absolute shadow-black/50 shadow-2xl z-[80] bottom-[-265px] right-[16px] w-[541px] h-[300px] rounded-lg border border-black"
+            className="absolute shadow-black/50 shadow-2xl z-[80] bottom-[-165px] xl:bottom-[-265px] left-[32px] md:left-[138px] lg:left-auto lg:right-[16px] w-[341px] xl:w-[541px] xl:h-[300px] rounded-lg border border-black"
           />
         </div>
         <div className="flex relative pb-9">
@@ -108,7 +114,7 @@ export const Security = (props: Props) => {
           <div className="min-h-full -mt-[38px] w-[81px] relative">
             <div className="absolute left-[24px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] h-[800px] bg-gradient-to-b z-20 from-[#2b2c68] via-[#5c61bc] to-[#2b2c68]" />
           </div>
-          <div className="py-[5px] -ml-[35px] md:ml-0 md:pl-[64px] pr-[8px] md:pr-[24px] mt-[200px] md:mt-[245px] lg:my-[64px]">
+          <div className="py-[5px] -ml-[35px] md:ml-0 md:pl-[64px] pr-[8px] md:pr-[24px] mt-[180px] md:mt-[245px] lg:my-[64px]">
             <p className="text-[20px] ssm:text-[24px] text-[#7d8590] font-inter leading-[28px] md:leading-[32px] max-w-[317px] smm:max-w-[500px] w-full md:max-w-[500px] font-medium mb-[24px] md:mb-[16px]">
               <span className="text-[#f0f0f0]">GitHub Advanced Security </span>
               lets you gain visibility into your security posture, respond to
