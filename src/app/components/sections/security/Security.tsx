@@ -173,7 +173,7 @@ export const Security = (props: Props) => {
           </div>
         </div>
 
-        <div className="relative grid grid-cols-1 h-fit md:grid-cols-2 gap-y-[35px] px-[8px] md:px-0 md:gap-x-[35px] w-full xl:mx-auto">
+        <div className="relative grid grid-cols-1 h-fit md:grid-cols-2 gap-y-[35px] md:gap-x-[35px] w-full xl:mx-auto">
           <div className="col-span-1 relative overflow-hidden shadow-black/50 shadow-xl border border-[#30363d] rounded-xl bg-[#161b22]">
             <div className="lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold">
               <span className="text-[#f0f0f0]">Dependabot</span> makes it easy
