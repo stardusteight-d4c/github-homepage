@@ -173,7 +173,7 @@ export const Productivity = () => {
                 />
               </div>
             </div>
-            <div className="absolute left-[16px] md:left-[53px] top-[100%] z-0 w-[2.5px] md:w-[4px] h-[50vh] bg-gradient-to-b from-[#ea6045] via-[#fe7b72] to-[#ea6045]" />
+            <div className="absolute left-[16px] md:left-[51px] top-[100%] z-0 w-[2.5px] md:w-[4px] h-[50vh] bg-gradient-to-b from-[#ea6045] via-[#fe7b72] to-[#ea6045]" />
           </div>
         </div>
       </div>

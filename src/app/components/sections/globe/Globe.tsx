@@ -9,7 +9,7 @@ export const Globe = (props: Props) => {
   return (
     <>
       <div className="w-screen h-[35px] bg-gradient-to-b from-[#0c1015] to-[#0d1018]" />
-      <section className="relative text-[#f0f0f0] px-[8px] md:px-0 max-w-7xl mx-auto w-full h-fit">
+      <section className="relative text-[#f0f0f0] px-[8px] md:px-[16px] xl:px-0 max-w-7xl mx-auto w-full h-fit">
         <picture className="pointer-events-none">
           <source
             media="(max-width: 768px)"
@@ -68,18 +68,18 @@ export const Globe = (props: Props) => {
                     width={1150}
                     height={641}
                     quality={100}
-                    className="relative min-w-[700px] left-1/2 -translate-x-1/2 md:-translate-x-0 md:left-auto md:w-[1150px] mt-[25px] md:-mt-[50px] -ml-[28px] md:ml-[12px] -mb-6 z-[5] pointer-events-none select-none"
+                    className="relative min-w-[700px] left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:left-auto lg:w-[1150px] mt-[25px] lg:-mt-[50px] -ml-[28px] lg:-ml-[38px] xl:ml-[12px] -mb-6 z-[5] pointer-events-none select-none"
                   />
                   <img
                     src={astrocat.src}
                     alt="astrocat/png"
-                    className="absolute w-[241px] md:w-[541px] z-20 -bottom-[70px] md:-bottom-[200px] left-1/2 -translate-x-1/2 md:-translate-x-0 md:left-[380px] pointer-events-none  select-none"
+                    className="absolute w-[241px] lg:w-[541px] z-20 -bottom-[70px] lg:-bottom-[200px] left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:left-[305px] xl:left-[380px] pointer-events-none  select-none"
                   />
                 </div>
                 <img
                   src={ground.src}
                   alt="ground/svg"
-                  className="absolute z-10 h-[150px] min-w-[2500px] left-1/2 -translate-x-1/2 pointer-events-none  select-none"
+                  className="absolute z-10 h-[150px] min-w-[2500px] left-1/2 -translate-x-1/2 pointer-events-none select-none"
                 />
               </div>
             </div>
