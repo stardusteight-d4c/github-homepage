@@ -1,16 +1,19 @@
-import { FixedNav } from "./components/navbar/FixedNav"
-import { MobileNav } from "./components/navbar/MobileNav"
-import { Navbar } from "./components/navbar/Navbar"
-import { Collaboration } from "./components/sections/collaboration/Collaboration"
-import { Footer } from "./components/sections/footer/Footer"
-import { Globe } from "./components/sections/globe/Globe"
-import { Hero } from "./components/sections/hero/Hero"
-import { Productivity } from "./components/sections/productivity/Productivity"
-import { Security } from "./components/sections/security/Security"
+import {
+  Navbar,
+  MobileNav,
+  FixedNav,
+  Hero,
+  Productivity,
+  Collaboration,
+  Security,
+  Globe,
+  Footer,
+} from "./components"
+import { homeStyles as css } from "./styles"
 
 export default function Home() {
   return (
-    <main className="w-screen h-fit bg-[#0c1015] relative overflow-x-hidden">
+    <main className={css.wrapper}>
       <Navbar />
       <MobileNav />
       <FixedNav />
