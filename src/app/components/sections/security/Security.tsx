@@ -48,7 +48,7 @@ export const Security = (props: Props) => {
                 <span className="block text-xs">on: push </span>
               </div>
               <div className="flex items-start justify-center gap-x-[42px]">
-                <div className="relative bg-[#41474e] mt-[34px] rounded-md w-[400px] flex items-center justify-between py-[16px] px-[24px]">
+                <div className="relative bg-[#41474e] shadow-black/50 shadow-xl mt-[34px] rounded-md w-[400px] flex items-center justify-between py-[16px] px-[24px]">
                   <span className="flex items-center gap-x-2">
                     <Check className="w-[22px] h-[22px] text-[#3fb950]" />
                     <span>Build</span>
@@ -66,26 +66,28 @@ export const Security = (props: Props) => {
                   <div className="bg-[#41474e] w-fit rounded-t-md px-[24px] pt-[8px] pb-[4px]">
                     Steps
                   </div>
-                  <div className="bg-[#41474e] rounded-tr-md w-[400px] flex items-center justify-between py-[16px] px-[24px]">
-                    <span className="flex items-center gap-x-2">
-                      <Check className="w-[22px] h-[22px] text-[#3fb950]" />
-                      <span>Initialize CodeQL</span>
-                    </span>
-                    <span className="text-sm text-[#969ea7]">1m 42s</span>
-                  </div>
-                  <div className="bg-[#41474e] w-[400px] flex items-center justify-between py-[16px] px-[24px]">
-                    <span className="flex items-center gap-x-2">
-                      <Check className="w-[22px] h-[22px] text-[#3fb950]" />
-                      <span>Autobuild</span>
-                    </span>
-                    <span className="text-sm text-[#969ea7]">1m 24s</span>
-                  </div>
-                  <div className="bg-[#41474e] rounded-b-md w-[400px] flex items-center justify-between py-[16px] px-[24px]">
-                    <span className="flex items-center gap-x-2">
-                      <Check className="w-[22px] h-[22px] text-[#3fb950]" />
-                      <span>Perform CodeQL Analyses</span>
-                    </span>
-                    <span className="text-sm text-[#969ea7]">1m 36s</span>
+                  <div className="shadow-black/50 shadow-xl">
+                    <div className="bg-[#41474e] rounded-tr-md w-[400px] flex items-center justify-between py-[16px] px-[24px]">
+                      <span className="flex items-center gap-x-2">
+                        <Check className="w-[22px] h-[22px] text-[#3fb950]" />
+                        <span>Initialize CodeQL</span>
+                      </span>
+                      <span className="text-sm text-[#969ea7]">1m 42s</span>
+                    </div>
+                    <div className="bg-[#41474e] w-[400px] flex items-center justify-between py-[16px] px-[24px]">
+                      <span className="flex items-center gap-x-2">
+                        <Check className="w-[22px] h-[22px] text-[#3fb950]" />
+                        <span>Autobuild</span>
+                      </span>
+                      <span className="text-sm text-[#969ea7]">1m 24s</span>
+                    </div>
+                    <div className="bg-[#41474e] rounded-b-md w-[400px] flex items-center justify-between py-[16px] px-[24px]">
+                      <span className="flex items-center gap-x-2">
+                        <Check className="w-[22px] h-[22px] text-[#3fb950]" />
+                        <span>Perform CodeQL Analyses</span>
+                      </span>
+                      <span className="text-sm text-[#969ea7]">1m 36s</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -184,10 +186,10 @@ export const Security = (props: Props) => {
               <Image
                 src={dependabot}
                 alt="dependabot/png"
-                width={619}
-                height={450}
+                width={550}
+                height={425}
                 quality={100}
-                className="w-full md:h-[350px] absolute bottom-0 lg:h-[450px] object-cover"
+                className="md:h-[350px] right-0 absolute bottom-0 w-[550px] lg:h-[425px] object-fill"
               />
             </div>
           </div>
@@ -211,10 +213,10 @@ export const Security = (props: Props) => {
               <Image
                 src={codeScanning}
                 alt="code_scanning/png"
-                width={619}
-                height={450}
+                width={550}
+                height={425}
                 quality={100}
-                className="w-full md:h-[350px]  absolute bottom-0 lg:h-[450px] object-cover"
+                className="md:h-[350px] left-1/2 -translate-x-1/2 absolute bottom-0 w-[550px] lg:h-[425px] object-fill"
               />
             </div>
           </div>
