@@ -41,7 +41,7 @@ export const Security = (props: Props) => {
           </p>
         </div>
         <div className="relative z-50 px-[8px] md:px-[16px] xl:px-0">
-          <div className="z-20 relative px-[8px] md:px-[16px] xl:px-0 mb-[35px] max-w-[1278px] w-full xl:mx-auto">
+          <div className="z-20 relative mb-[35px] max-w-[1278px] w-full xl:mx-auto">
             <div className="bg-[#161b22] font-roboto p-[24px] lg:p-[82px] h-full shadow-black/50 shadow-xl border border-[#30363d] rounded-xl overflow-hidden">
               <div className="text-[#5c636d]">
                 <span className="block text-sm font-medium">cmake.yml</span>

@@ -114,14 +114,14 @@ export const Collaboration = (props: Props) => {
                 </div>
               </span>
             </div>
-            <div className="h-[260px] ssm:h-[350px] smm:h-[450px] w-full">
+            <div className="h-full w-fit mx-auto mt-7">
               <Image
                 src={discussions}
                 alt="discussions/png"
                 width={550}
                 height={425}
                 quality={100}
-                className="md:h-[350px] left-1/2 -translate-x-1/2 border border-[#30363d] border-b-0 absolute bottom-0 w-[550px] lg:h-[425px] rounded-t-2xl object-fill"
+                className="md:h-[350px] mt-auto border border-[#30363d] border-b-0 w-[350px] smm:w-full lg:w-[550px] lg:h-[425px] rounded-t-2xl object-fill"
               />
             </div>
           </div>
@@ -140,14 +140,14 @@ export const Collaboration = (props: Props) => {
                 </div>
               </span>
             </div>
-            <div className="h-[260px] ssm:h-[350px] smm:h-[450px] w-full">
+            <div className="h-full w-fit mx-auto mt-7">
               <Image
                 src={pullRequests}
                 alt="pull_requests/png"
                 width={550}
                 height={425}
                 quality={100}
-                className="md:h-[350px] left-1/2 -translate-x-1/2 border border-[#30363d] border-b-0 absolute bottom-0 w-[550px] lg:h-[425px] rounded-t-2xl object-fill"
+                className="md:h-[350px] mt-auto border border-[#30363d] border-b-0 w-[350px] smm:w-full lg:w-[550px] lg:h-[425px] rounded-t-2xl object-fill"
               />
             </div>
           </div>
