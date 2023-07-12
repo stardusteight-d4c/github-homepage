@@ -3,9 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import github from "@/app/assets/logos/github-logo.svg"
-import { Overlay } from "./integrate/Overlay"
-import { SignUp } from "./integrate/SignUp"
-import { Menu } from "./integrate/Menu"
+import { Overlay, Menu, SignUp } from "./integrate"
 import { mobileNavStyles as css } from "./styles"
 
 export const MobileNav = () => {

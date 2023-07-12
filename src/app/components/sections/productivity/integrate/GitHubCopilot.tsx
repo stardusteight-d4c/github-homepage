@@ -8,7 +8,7 @@ import { Go } from "@/app/components/atoms/icons/go"
 
 interface Props {}
 
-export const CopilotExamples = (props: Props) => {
+export const GitHubCopilot = (props: Props) => {
   const [activeItem, setActiveItem] = useState<"python" | "javascript" | "go">(
     "python"
   )
@@ -222,7 +222,9 @@ export const CopilotExamples = (props: Props) => {
                           index + 1 >= 4
                             ? "border-r-[#1f6feb]"
                             : "border-transparent"
-                        } ${index + 1 >= 10 ? '-ml-[36px]' : '-ml-[27px]'} text-[#6e7681] -ml-[27px] px-2 border-r-[2px] `}
+                        } ${
+                          index + 1 >= 10 ? "-ml-[36px]" : "-ml-[27px]"
+                        } text-[#6e7681] -ml-[27px] px-2 border-r-[2px] `}
                       >
                         {index + 1}
                       </span>

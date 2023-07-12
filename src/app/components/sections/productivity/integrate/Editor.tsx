@@ -5,13 +5,16 @@ import { Menu } from "@/app/components/atoms/icons/menu"
 import { Notify } from "@/app/components/atoms/icons/notify"
 import { Plus } from "@/app/components/atoms/icons/plus"
 import { Refresh } from "@/app/components/atoms/icons/refresh"
+import contextMenu from "@/app/assets/illo-context-menu.png"
+import cursor from "@/app/assets/illo-cursor.png"
+import ports from "@/app/assets/illo-ports.png"
 import Image from "next/image"
 import globe from "../../../../assets/globe.jpg"
 
-interface Props {}
-
-export const Editor = (props: Props) => {
+export const Editor = () => {
   return (
+    <div className="relative max-w-[1278px] w-full xl:mx-auto">
+
     <div className="border z-20 relative shadow-black/50 shadow-xl border-[#30363d] rounded-xl overflow-hidden max-w-[1278px] w-full xl:mx-auto">
       <div className="bg-[#161b22] flex items-center justify-between w-full border-b border-[#30363d] mx-auto p-[16px]">
         <div className="flex items-center">
@@ -242,5 +245,27 @@ export const Editor = (props: Props) => {
         </div>
       </div>
     </div>
+
+    <div className="z-40 absolute -bottom-[220px] lg:-bottom-[180px] left-[35px] md:left-[140px] lg:left-auto lg:right-[50px]">
+            <div className="relative">
+              <img
+                src={contextMenu.src}
+                alt="context_menu/png"
+                className="rounded-lg shadow-black/50 shadow-2xl z-40 w-[300px] h-[262px] border border-black object-cover"
+              />
+              <img
+                src={cursor.src}
+                alt="cursor/png"
+                className="absolute z-50 bottom-[60px] left-[110px] lg:right-[50px] w-[30px] h-[48px]"
+              />
+              <img
+                src={ports.src}
+                alt="ports/png"
+                className="rounded-lg shadow-black/50 shadow-xl hidden xl:block absolute -left-[180px] -z-10 -bottom-[70px] min-w-[373px] min-h-[184px] border border-black object-cover"
+              />
+            </div>
+          </div>
+    </div>
+
   )
 }

@@ -1,9 +1,8 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { FixedNavMobile } from "./integrate/FixedNavMobile"
+import { FixedNavMobile, CallToAction } from "./integrate"
 import { fixedNavStyles as css } from "./styles"
-import { CallToAction } from "./integrate/CallToAction"
 
 interface ListItemProps {
   item: "productivity" | "collaboration" | "security"
