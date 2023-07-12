@@ -56,3 +56,36 @@ export const productListStyles = {
     subtitle: `text-sm leading-[20px]`,
   },
 }
+
+export const solutionsListStyles = {
+  wrapper: (activeItem: false | "product" | "solutions" | "open-source") => {
+    return `${activeItem === "solutions" ? "block" : "hidden"} pr-4 mt-[8px]`
+  },
+  divider: `bg-[#636a74]/30 w-full h-[1px] my-[16px]`,
+  list: {
+    title: `font-semibold font-roboto leading-[20px] text-[#1f2328]`,
+    unorderedList: `font-roboto text-[#636a74] mt-[4px]`,
+    item: `text-sm cursor-pointer leading-[20px] py-[6px] hover:text-[#2563eb] transition-all duration-200 ease-in-out`,
+  },
+}
+
+export const openSourceListStyles = {
+  wrapper: (activeItem: false | "product" | "solutions" | "open-source") => {
+    return `${
+      activeItem === "open-source" ? "block" : "hidden"
+    } cursor-pointer group/li py-2`
+  },
+  liGroup: (group: "group/li1" | "group/li2") => {
+    return `cursor-pointer ${group}`
+  },
+  mainListTitle: (group: "li1" | "li2") => {
+    return `font-semibold leading-[20px] text-[#1f2328] group-hover/${group}:text-[#2563eb] transition-all duration-200 ease-in-out`
+  },
+  mainListSubtitle: (group: "li1" | "li2") => {
+    return `text-sm -mt-1 text-[#636a74] block leading-[20px] pt-[6px] group-hover/${group}:text-[#2563eb] transition-all duration-200 ease-in-out`
+  },
+  divider: `bg-[#636a74]/30 w-full h-[1px] my-[16px]`,
+  secondaryTitle: `font-semibold leading-[20px] text-[#1f2328] mb-2`,
+  unorderedList: `text-[#636a74]`,
+  listItem: `text-sm cursor-pointer leading-[20px] py-[6px] hover:text-[#2563eb] transition-all duration-200 ease-in-out`,
+}

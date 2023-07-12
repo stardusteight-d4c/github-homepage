@@ -5,9 +5,7 @@ export const OpenSourceDropdown = () => {
     <div className={css.wrapper}>
       <div className={css.groupLi}>
         <h2 className={css.mainTitle}>GitHub Sponsors</h2>
-        <span>
-          <span className={css.subtitleSpan}>Fund open source developers</span>
-        </span>
+        <span className={css.subtitleSpan}>Fund open source developers</span>
       </div>
       <div className={css.divider} />
       <div className={css.groupLi}>
