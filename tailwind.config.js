@@ -7,6 +7,7 @@ module.exports = {
   ],
   theme: {
     screens: {
+      hypersm: "360px",
       smsm: "380px",
       ssm: "400px",
       smm: "500px",
