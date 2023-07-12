@@ -73,7 +73,7 @@ export const Globe = (props: Props) => {
                   <img
                     src={astrocat.src}
                     alt="astrocat/png"
-                    className="absolute w-[241px] lg:w-[541px] z-20 -bottom-[70px] lg:-bottom-[200px] left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:left-[305px] xl:left-[380px] pointer-events-none  select-none"
+                    className="absolute w-[241px] lg:w-[541px] z-20 -bottom-[70px] lg:-bottom-[200px] left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:left-[305px] xl:left-[350px] pointer-events-none  select-none"
                   />
                 </div>
                 <img
