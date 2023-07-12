@@ -1,7 +1,8 @@
 "use client"
 
-import { Dispatch, SetStateAction, useEffect, useState } from "react"
+import { Dispatch, SetStateAction } from "react"
 import { createPortal } from "react-dom"
+import { overlayStyles as css } from "./styles"
 
 interface Props {
   openMenu: boolean
@@ -9,21 +10,18 @@ interface Props {
 }
 
 export const Overlay = ({ openMenu, setOpenMenu }: Props) => {
+  function handleCloseMenu(): void {
+    const menuToggle = document.querySelector(".menu-toggle")
+    const menu = document.querySelector(".menu")
+    menuToggle?.classList.toggle("active")
+    menu?.classList.toggle("active")
+    setOpenMenu(false)
+  }
+
   return (
     <>
       {createPortal(
-        <div
-          onClick={() => {
-            const menuToggle = document.querySelector(".menu-toggle")
-            const menu = document.querySelector(".menu")
-            menuToggle?.classList.toggle("active")
-            menu?.classList.toggle("active")
-            setOpenMenu(false)
-          }}
-          className={`${
-            openMenu ? "block" : "hidden"
-          } overlay-glassmorphism w-screen min-h-screen inset-0 z-[100] overflow-hidden fixed`}
-        />,
+        <div onClick={handleCloseMenu} className={css.overlay(openMenu)} />,
         document.body
       )}
     </>

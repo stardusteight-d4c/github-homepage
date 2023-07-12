@@ -16,7 +16,7 @@ export const Search = () => {
       placeholder="Search GitHub"
       value={inputData}
       onChange={(e) => handleInputChange(e)}
-      className={css.input}
+      className={css.search}
     />
   )
 }
