@@ -5,11 +5,11 @@ export const backgroundImageStyles = {
 export const absoluteItemsStyles = {
   wrapper: `absolute w-full pointer-events-none left-6 md:left-[38px] -top-[45px] md:top-[80px] lg:top-[129px]`,
   container: `relative h-full w-[300px] -ml-1 md:-ml-0 md:w-[440px]`,
-  heroLine: `-ml-1 md:ml-[3px] w-[440px] h-[630px]`,
-  sectionIconContainer: `absolute bottom-[38px] md:bottom-[-58px] w-fit flex items-center justify-center my-[10px] -left-[19px] md:left-[-8px]`,
+  heroLine: `-ml-1 md:ml-[10px] xl:ml-[3px] w-[440px] h-[630px]`,
+  sectionIconContainer: `absolute bottom-[38px] md:bottom-[-58px] w-fit flex items-center justify-center my-[10px] -left-[19px] md:left-[5px] xl:left-[-8px]`,
   blurEffect: `blur-effect bg-[#773fc6] w-[48px] h-[48px] rounded-full animate-pulse`,
   icon: `absolute w-[28px] h-[28px] text-[#f6f8fa] z-[50]`,
-  branchLine: `absolute top-[100%] left-[23px] w-[2.5px] md:w-[4px] h-[180vh] bg-gradient-to-b from-[#733fc8] via-[#48eb5b] to-[#55d163]`,
+  branchLine: `absolute top-[100%] md:left-[23px] w-[2.5px] md:w-[4px] h-[180vh] bg-gradient-to-b from-[#733fc8] via-[#48eb5b] to-[#55d163]`,
   drone: `drone w-[35vw] xl:w-[320px] xl:h-[208px] absolute top-[240px] md:top-[15px] right-9 md:right-16 lx:right-12`,
 }
 

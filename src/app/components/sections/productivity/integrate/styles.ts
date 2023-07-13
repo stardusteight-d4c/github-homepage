@@ -2,7 +2,7 @@ export const headerStyles = {
   wrapper: `max-w-7xl mx-auto`,
   container: `ml-[50px] md:ml-[115px] mb-[58px] md:mb-[96px]`,
   headingContainer: `text-[20px] font-jet-brains md:text-[24px] relative mb-[24px] leading-[28px] font-semibold`,
-  absoluteIconWrapper: `absolute -left-[38px] md:-left-[74px] z-20`,
+  absoluteIconWrapper: `absolute -left-[46px] md:-left-[74px] z-20`,
   sectionIconContainer: `relative flex items-center justify-center`,
   blurEffect: `blur-effect absolute bg-[#7ee787] w-[48px] h-[48px] rounded-full animate-pulse`,
   icon: `w-[28px] h-[28px] text-[#f0f0f0] relative z-[50]`,
