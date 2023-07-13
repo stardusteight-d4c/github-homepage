@@ -20,6 +20,7 @@ interface GridContainerProps {
 export const Productivity = () => {
   return (
     <Wrapper>
+      <Header />
       <Editor />
       <Branch />
       <GitHubCopilot />
@@ -35,7 +36,6 @@ export const Productivity = () => {
 const Wrapper = ({ children }: WrapperProps) => {
   return (
     <section id="productivity" className={css.wrapper}>
-      <Header />
       <div className={css.container}>{children}</div>
     </section>
   )
