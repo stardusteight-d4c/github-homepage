@@ -44,7 +44,7 @@ export const gitHubActionsStyles = {
   textContainer: `lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold`,
   spanStrong: `text-[#f0f0f0]`,
   imageContainer: `h-full w-fit mx-auto mt-7`,
-  image: `md:h-[350px] mt-auto border border-[#30363d] border-b-0 w-[350px] smm:w-full lg:w-[550px] lg:h-[425px] rounded-t-2xl object-fill`,
+  image: `md:h-[350px] pointer-events-none select-none mt-auto border border-[#30363d] border-b-0 w-[350px] smm:w-full lg:w-[550px] lg:h-[425px] rounded-t-2xl object-fill`,
 }
 
 export const gitHubMobileStyles = {
@@ -53,6 +53,6 @@ export const gitHubMobileStyles = {
   spanStrong: `text-[#f0f0f0]`,
   textSpan: `text-[#f0f0f0] mt-[60px]`,
   imageContainer: `h-[480px] md:h-[260px] w-fit mx-auto mt-7`,
-  image1: `lgg:left-[35px] left-1/2 -translate-x-1/2 lgg:translate-x-0 border border-[#30363d] border-b-0 absolute -bottom-[150px] md:-bottom-[265px] lg:-bottom-[195px] w-[350px] rounded-t-2xl object-fill`,
-  image2: `hidden lgg:block left-[232px] border border-[#30363d] border-b-0 absolute -bottom-[300px] w-[350px] rounded-t-2xl object-fill`,
+  image1: `lgg:left-[35px] pointer-events-none select-none left-1/2 -translate-x-1/2 lgg:translate-x-0 border border-[#30363d] border-b-0 absolute -bottom-[150px] md:-bottom-[265px] lg:-bottom-[195px] w-[350px] rounded-t-2xl object-fill`,
+  image2: `hidden lgg:block pointer-events-none select-none left-[232px] border border-[#30363d] border-b-0 absolute -bottom-[300px] w-[350px] rounded-t-2xl object-fill`,
 }

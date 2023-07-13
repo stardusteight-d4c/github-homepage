@@ -9,24 +9,34 @@ import {
 } from "./integrate"
 import { productivityStyles as css } from "./styles"
 
+interface WrapperProps {
+  children: ReactNode
+}
+
 interface GridContainerProps {
   children: ReactNode
 }
 
 export const Productivity = () => {
   return (
+    <Wrapper>
+      <Editor />
+      <Branch />
+      <GitHubCopilot />
+      <GridContainer>
+        <GitHubActions />
+        <GitHubMobile />
+        <div className={css.collaborationBranchLine} />
+      </GridContainer>
+    </Wrapper>
+  )
+}
+
+const Wrapper = ({ children }: WrapperProps) => {
+  return (
     <section id="productivity" className={css.wrapper}>
       <Header />
-      <div className={css.container}>
-        <Editor />
-        <Branch />
-        <GitHubCopilot />
-        <GridContainer>
-          <GitHubActions />
-          <GitHubMobile />
-          <div className={css.collaborationBranchLine} />
-        </GridContainer>
-      </div>
+      <div className={css.container}>{children}</div>
     </section>
   )
 }

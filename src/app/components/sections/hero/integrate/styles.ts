@@ -54,6 +54,6 @@ export const organizationsStyles = {
   image: (index: number) => {
     return `${
       index >= 4 ? "h-[32px]" : "h-[44px]"
-    } hover:brightness-200 col-span-1 cursor-pointer`
+    } hover:brightness-200 col-span-1 cursor-pointer select-none`
   },
 }

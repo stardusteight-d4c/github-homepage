@@ -49,13 +49,13 @@ export const codeOutputStyles = {
   icon: `text-[#f6f8fa] w-[16px] h-[16px]`,
   githubLogo: `text-[#f6f8fa] w-[24px] h-[24px]`,
   imgContainer: `bg-[#040D21]`,
-  image: `max-w-[500px] w-full h-[591px] mx-auto object-contain`,
+  image: `max-w-[500px] pointer-events-none select-none w-full h-[591px] mx-auto object-contain`,
 }
 
 export const floatingItemsStyles = {
   wrapper: `z-40 absolute -bottom-[220px] lg:-bottom-[180px] left-[35px] md:left-[140px] lg:left-auto lg:right-[50px]`,
   container: `relative`,
-  contextMenu: `rounded-lg shadow-black/50 shadow-2xl z-40 w-[300px] h-[262px] border border-black object-cover`,
-  cursor: `absolute z-50 bottom-[60px] left-[110px] lg:right-[50px] w-[30px] h-[48px]`,
-  ports: `rounded-lg shadow-black/50 shadow-xl hidden xl:block absolute -left-[180px] -z-10 -bottom-[70px] min-w-[373px] min-h-[184px] border border-black object-cover`,
+  contextMenu: `rounded-lg pointer-events-none select-none shadow-black/50 shadow-2xl z-40 w-[300px] h-[262px] border border-black object-cover`,
+  cursor: `absolute pointer-events-none select-none z-50 bottom-[60px] left-[110px] lg:right-[50px] w-[30px] h-[48px]`,
+  ports: `rounded-lg pointer-events-none select-none shadow-black/50 shadow-xl hidden xl:block absolute -left-[180px] -z-10 -bottom-[70px] min-w-[373px] min-h-[184px] border border-black object-cover`,
 }
