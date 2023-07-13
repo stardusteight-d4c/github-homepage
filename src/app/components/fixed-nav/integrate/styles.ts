@@ -4,7 +4,7 @@ export const callToActionStyles = {
       ? `flex flex-col gap-y-[8px] mt-[22px]`
       : `flex items-center gap-x-[24px]`
   },
-  enterpriseTrialButton: `trial-span group w-full md:w-[487px] lg:w-fit span active:scale-95 transition-all ease-in-out duration-300 relative flex items-center justify-center py-[12px] px-[24px] rounded-md bg-transparent border-[1px] hover:border-[#f6f8fa] border-[#ffffff2e] font-semibold`,
+  enterpriseTrialButton: `trial-span group w-full md:w-[487px] lg:w-fit span active:scale-95 transition-all ease-in-out duration-300 relative flex items-center justify-center py-[12px] px-[24px] rounded-md bg-transparent border-[1px] hover:ring-[2px] hover:ring-[#f6f8fa] border-[#ffffff2e] font-semibold`,
   span: `pr-[4px] tracking-[0.03em] font-roboto font-medium`,
   caretContainer: `relative z-50 min-w-[16px] max-w-[16px] h-[16px]`,
   signUpButton: `py-[12px] active:scale-95 transition-all w-full md:w-fit px-[24px] bg-[#f0f0f0] text-[#0d1117] rounded-md text-base font-semibold font-inter flex items-center justify-center`,

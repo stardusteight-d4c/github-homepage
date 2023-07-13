@@ -20,11 +20,11 @@ export const listItemStyles = {
 }
 
 export const signInStyles = {
-  wrapper: `py-[8px] px-[12px] font-inter rounded-md hover:opacity-80 transition-all ease-in-out duration-75`,
+  wrapper: `py-[8px] active:scale-95 transition-all ease-in-out duration-300 px-[12px] font-inter rounded-md hover:opacity-80 transition-all ease-in-out duration-75`,
 }
 
 export const signUpStyles = {
-  wrapper: `custom-button py-[8px] px-[12px] bg-[#773fc6] rounded-md text-base font-inter flex items-center justify-center`,
+  wrapper: `custom-button active:scale-95 transition-all ease-in-out duration-300 py-[8px] px-[12px] bg-[#773fc6] rounded-md text-base font-inter flex items-center justify-center`,
 }
 
 export const productDropdownStyles = {

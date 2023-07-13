@@ -8,7 +8,7 @@ export const signUpButtonStyles = {
 }
 
 export const enterpriseTrialButtonStyles = {
-  wrapper: `trial-span active:scale-95 group span w-full md:w-fit transition-all ease-in-out duration-300 relative flex items-center justify-center py-[17px] px-[30px] rounded-md bg-transparent border-[1px] hover:border-[#f6f8fa] border-[#ffffff2e] font-semibold`,
+  wrapper: `trial-span active:scale-95 group span w-full md:w-fit transition-all ease-in-out duration-300 relative flex items-center justify-center py-[17px] px-[30px] rounded-md bg-transparent border-[1px] hover:ring-[2px] hover:ring-[#f6f8fa] border-[#ffffff2e] font-semibold`,
   container: `pr-[4px] text-xl tracking-[0.03em] font-roboto font-medium`,
 }
 
