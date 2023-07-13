@@ -6,10 +6,8 @@ export const CaretHorizontal = (props: Props) => {
   return (
     <svg
       aria-hidden="true"
-      height="24"
       viewBox="0 0 24 24"
       version="1.1"
-      width="24"
       fill="currentColor"
       className={props.className}
     >

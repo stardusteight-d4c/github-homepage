@@ -14,15 +14,12 @@ export const absoluteItemsStyles = {
 }
 
 export const copilotSpanStyles = {
-  wrapper: `copilot-span span w-fit hover:border-[#f6f8fa] mb-[18px] md:mb-[30px] rounded-full transition-all ease-in-out duration-300 flex items-center py-[7px] md:py-[14px] px-[10px] md:px-[20px]`,
+  wrapper: `copilot-span group active:scale-95 transition-all ease-in-out duration-300 span w-fit hover:border-[#f6f8fa] mb-[18px] md:mb-[30px] rounded-full transition-all ease-in-out duration-300 flex items-center py-[7px] md:py-[14px] px-[10px] md:px-[20px]`,
   copilotIconContainer: `bg-[#f6f8fa] rounded-full w-fit h-fit mr-[16px]`,
   icon: `w-[38px] md:w-[40px] my-2 mx-[1px] text-[#0c1015]`,
-  textContent: `flex flex-col font-roboto mr-[16px] pr-[4px]`,
+  textContent: `flex select-none flex-col font-roboto mr-[16px] pr-[4px]`,
   main: `text-sm md:text-base font-medium tracking-[0.03em] leading-5`,
   secondary: `text-sm md:text-base text-[#6e7681] font-light md:whitespace-nowrap`,
-  caretContainer: `relative z-50 min-w-[16px] max-w-[16px] h-[16px]`,
-  caret: `caret`,
-  lineArrow: `line absolute -translate-y-1/2 top-1/2`,
 }
 
 export const headerStyles = {
@@ -37,14 +34,12 @@ export const formStyles = {
   container: `flex flex-col gap-y-5 md:flex-row items-center justify-center w-full md:w-fit`,
   inputContainer: `rounded-l-md overflow-hidden w-full md:w-fit`,
   input: `placeholder:text-[#535a61] outline-none w-full md:w-[296px] border-[2px] border-[#f6f8fa] transition-all duration-100 focus:border-blue-600 text-[#0d1117]/90 bg-[#f6f8fa] rounded-md md:rounded-r-none rounded-l-md py-[10px] px-[12px] md:px-[24px]`,
-  signUpButton: `custom-button py-[12px] w-full md:w-fit px-[24px] bg-[#773fc6] rounded-md md:rounded-l-none rounded-r-md text-base font-semibold font-inter flex items-center justify-center`,
+  signUpButton: `active:scale-95 transition-all ease-in-out duration-300 custom-button py-[12px] w-full md:w-fit px-[24px] bg-[#773fc6] rounded-md md:rounded-l-none rounded-r-md text-base font-semibold font-inter flex items-center justify-center`,
   divider: `h-[1px] lg:h-[48px] w-full md:w-[487px] lg:w-[1px] border-t lg:border-l border-[#ffffff2e] my-4 lg:my-0 lg:mx-4`,
   enterpriseTrial: {
-    container: `trial-span w-full md:w-[487px] lg:w-fit span transition-all ease-in-out duration-300 relative flex items-center justify-center py-[12px] px-[24px] rounded-md bg-transparent border-[1px] hover:border-[#f6f8fa] border-[#ffffff2e] font-semibold`,
+    container: `trial-span active:scale-95 transition-all ease-in-out duration-300 group w-full md:w-[487px] lg:w-fit span transition-all ease-in-out duration-300 relative flex items-center justify-center py-[12px] px-[24px] rounded-md bg-transparent border-[1px] hover:border-[#f6f8fa] border-[#ffffff2e] font-semibold`,
     span: `pr-[4px] tracking-[0.03em] font-roboto font-medium`,
     caretContainer: `relative z-50 min-w-[16px] max-w-[16px] h-[16px]`,
-    caret: `caret ml-2 mt-[1px]`,
-    arrowLine: `line absolute -translate-y-1/2 top-1/2 mt-[1px]`,
   },
 }
 

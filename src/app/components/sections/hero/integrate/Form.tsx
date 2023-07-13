@@ -1,3 +1,4 @@
+import { ArrowRight } from "@/app/components/atoms/icons/arrow-right"
 import { formStyles as css } from "./styles"
 
 export const Form = () => {
@@ -12,7 +13,9 @@ export const Form = () => {
               className={css.input}
             />
           </div>
-          <button className={css.signUpButton}>Sign up for GitHub</button>
+          <button type="button" className={css.signUpButton}>
+            Sign up for GitHub
+          </button>
         </div>
       </form>
       <div className={css.divider} />
@@ -20,10 +23,7 @@ export const Form = () => {
         <span className={css.enterpriseTrial.span}>
           Start a free enterprise trial
         </span>
-        <div className={css.enterpriseTrial.caretContainer}>
-          <div className={css.enterpriseTrial.caret} />
-          <span className={css.enterpriseTrial.arrowLine} />
-        </div>
+        <ArrowRight />
       </button>
     </div>
   )

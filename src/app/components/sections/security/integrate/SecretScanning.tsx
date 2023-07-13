@@ -17,7 +17,11 @@ export const SecretScanning = () => {
             styles="text-[#f0f0f0] !absolute left-0 bottom-0"
           />
         </div>
-        <img src={secretScanning.src} alt="secret_scanning/png" />
+        <img
+          src={secretScanning.src}
+          alt="secret_scanning/png"
+          className="pointer-events-none select-none"
+        />
       </div>
     </div>
   )

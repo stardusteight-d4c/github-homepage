@@ -5,5 +5,5 @@ export const buildWorkflowStyles = {
   spanContainer: `text-[#5c636d]`,
   span1: `block text-sm font-medium`,
   span2: `block text-xs`,
-  image: `absolute shadow-black/50 shadow-2xl z-[80] bottom-[-165px] xl:bottom-[-265px] left-[32px] md:left-[138px] lg:left-auto lg:right-[16px] w-[341px] xl:w-[541px] xl:h-[300px] rounded-lg border border-black`,
+  image: `absolute pointer-events-none select-none shadow-black/50 shadow-2xl z-[80] bottom-[-165px] xl:bottom-[-265px] left-[32px] md:left-[138px] lg:left-auto lg:right-[16px] w-[341px] xl:w-[541px] xl:h-[300px] rounded-lg border border-black`,
 }

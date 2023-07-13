@@ -1,5 +1,6 @@
 import { CopilotIcon } from "@/app/components/atoms/icons/copilot"
 import { copilotSpanStyles as css } from "./styles"
+import { ArrowRight } from "@/app/components/atoms/icons/arrow-right"
 
 export const CopilotSpan = () => {
   return (
@@ -13,10 +14,7 @@ export const CopilotSpan = () => {
           Your AI pair programmer is leveling up
         </span>
       </div>
-      <div className={css.caretContainer}>
-        <div className={css.caret} />
-        <span className={css.lineArrow} />
-      </div>
+      <ArrowRight />
     </div>
   )
 }

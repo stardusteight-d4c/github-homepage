@@ -1,3 +1,4 @@
+import { ArrowRight } from "../atoms/icons/arrow-right"
 import { textSpanWithUnderlineStyles as css } from "./styles"
 
 interface Props {
@@ -10,8 +11,7 @@ export const TextSpanWithUnderline = ({ title, styles }: Props) => {
     <span className={css.wrapper(styles ?? "")}>
       <span className={css.title}>{title}</span>
       <div className={css.caretContainer}>
-        <div className={css.caret} />
-        <span className={css.arrowLine} />
+        <ArrowRight />
       </div>
     </span>
   )

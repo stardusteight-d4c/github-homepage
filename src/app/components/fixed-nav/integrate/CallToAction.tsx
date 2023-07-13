@@ -1,3 +1,4 @@
+import { ArrowRight } from "../../atoms/icons/arrow-right"
 import { callToActionStyles as css } from "./styles"
 
 interface Props {
@@ -9,10 +10,7 @@ export const CallToAction = ({ mobile = false }: Props) => {
     <div className={css.wrapper(mobile)}>
       <button className={css.enterpriseTrialButton}>
         <span className={css.span}>Start a free enterprise trial</span>
-        <div className={css.caretContainer}>
-          <div className={css.caret} />
-          <span className={css.arrowLine} />
-        </div>
+        <ArrowRight />
       </button>
       <button className={css.signUpButton}>Sign up for GitHub</button>
     </div>
