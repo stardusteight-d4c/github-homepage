@@ -13,8 +13,8 @@ export const CopilotSpan = () => {
           Your AI pair programmer is leveling up
         </span>
       </div>
-      <div className={css.chevronContainer}>
-        <div className={css.chevron} />
+      <div className={css.caretContainer}>
+        <div className={css.caret} />
         <span className={css.lineArrow} />
       </div>
     </div>

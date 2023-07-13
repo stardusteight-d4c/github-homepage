@@ -20,8 +20,8 @@ export const copilotSpanStyles = {
   textContent: `flex flex-col font-roboto mr-[16px] pr-[4px]`,
   main: `text-sm md:text-base font-medium tracking-[0.03em] leading-5`,
   secondary: `text-sm md:text-base text-[#6e7681] font-light md:whitespace-nowrap`,
-  chevronContainer: `relative z-50 min-w-[16px] max-w-[16px] h-[16px]`,
-  chevron: `chevron`,
+  caretContainer: `relative z-50 min-w-[16px] max-w-[16px] h-[16px]`,
+  caret: `caret`,
   lineArrow: `line absolute -translate-y-1/2 top-1/2`,
 }
 
@@ -42,8 +42,8 @@ export const formStyles = {
   enterpriseTrial: {
     container: `trial-span w-full md:w-[487px] lg:w-fit span transition-all ease-in-out duration-300 relative flex items-center justify-center py-[12px] px-[24px] rounded-md bg-transparent border-[1px] hover:border-[#f6f8fa] border-[#ffffff2e] font-semibold`,
     span: `pr-[4px] tracking-[0.03em] font-roboto font-medium`,
-    chevronContainer: `relative z-50 min-w-[16px] max-w-[16px] h-[16px]`,
-    chevron: `chevron ml-2 mt-[1px]`,
+    caretContainer: `relative z-50 min-w-[16px] max-w-[16px] h-[16px]`,
+    caret: `caret ml-2 mt-[1px]`,
     arrowLine: `line absolute -translate-y-1/2 top-1/2 mt-[1px]`,
   },
 }

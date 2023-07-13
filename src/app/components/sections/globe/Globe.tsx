@@ -45,7 +45,7 @@ export const Globe = (props: Props) => {
               <button className="span-button w-full md:w-fit text-center bg-[#f6f8fa] flex items-center justify-center gap-x-3 rounded-md text-xl font-bold text-[#0d1117] py-[18px] px-[30px]">
                 <span>Sign up for GitHub</span>
                 <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px] mt-[2px]">
-                  <div className="chevron-black " />
+                  <div className="caret-black " />
                   <span className="line-black -ml-2 absolute -translate-y-1/2 top-1/2" />
                 </div>
               </button>
@@ -54,7 +54,7 @@ export const Globe = (props: Props) => {
                   Start a free enterprise trial
                 </span>
                 <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px]">
-                  <div className="chevron ml-2 mt-[1px]" />
+                  <div className="caret ml-2 mt-[1px]" />
                   <span className="line absolute -translate-y-1/2 top-1/2 mt-[1px]" />
                 </div>
               </button>

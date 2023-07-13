@@ -125,7 +125,7 @@ export const Security = (props: Props) => {
                 Get GitHub Advanced Security
               </span>
               <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px] mt-[2px]">
-                <div className="chevron" />
+                <div className="caret" />
                 <span className="line absolute -translate-y-1/2 top-1/2" />
               </div>
             </span>
@@ -164,7 +164,7 @@ export const Security = (props: Props) => {
                   Read about secret scanning
                 </span>
                 <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px] mt-[2px]">
-                  <div className="chevron" />
+                  <div className="caret" />
                   <span className="line absolute -translate-y-1/2 top-1/2" />
                 </div>
               </span>
@@ -183,7 +183,7 @@ export const Security = (props: Props) => {
                   Explore Dependabot
                 </span>
                 <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px] mt-[2px]">
-                  <div className="chevron" />
+                  <div className="caret" />
                   <span className="line absolute -translate-y-1/2 top-1/2" />
                 </div>
               </span>
@@ -210,7 +210,7 @@ export const Security = (props: Props) => {
                   Download the latest SAST ebook
                 </span>
                 <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px] mt-[2px]">
-                  <div className="chevron" />
+                  <div className="caret" />
                   <span className="line absolute -translate-y-1/2 top-1/2" />
                 </div>
               </span>

@@ -65,16 +65,15 @@ html {
 }
 
 .line {
-  width: 0;
-  height: 2px;
-  background-color: #f6f8fa;
+  width: 0px;
+  height: 0px;
+  border-top: 2px solid #f6f8fa;
   border-radius: 50px;
-  transition: all 0.1s ease-in-out; 
 }
 
 .line-black {
   width: 0;
-  height: 2px;
+  height: 0px;
   background-color: #0d1117;
   border-radius: 50px;
   transition: all 0.1s ease-in-out; 
@@ -86,7 +85,7 @@ html {
   transition: all 0.3s ease-in-out;
 }
 
-.span-button:hover .chevron-black {
+.span-button:hover .caret-black {
   left: 4px;
   animation-name: slide-in;
   animation-duration: 0.3s;
@@ -98,7 +97,7 @@ html {
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
 }
-.copilot-span:hover .chevron {
+.copilot-span:hover .caret {
   left: 4px;
   animation-name: slide-in;
   animation-duration: 0.3s;
@@ -110,7 +109,7 @@ html {
   transition: all 0.3s ease-in-out;
   width: 14px;
 }
-.trial-span:hover .chevron {
+.trial-span:hover .caret {
   left: 4px;
   animation-name: slide-in;
   animation-duration: 0.3s;
@@ -122,7 +121,7 @@ html {
   transition: all 0.3s ease-in-out;
   width: 14px;
 }
-.codespace-span:hover .chevron {
+.codespace-span:hover .caret {
   left: 4px;
   animation-name: slide-in;
   animation-duration: 0.3s;
@@ -138,7 +137,7 @@ html {
   }
 }
 
-.chevron-black {
+.caret-black {
   width: 16px;
   height: 16px;
   position: relative;
@@ -147,8 +146,8 @@ html {
 }
 
 
-.chevron-black::before,
-.chevron-black::after {
+.caret-black::before,
+.caret-black::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -158,18 +157,18 @@ html {
   border-radius: 50px;
 }
 
-.chevron-black::before {
+.caret-black::before {
   left: 0;
   transform: translateY(-50%) rotate(-45deg);
   border-radius: 50px;
 }
 
-.chevron-black::after {
+.caret-black::after {
   right: 0;
   transform: translateY(-50%) rotate(45deg);
 }
 
-.chevron {
+.caret {
   width: 16px;
   height: 16px;
   position: relative;
@@ -177,26 +176,28 @@ html {
   transition: all 0.3s ease-in-out; 
 }
 
-.chevron::before,
-.chevron::after {
+.caret::before,
+.caret::after {
   content: "";
   position: absolute;
   top: 50%;
   width: 10px;
-  height: 2px;
+  height: 0px;
+  border-top: 2px solid #f6f8fa;
   background-color: #f6f8fa;
   border-radius: 50px;
 }
 
-.chevron::before {
+.caret::before {
   left: 0;
   transform: translateY(-50%) rotate(-45deg);
   border-radius: 50px;
 }
 
-.chevron::after {
+.caret::after {
   right: 0;
   transform: translateY(-50%) rotate(45deg);
+  border-radius: 50px;
 }
 
 .custom-button {
@@ -248,12 +249,12 @@ html {
   -webkit-backdrop-filter: blur(2px);
 }
 
-.underline-animation {
+.codespace-span {
   position: relative;
-  display: inline-block;
+  width: fit-content;
 }
 
-.underline-animation::before {
+.codespace-span::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -264,7 +265,7 @@ html {
   transition: width 0.3s ease-in-out;
 }
 
-.underline-animation:hover::before {
+.codespace-span:hover::before  {
   width: 100%;
 }
 

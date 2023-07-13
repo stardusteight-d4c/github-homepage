@@ -16,7 +16,7 @@ export const GitHubSponsors = () => {
                 Invest with GitHub Sponsors
               </span>
               <div className="relative z-50 min-w-[16px] max-w-[16px] h-[16px] mt-[2px]">
-                <div className="chevron" />
+                <div className="caret" />
                 <span className="line absolute -translate-y-1/2 top-1/2" />
               </div>
             </span>

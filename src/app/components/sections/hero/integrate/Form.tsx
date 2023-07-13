@@ -20,8 +20,8 @@ export const Form = () => {
         <span className={css.enterpriseTrial.span}>
           Start a free enterprise trial
         </span>
-        <div className={css.enterpriseTrial.chevronContainer}>
-          <div className={css.enterpriseTrial.chevron} />
+        <div className={css.enterpriseTrial.caretContainer}>
+          <div className={css.enterpriseTrial.caret} />
           <span className={css.enterpriseTrial.arrowLine} />
         </div>
       </button>

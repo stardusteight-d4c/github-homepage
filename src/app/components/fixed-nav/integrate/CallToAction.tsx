@@ -9,8 +9,8 @@ export const CallToAction = ({ mobile = false }: Props) => {
     <div className={css.wrapper(mobile)}>
       <button className={css.enterpriseTrialButton}>
         <span className={css.span}>Start a free enterprise trial</span>
-        <div className={css.chevronContainer}>
-          <div className={css.chevron} />
+        <div className={css.caretContainer}>
+          <div className={css.caret} />
           <span className={css.arrowLine} />
         </div>
       </button>
