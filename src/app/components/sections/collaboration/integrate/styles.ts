@@ -49,3 +49,24 @@ export const pullRequestsStyles = {
   imageContainer: `h-full w-fit mx-auto mt-7`,
   image: `md:h-[350px] pointer-events-none select-none mt-auto border border-[#30363d] border-b-0 w-[350px] smm:w-full lg:w-[550px] lg:h-[425px] rounded-t-2xl object-fill`,
 }
+
+export const githubSponsorsStyles = {
+  container: `relative pb-[158px]`,
+  innerContainer: `z-20 relative md:h-[550px] lg:h-[457px] mt-[35px] max-w-[1278px] w-full xl:mx-auto`,
+  cardContainer: `bg-[#161b22] h-full flex flex-col lg:flex-row justify-between shadow-black/50 shadow-xl border border-[#30363d] rounded-xl overflow-hidden`,
+  textContainer: `text-[#f0f0f0]/50 relative md:mr-[50px] mx-[40px] pb-[65px] md:pb-0 mdd:mx-[32px] lg:mx-[58px] my-[28px] mdd:my-[62px] m-[32px] leading-[32px] font-semibold`,
+  text: `md:max-w-[447px] w-full text-[20px] mdd:text-[24px]`,
+  spanStrong: `text-[#f0f0f0]`,
+  gridContainer: `grid grid-cols-3 w-[500px] md:min-w-[525px] h-fit lg:w-fit gap-2 md:gap-4 mt-[0px] lg:-mt-[90px] md:ml-[400px] lg:ml-0 lg:mr-8 -rotate-[10deg] lg:-rotate-[15deg]`,
+  securityLineContainer: `overflow-hidden h-[158px] w-full absolute top-[100%]`,
+  branchSecurityLine: `absolute left-[16px] md:left-[52px] top-0 z-0 w-[2.5px] md:w-[4px] h-[50vh] bg-gradient-to-b from-[#2b2c68] via-[#5c61bc] to-[#f6f8fa]`,
+  sponsorCard: {
+    container: `col-span-1 select-none h-fit px-[24px] w-fit lg:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md`,
+    image: `w-[48px] md:w-[98px] pointer-events-none select-none mx-auto`,
+    userImage: `rounded-full`,
+    name: `block text-sm font-roboto text-[#686e77] mx-auto my-[8px]`,
+    buttonContainer: `flex hover:brightness-150 cursor-pointer items-center bg-[#21262d] border border-[#373b42] rounded-md gap-x-[4px] py-[5px] px-[16px]`,
+    heartIcon: `text-[#db61a2] w-[17px] h-[17px]`,
+    buttonText: `text-[#bec6ce] font-roboto text-sm`,
+  },
+}
