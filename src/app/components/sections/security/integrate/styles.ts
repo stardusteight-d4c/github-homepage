@@ -15,7 +15,7 @@ export const branchStyles = {
   wrapper: `flex relative pb-9`,
   bgStars: `w-[500px] rotate-[380deg] md:w-[1000px] h-[900px] z-0 -bottom-[280px] absolute right-0`,
   securityBranchContainer: `min-h-full -mt-[38px] w-[81px] relative`,
-  securityBranchLine: `absolute left-[17px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] h-[800px] bg-gradient-to-b z-20 from-[#2b2c68] via-[#5c61bc] to-[#2b2c68]`,
+  securityBranchLine: `absolute left-[17px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] h-[900px] bg-gradient-to-b z-20 from-[#2b2c68] via-[#5c61bc] to-[#2b2c68]`,
   contentContainer: `py-[5px] -ml-[35px] md:ml-0 md:pl-[64px] pr-[8px] md:pr-[24px] mt-[180px] md:mt-[245px] lg:my-[64px]`,
   paragraph: `text-[20px] ssm:text-[24px] text-[#7d8590] font-inter leading-[28px] md:leading-[32px] max-w-[317px] smm:max-w-[500px] w-full md:max-w-[500px] font-medium mb-[24px] md:mb-[16px]`,
   spanStrong: `text-[#f0f0f0]`,
@@ -26,3 +26,32 @@ export const branchStyles = {
   source: `text-base md:text-[20px] leading-[24px] md:leading-[28px] font-medium flex`,
   note: `text-base -mt-1 block`,
 }
+
+export const secretScanningStyles = {
+  container: `mx-auto z-20 relative md:h-[457px] mb-[35px] w-full xl:mx-auto`,
+  cardContainer: `bg-[#161b22] h-full flex flex-col md:flex-row justify-between shadow-black/50 shadow-xl border border-[#30363d] rounded-xl overflow-hidden`,
+  textContainer: `text-[#f0f0f0]/50 relative md:mr-[50px] mx-[40px] pb-[65px] md:pb-0 mdd:mx-[32px] lg:mx-[58px] my-[28px] mdd:my-[62px] m-[32px] leading-[32px] font-semibold`,
+  text: `md:max-w-[447px] w-full text-[20px] mdd:text-[24px]`,
+  spanStrong: `text-[#f0f0f0]`,
+  line: `line absolute -translate-y-1/2 top-1/2`,
+}
+
+export const dependabotStyles = {
+  container: `col-span-1 relative overflow-hidden shadow-black/50 shadow-xl border border-[#30363d] rounded-xl bg-[#161b22]`,
+  textContainer: `lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold`,
+  title: `text-[#f0f0f0]`,
+  description: `lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold`,
+  underline: `text-[#f0f0f0] mt-[60px]`,
+  imageContainer: `h-[260px] ssm:h-[350px] smm:h-[450px] w-full`,
+  image: `md:h-[350px] right-0 absolute bottom-0 w-[550px] lg:h-[425px] object-fill`,
+}
+
+export const codeScanningStyles = {
+  container: "col-span-1 relative overflow-hidden shadow-black/50 shadow-xl border border-[#30363d] rounded-xl bg-[#161b22]",
+  textContainer: "lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold",
+  title: "text-[#f0f0f0]",
+  description: "lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold",
+  underline: "text-[#f0f0f0] mt-[60px]",
+  imageContainer: "h-[260px] ssm:h-[350px] smm:h-[450px] w-full",
+  image: "md:h-[350px] left-1/2 -translate-x-1/2 absolute bottom-0 w-[550px] lg:h-[425px] object-fill",
+};
