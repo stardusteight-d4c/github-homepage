@@ -18,7 +18,7 @@ export const branchStyles = {
   wrapper: `max-w-7xl mx-auto flex relative`,
   bgStars: `w-[500px] pointer-events-none select-none md:w-[1000px] h-[900px] z-0 -bottom-[250px] absolute right-7`,
   branchLineContainer: `min-h-full w-[81px] relative`,
-  branchLine: `absolute left-[16px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] min-h-full bg-gradient-to-b z-20 from-[#55d163] via-[#48eb5b] to-[#55d163]`,
+  branchLine: `absolute left-[16px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] h-[1000px] bg-gradient-to-b z-20 from-[#55d163] via-[#48eb5b] to-[#55d163]`,
   contentContainer: `py-[5px] -ml-[45px] md:ml-0 md:pl-[64px] pr-[8px] md:pr-[24px] mt-[245px] lg:my-[64px]`,
   paragraph: `text-[20px] ssm:text-[24px] text-[#7d8590] font-inter leading-[28px] md:leading-[32px] max-w-[317px] smm:max-w-[500px] w-full md:max-w-[500px] font-medium mb-[24px] md:mb-[16px]`,
   strong: `text-[#f0f0f0]`,
@@ -40,7 +40,7 @@ export const gitHubCopilotStyles = {
 }
 
 export const gitHubActionsStyles = {
-  wrapper: `col-span-1 relative overflow-hidden shadow-black/50 shadow-xl border border-[#30363d] rounded-xl bg-[#161b22]`,
+  wrapper: `col-span-1 relative z-[50] overflow-hidden shadow-black/50 shadow-xl border border-[#30363d] rounded-xl bg-[#161b22]`,
   textContainer: `lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold`,
   spanStrong: `text-[#f0f0f0]`,
   imageContainer: `h-full w-fit mx-auto mt-7`,
@@ -48,7 +48,7 @@ export const gitHubActionsStyles = {
 }
 
 export const gitHubMobileStyles = {
-  wrapper: `col-span-1 overflow-hidden relative shadow-black/50 shadow-xl border border-[#30363d] rounded-xl bg-[#161b22]`,
+  wrapper: `col-span-1 overflow-hidden relative z-[50] shadow-black/50 shadow-xl border border-[#30363d] rounded-xl bg-[#161b22]`,
   textContainer: `lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold`,
   spanStrong: `text-[#f0f0f0]`,
   textSpan: `text-[#f0f0f0] mt-[60px]`,

@@ -2,6 +2,7 @@ import { Heart } from "@/app/components/atoms/icons/heart"
 import { TextSpanWithUnderline } from "@/app/components/globals/TextSpanWithUnderline"
 import { sponsorsData } from "./data"
 import { githubSponsorsStyles as css } from "./styles"
+import { Tilt } from "@/app/components/globals/Tilt"
 
 interface SponsorCardProps {
   link: string
@@ -12,30 +13,32 @@ interface SponsorCardProps {
 
 export const GitHubSponsors = () => {
   return (
-    <div className={css.container}>
-      <div className={css.innerContainer}>
-        <div className={css.cardContainer}>
-          <div className={css.textContainer}>
-            <p className={css.text}>
-              <span className={css.spanStrong}>GitHub Sponsors </span> lets you
-              support your favorite open source maintainers and projects.
-            </p>
-            <TextSpanWithUnderline
-              title="Invest with GitHub Sponsors"
-              styles="text-[#f0f0f0] !absolute bottom-0"
-            />
+    <Tilt elementId="github-sponsors" max={4}>
+      <div className={css.container}>
+        <div className={css.innerContainer}>
+          <div id="github-sponsors" className={css.cardContainer}>
+            <div className={css.textContainer}>
+              <p className={css.text}>
+                <span className={css.spanStrong}>GitHub Sponsors </span> lets
+                you support your favorite open source maintainers and projects.
+              </p>
+              <TextSpanWithUnderline
+                title="Invest with GitHub Sponsors"
+                styles="text-[#f0f0f0] !absolute bottom-0"
+              />
+            </div>
+            <div className={css.gridContainer}>
+              {sponsorsData.map((sponsor: any, index) => (
+                <SponsorCard key={index} {...sponsor} />
+              ))}
+            </div>
           </div>
-          <div className={css.gridContainer}>
-            {sponsorsData.map((sponsor: any, index) => (
-              <SponsorCard key={index} {...sponsor} />
-            ))}
+          <div className={css.securityLineContainer}>
+            <div className={css.branchSecurityLine} />
           </div>
-        </div>
-        <div className={css.securityLineContainer}>
-          <div className={css.branchSecurityLine} />
         </div>
       </div>
-    </div>
+    </Tilt>
   )
 }
 

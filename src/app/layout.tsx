@@ -18,7 +18,7 @@ const roboto = Roboto({
 })
 
 const jetBrainsMono = JetBrains_Mono({
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
   display: "swap",

@@ -18,10 +18,10 @@ export const issuesStyles = {
 }
 
 export const branchStyles = {
-  wrapper: `max-w-7xl mx-auto flex relative pb-9 overflow-hidden`,
+  wrapper: `max-w-7xl mx-auto flex relative pb-9`,
   bgStars: `w-[500px] pointer-events-none select-none rotate-[180deg] md:w-[1000px] h-[900px] z-0 -bottom-[190px] absolute -right-[180px]`,
   branchLineContainer: `min-h-full w-[81px] relative`,
-  branchLine: `absolute left-[18px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] h-[800px] bg-gradient-to-b z-20 from-[#fe7b72] via-[#ea6045] to-[#fe7b72]`,
+  branchLine: `absolute left-[18px] md:left-[53px] top-0 w-[2.5px] md:w-[4px] h-[1000px] bg-gradient-to-b z-20 from-[#fe7b72] via-[#ea6045] to-[#fe7b72]`,
   contentContainer: `py-[5px] -ml-[35px] md:ml-0 md:pl-[64px] pr-[8px] md:pr-[24px] mt-[200px] md:mt-[245px] lg:my-[64px]`,
   paragraph: `text-[20px] ssm:text-[24px] text-[#7d8590] font-inter leading-[28px] md:leading-[32px] max-w-[317px] smm:max-w-[500px] w-full md:max-w-[500px] font-medium mb-[24px] md:mb-[16px]`,
   spanStrong: `text-[#f0f0f0]`,
@@ -35,7 +35,7 @@ export const branchStyles = {
 }
 
 export const gitHubDiscussionsStyles = {
-  wrapper: `col-span-1 relative overflow-hidden shadow-black/50 shadow-xl border border-[#30363d] rounded-xl bg-[#161b22]`,
+  wrapper: `col-span-1 relative z-[50] overflow-hidden shadow-black/50 shadow-xl border border-[#30363d] rounded-xl bg-[#161b22]`,
   text: `lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold`,
   spanStrong: `text-[#f0f0f0]`,
   imageContainer: `h-full w-fit mx-auto mt-7`,
@@ -43,7 +43,7 @@ export const gitHubDiscussionsStyles = {
 }
 
 export const pullRequestsStyles = {
-  wrapper: `col-span-1 relative overflow-hidden shadow-black/50 shadow-xl border border-[#30363d] rounded-xl bg-[#161b22]`,
+  wrapper: `col-span-1 relative z-[50] overflow-hidden shadow-black/50 shadow-xl border border-[#30363d] rounded-xl bg-[#161b22]`,
   text: `lg:py-[64px] lg:pl-[64px] lg:pr-[128px] p-[32px] text-[#f0f0f0]/50 text-[20px] md:text-[24px] leading-[32px] font-semibold`,
   spanStrong: `text-[#f0f0f0]`,
   imageContainer: `h-full w-fit mx-auto mt-7`,
@@ -51,14 +51,14 @@ export const pullRequestsStyles = {
 }
 
 export const githubSponsorsStyles = {
-  container: `relative pb-[158px]`,
+  container: `relative z-[50] pb-[158px]`,
   innerContainer: `z-20 relative md:h-[550px] lg:h-[457px] mt-[35px] max-w-[1278px] w-full xl:mx-auto`,
-  cardContainer: `bg-[#161b22] h-full flex flex-col lg:flex-row justify-between shadow-black/50 shadow-xl border border-[#30363d] rounded-xl overflow-hidden`,
+  cardContainer: `bg-[#161b22] z-[50] relative h-full flex flex-col lg:flex-row justify-between shadow-black/50 shadow-xl border border-[#30363d] rounded-xl overflow-hidden`,
   textContainer: `text-[#f0f0f0]/50 relative md:mr-[50px] mx-[40px] pb-[65px] md:pb-0 mdd:mx-[32px] lg:mx-[58px] my-[28px] mdd:my-[62px] m-[32px] leading-[32px] font-semibold`,
   text: `md:max-w-[447px] w-full text-[20px] mdd:text-[24px]`,
   spanStrong: `text-[#f0f0f0]`,
   gridContainer: `grid grid-cols-3 w-[500px] md:min-w-[525px] h-fit lg:w-fit gap-2 md:gap-4 mt-[0px] lg:-mt-[90px] md:ml-[400px] lg:ml-0 lg:mr-8 -rotate-[10deg] lg:-rotate-[15deg]`,
-  securityLineContainer: `overflow-hidden h-[158px] w-full absolute top-[100%]`,
+  securityLineContainer: `overflow-hidden h-[195px] lg:h-[185px] w-full absolute top-[95%]`,
   branchSecurityLine: `absolute left-[16px] md:left-[52px] top-0 z-0 w-[2.5px] md:w-[4px] h-[50vh] bg-gradient-to-b from-[#2b2c68] via-[#5c61bc] to-[#f6f8fa]`,
   sponsorCard: {
     container: `col-span-1 select-none h-fit px-[24px] w-fit lg:px-[32px] py-[26px] flex cursor-pointer flex-col border border-[#30363d] rounded-md`,
