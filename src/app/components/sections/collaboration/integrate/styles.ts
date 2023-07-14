@@ -5,7 +5,7 @@ export const headerStyles = {
   sectionIconContainer: `relative flex items-center justify-center`,
   titleIcon: `w-[28px] h-[28px] text-[#f0f0f0] relative z-[50]`,
   titleIconBlur: `blur-effect absolute bg-[#fe7b72] w-[48px] h-[48px] rounded-full animate-pulse`,
-  collaborationBranchLine: `absolute z-0 top-[100%] mt-3 w-[2.5px] md:w-[4px] h-[460px] bg-gradient-to-b from-[#ea6045] via-[#fe7b72] to-[#ea6045]`,
+  collaborationBranchLine: `absolute z-0 top-[100%] mt-3 w-[2.5px] md:w-[4px] h-[550px] bg-gradient-to-b from-[#ea6045] via-[#fe7b72] to-[#ea6045]`,
   description: `text-[28px] md:text-[48px] leading-[32px] md:leading-[55px] font-inter mr-2 max-w-[960px]`,
   gradientText: `bg-gradient-to-br from-[#fe7b72] to-[#ea6045] text-transparent bg-clip-text font-semibold mr-2 leading-[32px] md:leading-[55px] tracking-[-0.03em]`,
   regularText: `tracking-[-0.03em]`,
