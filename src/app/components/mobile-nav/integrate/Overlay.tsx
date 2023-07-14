@@ -1,7 +1,6 @@
 "use client"
 
 import { Dispatch, SetStateAction } from "react"
-import { createPortal } from "react-dom"
 import { overlayStyles as css } from "./styles"
 
 interface Props {
@@ -20,10 +19,7 @@ export const Overlay = ({ openMenu, setOpenMenu }: Props) => {
 
   return (
     <>
-      {createPortal(
-        <div onClick={handleCloseMenu} className={css.overlay(openMenu)} />,
-        document.body
-      )}
+      <div onClick={handleCloseMenu} className={css.overlay(openMenu)} />,
     </>
   )
 }
