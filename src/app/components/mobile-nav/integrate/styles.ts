@@ -1,7 +1,7 @@
 export const overlayStyles = {
   overlay: (openMenu: boolean) => {
     return `${
-      openMenu ? "block" : "hidden"
+      openMenu ? "block lg:hidden" : "hidden"
     } overlay-glassmorphism w-screen min-h-screen inset-0 z-[100] overflow-hidden fixed`
   },
 }

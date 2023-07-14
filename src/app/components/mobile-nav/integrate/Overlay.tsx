@@ -17,9 +17,5 @@ export const Overlay = ({ openMenu, setOpenMenu }: Props) => {
     setOpenMenu(false)
   }
 
-  return (
-    <>
-      <div onClick={handleCloseMenu} className={css.overlay(openMenu)} />,
-    </>
-  )
+  return <div onClick={handleCloseMenu} className={css.overlay(openMenu)} />
 }
