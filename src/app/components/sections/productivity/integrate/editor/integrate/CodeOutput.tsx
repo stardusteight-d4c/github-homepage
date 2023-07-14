@@ -1,4 +1,7 @@
+"use client"
+
 import Image from "next/image"
+import { Zoom } from "react-awesome-reveal"
 import { GithubLogo } from "@/app/components/atoms/icons/github-logo"
 import { Notify } from "@/app/components/atoms/icons/notify"
 import { Menu } from "@/app/components/atoms/icons/menu"
@@ -14,14 +17,16 @@ export const CodeOutput = () => {
         <Notify className={css.icon} />
       </ul>
       <div className={css.imgContainer}>
-        <Image
-          src={globe}
-          alt="planet_globe/jpg"
-          width={500}
-          height={591}
-          quality={100}
-          className={css.image}
-        />
+        <Zoom>
+          <Image
+            src={globe}
+            alt="planet_globe/jpg"
+            width={500}
+            height={591}
+            quality={100}
+            className={css.image}
+          />
+        </Zoom>
       </div>
     </div>
   )

@@ -1,4 +1,7 @@
+"use client"
+
 import { ReactNode } from "react"
+import { Zoom } from "react-awesome-reveal"
 import { productDropdownData } from "./data"
 import { productDropdownStyles as css } from "./styles"
 
@@ -17,29 +20,31 @@ interface ListItemDropdownProps {
 export const ProductDropdown = () => {
   return (
     <div className={css.wrapper}>
-      <ul className={css.unorderedList}>
-        {[
-          productDropdownData.actions,
-          productDropdownData.packages,
-          productDropdownData.security,
-          productDropdownData.codespaces,
-          productDropdownData.copilot,
-          productDropdownData.codeReview,
-          productDropdownData.issues,
-          productDropdownData.discussions,
-        ].map((item, index) => (
-          <ListItemDropdown type="icon" key={index} {...item} />
-        ))}
-      </ul>
-      <div className={css.divider} />
-      <div className={css.secondListWrapper}>
-        <h2 className={css.secondListTitle}>Explore</h2>
-        <ul className={css.secondUnorderedList}>
-          {productDropdownData.list.map((item, index) => (
-            <ListItemDropdown type="children" key={index} children={item} />
+      <Zoom duration={300}>
+        <ul className={css.unorderedList}>
+          {[
+            productDropdownData.actions,
+            productDropdownData.packages,
+            productDropdownData.security,
+            productDropdownData.codespaces,
+            productDropdownData.copilot,
+            productDropdownData.codeReview,
+            productDropdownData.issues,
+            productDropdownData.discussions,
+          ].map((item, index) => (
+            <ListItemDropdown type="icon" key={index} {...item} />
           ))}
         </ul>
-      </div>
+        <div className={css.divider} />
+        <div className={css.secondListWrapper}>
+          <h2 className={css.secondListTitle}>Explore</h2>
+          <ul className={css.secondUnorderedList}>
+            {productDropdownData.list.map((item, index) => (
+              <ListItemDropdown type="children" key={index} children={item} />
+            ))}
+          </ul>
+        </div>
+      </Zoom>
     </div>
   )
 }

@@ -1,3 +1,6 @@
+"use client"
+
+import { Fade, Slide } from "react-awesome-reveal"
 import { Security2 as SecurityIcon } from "@/app/components/atoms/icons/security-2"
 import { headerStyles as css } from "./styles"
 
@@ -12,17 +15,21 @@ export const Header = () => {
             <div className={css.brachLine} />
           </div>
         </div>
-        Security
+        <Fade delay={0} cascade damping={1e-1}>
+          Security
+        </Fade>
       </h2>
-      <p className={css.paragraph}>
-        <p className={css.gradientText}>
-          Embed security into <br /> the developer workflow.
+      <Slide duration={2000}>
+        <p className={css.paragraph}>
+          <p className={css.gradientText}>
+            Embed security into <br /> the developer workflow.
+          </p>
+          <p className={css.regularText}>
+            With GitHub, developers can secure their code in minutes and
+            organizations can automatically comply with regulations.
+          </p>
         </p>
-        <p className={css.regularText}>
-          With GitHub, developers can secure their code in minutes and
-          organizations can automatically comply with regulations.
-        </p>
-      </p>
+      </Slide>
     </div>
   )
 }

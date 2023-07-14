@@ -1,5 +1,8 @@
-import { CopilotIcon } from "@/app/components/atoms/icons/copilot"
+"use client"
+
 import React from "react"
+import { Fade } from "react-awesome-reveal"
+import { CopilotIcon } from "@/app/components/atoms/icons/copilot"
 
 interface Props {
   activeItem: "python" | "javascript" | "go"
@@ -36,41 +39,44 @@ export const JavascriptExample = ({ activeItem }: Props) => {
         <span className="text-[#a5d6ff]"> = </span>seconds{" "}
         <span className="text-[#a5d6ff]">/ 60</span>
       </span>
-      <div className="flex">
-        <span className="block whitespace-nowrap bg-[#388bfd1a] w-fit">
-          <span className="text-[#fe7b72]">const </span> hours
-          <span className="text-[#a5d6ff]"> = </span>minutes{" "}
-          <span className="text-[#a5d6ff]">/ 60</span>
-        </span>
-      </div>
-      <div className="flex">
-        <span className="block whitespace-nowrap bg-[#388bfd1a] w-fit">
-          <span className="text-[#fe7b72]">const </span> days
-          <span className="text-[#a5d6ff]"> = </span>hours{" "}
-          <span className="text-[#a5d6ff]">/ 24</span>
-        </span>
-      </div>
-      <div className="flex">
-        <span className="block whitespace-nowrap bg-[#388bfd1a] w-fit">
-          <span className="text-[#fe7b72]">const </span> weeks
-          <span className="text-[#a5d6ff]"> = </span>days{" "}
-          <span className="text-[#a5d6ff]">/ 7</span>{" "}
-        </span>
-      </div>
-      <div className="flex">
-        <span className="block whitespace-nowrap bg-[#388bfd1a] w-fit">
-          <span className="text-[#fe7b72]">const </span> months
-          <span className="text-[#a5d6ff]"> = </span>days{" "}
-          <span className="text-[#a5d6ff]">/ 30</span>
-        </span>
-      </div>
-      <div className="flex">
-        <span className="block whitespace-nowrap bg-[#388bfd1a] w-fit">
-          <span className="text-[#fe7b72]">const </span>years
-          <span className="text-[#a5d6ff]"> = </span>
-          months <span className="text-[#a5d6ff]">/ 12</span>
-        </span>
-      </div>
+      <Fade delay={800} cascade duration={500}>
+        <div className="flex">
+          <span className="block whitespace-nowrap bg-[#388bfd1a] w-fit">
+            <span className="text-[#fe7b72]">const </span> hours
+            <span className="text-[#a5d6ff]"> = </span>minutes{" "}
+            <span className="text-[#a5d6ff]">/ 60</span>
+          </span>
+        </div>
+        <div className="flex">
+          <span className="block whitespace-nowrap bg-[#388bfd1a] w-fit">
+            <span className="text-[#fe7b72]">const </span> days
+            <span className="text-[#a5d6ff]"> = </span>hours{" "}
+            <span className="text-[#a5d6ff]">/ 24</span>
+          </span>
+        </div>
+        <div className="flex">
+          <span className="block whitespace-nowrap bg-[#388bfd1a] w-fit">
+            <span className="text-[#fe7b72]">const </span> weeks
+            <span className="text-[#a5d6ff]"> = </span>days{" "}
+            <span className="text-[#a5d6ff]">/ 7</span>{" "}
+          </span>
+        </div>
+        <div className="flex">
+          <span className="block whitespace-nowrap bg-[#388bfd1a] w-fit">
+            <span className="text-[#fe7b72]">const </span> months
+            <span className="text-[#a5d6ff]"> = </span>days{" "}
+            <span className="text-[#a5d6ff]">/ 30</span>
+          </span>
+        </div>
+        <div className="flex">
+          <span className="block whitespace-nowrap bg-[#388bfd1a] w-fit">
+            <span className="text-[#fe7b72]">const </span>years
+            <span className="text-[#a5d6ff]"> = </span>
+            months <span className="text-[#a5d6ff]">/ 12</span>
+          </span>
+        </div>
+      </Fade>
+
       <div className="bg-[#1f6feb] -ml-[2px] text-sm font-roboto gap-x-1 absolute top-[100%] p-[8px] rounded-md rounded-tl-none w-fit h-fit flex items-center">
         <CopilotIcon className="w-[16px] h-[16px]" /> Copilot
       </div>

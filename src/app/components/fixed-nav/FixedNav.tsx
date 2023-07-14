@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import { FixedNavMobile, CallToAction } from "./integrate"
 import { fixedNavStyles as css } from "./styles"
+import { Zoom } from "react-awesome-reveal"
 
 interface ListItemProps {
   item: "productivity" | "collaboration" | "security"
@@ -71,29 +72,31 @@ export const FixedNav = () => {
 
   return (
     <header className={css.wrapper(showNavbar)}>
-      <div className={css.container}>
-        <nav className={css.navigation}>
-          <ul className={css.unorderedList}>
-            {["productivity", "collaboration", "security"].map(
-              (item: any, index) => (
-                <ListItem
-                  key={index}
-                  item={item}
-                  activeItem={activeItem}
-                  handleScrollView={handleScrollView}
-                />
-              )
-            )}
-          </ul>
-          <CallToAction />
-        </nav>
-      </div>
-      <FixedNavMobile
-        activeItem={activeItem}
-        openDropdown={openDropdown}
-        setOpenDropdown={setOpenDropdown}
-        handleScrollView={handleScrollView}
-      />
+      <Zoom duration={800}>
+        <div className={css.container}>
+          <nav className={css.navigation}>
+            <ul className={css.unorderedList}>
+              {["productivity", "collaboration", "security"].map(
+                (item: any, index) => (
+                  <ListItem
+                    key={index}
+                    item={item}
+                    activeItem={activeItem}
+                    handleScrollView={handleScrollView}
+                  />
+                )
+              )}
+            </ul>
+            <CallToAction />
+          </nav>
+        </div>
+        <FixedNavMobile
+          activeItem={activeItem}
+          openDropdown={openDropdown}
+          setOpenDropdown={setOpenDropdown}
+          handleScrollView={handleScrollView}
+        />
+      </Zoom>
     </header>
   )
 }

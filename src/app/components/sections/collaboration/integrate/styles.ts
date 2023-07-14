@@ -14,7 +14,7 @@ export const headerStyles = {
 export const issuesStyles = {
   container: `relative z-50`,
   issuesImage: `w-full pointer-events-none select-none border border-[#30363d] shadow-black/50 shadow-xl rounded-xl`,
-  projectsImage: `absolute pointer-events-none select-none object-cover shadow-black/50 shadow-2xl bottom-[-175px] xl:bottom-[-375px] right-[16px] lg:left-auto smm:left-[45px] md:left-[142px] lg:right-[50px] xl:right-[25px] w-[267px] xl:w-[544px] h-[225px] xl:h-[459px] rounded-lg border border-[#0d1117]`,
+  projectsImage: `pointer-events-none select-none object-cover shadow-black/50 shadow-2xl w-[267px] xl:w-[544px] h-[225px] xl:h-[459px] rounded-lg border border-[#0d1117]`,
 }
 
 export const branchStyles = {

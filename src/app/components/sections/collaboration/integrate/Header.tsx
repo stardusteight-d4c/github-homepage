@@ -1,3 +1,6 @@
+"use client"
+
+import { Fade, Slide } from "react-awesome-reveal"
 import { Collaboration as CollaborationIcon } from "@/app/components/atoms/icons/collaboration"
 import { headerStyles as css } from "./styles"
 
@@ -12,16 +15,20 @@ export const Header = () => {
             <div className={css.collaborationBranchLine} />
           </div>
         </div>
-        Collaboration
+        <Fade delay={0} cascade damping={1e-1}>
+          Collaboration
+        </Fade>
       </h2>
-      <p className={css.description}>
-        <span className={css.gradientText}>Supercharge collaboration.</span>
-        <span className={css.regularText}>
-          We provide unlimited repositories, best-in-class version control, and
-          the world’s most powerful open source community! So your team can work
-          more efficiently together.
-        </span>
-      </p>
+      <Slide duration={2000}>
+        <p className={css.description}>
+          <span className={css.gradientText}>Supercharge collaboration.</span>
+          <span className={css.regularText}>
+            We provide unlimited repositories, best-in-class version control,
+            and the world’s most powerful open source community! So your team
+            can work more efficiently together.
+          </span>
+        </p>
+      </Slide>
     </div>
   )
 }

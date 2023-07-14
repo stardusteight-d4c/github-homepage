@@ -1,4 +1,7 @@
+"use client"
+
 import { ReactNode } from "react"
+import { Fade, Slide } from "react-awesome-reveal"
 import {
   BackgroundImage,
   SignUpButton,
@@ -14,14 +17,16 @@ interface WrapperProps {
 export const Globe = () => {
   return (
     <Wrapper>
-      <h4 className={css.title}>
-        The place for anyone from anywhere to build anything
-      </h4>
-      <p className={css.description}>
-        Whether you’re scaling your startup or just learning how to code, GitHub
-        is your home. Join the world’s largest developer platform to build the
-        innovations that empower humanity. Let’s build from here.
-      </p>
+      <Fade duration={1300} delay={400}>
+        <h4 className={css.title}>
+          The place for anyone from anywhere to build anything
+        </h4>
+        <p className={css.description}>
+          Whether you’re scaling your startup or just learning how to code,
+          GitHub is your home. Join the world’s largest developer platform to
+          build the innovations that empower humanity. Let’s build from here.
+        </p>
+      </Fade>
       <div className={css.buttonContainer}>
         <SignUpButton />
         <EnterpriseTrialButton />

@@ -1,3 +1,6 @@
+"use client"
+
+import { Zoom } from "react-awesome-reveal"
 import { solutionsDropdownData } from "./data"
 import { solutionsDropdownStyles as css } from "./styles"
 
@@ -9,11 +12,16 @@ interface ListProps {
 export const SolutionsDropdown = () => {
   return (
     <div className={css.wrapper}>
-      <List title="For" content={solutionsDropdownData.for} />
-      <div className={css.divider} />
-      <List title="By Solution" content={solutionsDropdownData.bySolution} />
-      <div className={css.divider} />
-      <List title="Case Studies" content={solutionsDropdownData.caseStudies} />
+      <Zoom duration={300}>
+        <List title="For" content={solutionsDropdownData.for} />
+        <div className={css.divider} />
+        <List title="By Solution" content={solutionsDropdownData.bySolution} />
+        <div className={css.divider} />
+        <List
+          title="Case Studies"
+          content={solutionsDropdownData.caseStudies}
+        />
+      </Zoom>
     </div>
   )
 }

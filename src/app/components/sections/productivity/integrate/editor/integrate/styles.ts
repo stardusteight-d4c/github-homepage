@@ -48,7 +48,7 @@ export const codeOutputStyles = {
   header: `bg-[#161b22] w-full flex items-center justify-between pt-[16px] pb-[8px] px-[16px]`,
   icon: `text-[#f6f8fa] w-[16px] h-[16px]`,
   githubLogo: `text-[#f6f8fa] w-[24px] h-[24px]`,
-  imgContainer: `bg-[#040D21]`,
+  imgContainer: `bg-[#040d21] h-full w-full`,
   image: `max-w-[500px] pointer-events-none select-none w-full h-[591px] mx-auto object-contain`,
 }
 

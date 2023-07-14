@@ -1,3 +1,6 @@
+"use client"
+
+import { Fade, Slide } from "react-awesome-reveal"
 import { Productivity as ProductivityIcon } from "@/app/components/atoms/icons/productivity"
 import { headerStyles as css } from "./styles"
 
@@ -13,9 +16,13 @@ export const Header = () => {
               <div className={css.productivityBranchLine} />
             </div>
           </div>
-          Productivity
+          <Fade delay={0} cascade damping={1e-1}>
+            Productivity
+          </Fade>
         </h2>
-        <Paragraph />
+        <Slide duration={2000}>
+          <Paragraph />
+        </Slide>
       </div>
     </div>
   )
