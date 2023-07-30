@@ -55,6 +55,6 @@ The Next.js framework also features a hybrid routing system, where you can choos
 
 When it comes to metadata and header tags, Next.js offers ease of control. You can dynamically manage page metadata such as title, description, and header tags using special components like Head. This metadata is crucial for SEO optimization as search engines use this information to understand page content and display it in search results.
 
-![screen](/screens/desktop-1559px.png)
+![screen](./screenshots/desktop-1559px.png)
 
 <p align="center">Project made with :blue_heart: by <a href="https://github.com/stardusteight-d4c">Gabriel Sena</a></p>
